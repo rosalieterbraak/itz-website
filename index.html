@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT'Z — 0.0% alcohol, 100% it's wine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FAF5EC;
+    --ink:#1C1A17;
+    --gold:#C6952F;
+    --burgundy:#5A1B31;
+    --coral:#E08D6F;
+    --paper:#FFFFFF;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{
+    font-family:'Big Shoulders Display', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.01em;
+    line-height:0.92;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1140px; margin:0 auto; padding:0 28px;}
+
+  /* NAV */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:var(--cream);
+    border-bottom:2px solid var(--ink);
+  }
+  nav .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:16px; padding-bottom:16px;
+  }
+  .logo{font-family:'Big Shoulders Display'; font-weight:900; font-size:28px; text-transform:uppercase;}
+  .logo span{color:var(--burgundy);}
+  nav ul{display:flex; gap:28px; list-style:none;}
+  nav a{font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:0.04em; text-decoration:none;}
+  .nav-cta{
+    background:var(--ink); color:var(--cream); padding:9px 18px;
+    font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:0.04em;
+    text-decoration:none; border-radius:2px;
+  }
+  @media(max-width:720px){ nav ul{display:none;} }
+
+  /* HERO */
+  .hero{
+    position:relative;
+    padding:90px 0 70px;
+    border-bottom:2px solid var(--ink);
+    overflow:hidden;
+  }
+  .hero .wrap{position:relative; z-index:2;}
+  .hero h1{
+    font-size:clamp(58px, 12vw, 148px);
+    font-weight:900;
+    max-width:900px;
+  }
+  .hero .tag{
+    font-size:clamp(18px, 2.6vw, 26px);
+    max-width:560px;
+    margin-top:22px;
+    font-weight:500;
+  }
+  .hero .tag strong{color:var(--burgundy);}
+  .sticker{
+    position:absolute;
+    top:60px; right:6%;
+    width:150px; height:150px;
+    background:var(--burgundy);
+    color:var(--cream);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    transform:rotate(11deg);
+    font-family:'Big Shoulders Display';
+    font-weight:900;
+    font-size:15px;
+    line-height:1.15;
+    text-transform:uppercase;
+    box-shadow:0 8px 24px rgba(0,0,0,0.18);
+    z-index:3;
+  }
+  .sticker .big{font-size:34px; display:block;}
+  @media(max-width:720px){ .sticker{width:110px;height:110px; top:20px; right:20px; font-size:11px;} .sticker .big{font-size:24px;} }
+
+  .hero-cta{
+    margin-top:36px;
+    display:flex; gap:16px; flex-wrap:wrap;
+  }
+  .btn{
+    display:inline-block;
+    padding:15px 26px;
+    font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:0.04em;
+    text-decoration:none;
+    border-radius:2px;
+    border:2px solid var(--ink);
+  }
+  .btn-solid{background:var(--ink); color:var(--cream);}
+  .btn-solid:hover{background:var(--burgundy); border-color:var(--burgundy);}
+  .btn-outline{background:transparent; color:var(--ink);}
+  .btn-outline:hover{background:var(--ink); color:var(--cream);}
+
+  /* MARQUEE */
+  .marquee{
+    border-bottom:2px solid var(--ink);
+    background:var(--ink);
+    color:var(--cream);
+    overflow:hidden;
+    white-space:nowrap;
+    padding:12px 0;
+  }
+  .marquee-track{
+    display:inline-block;
+    animation:scroll 22s linear infinite;
+    font-family:'Big Shoulders Display';
+    font-weight:700;
+    font-size:17px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+  }
+  .marquee-track span{margin:0 22px; color:var(--gold);}
+  @keyframes scroll{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+
+  /* PRODUCTS */
+  .section{padding:80px 0;}
+  .section-head{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    margin-bottom:44px; gap:24px; flex-wrap:wrap;
+    border-bottom:2px solid var(--ink);
+    padding-bottom:20px;
+  }
+  .section-head h2{font-size:clamp(38px,6vw,64px); font-weight:800;}
+  .eyebrow{
+    font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.12em;
+    color:var(--burgundy); margin-bottom:8px;
+  }
+  .section-head p{max-width:340px; font-size:15px;}
+
+  .products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2px;
+    background:var(--ink);
+    border:2px solid var(--ink);
+  }
+  @media(max-width:900px){ .products{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:520px){ .products{grid-template-columns:1fr;} }
+
+  .product-card{
+    background:var(--paper);
+    padding:26px 22px 22px;
+    display:flex; flex-direction:column;
+    position:relative;
+  }
+  .product-card .imgbox{
+    aspect-ratio:1/1.15;
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:18px;
+    border-radius:4px;
+  }
+  .product-card .imgbox img{max-height:88%; max-width:78%; object-fit:contain; filter:drop-shadow(0 10px 16px rgba(0,0,0,0.18));}
+  .product-card h3{font-size:24px; font-weight:800; margin-bottom:4px;}
+  .product-card .grape{font-size:13px; color:#6b6558; margin-bottom:14px; font-weight:500;}
+  .product-card .price{
+    font-family:'Big Shoulders Display'; font-weight:900; font-size:20px;
+    margin-top:auto; padding-top:14px; border-top:1px solid #e4ddce;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .product-card .price a{font-family:'Work Sans'; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; text-decoration:underline;}
+
+  .p-rose .imgbox{background:#F4DAD0;}
+  .p-chardonnay .imgbox{background:#F3E4B8;}
+  .p-pinot .imgbox{background:#E6CBD1;}
+  .p-sparkling .imgbox{background:#F0E6C8;}
+
+  /* STORY */
+  .story{background:var(--ink); color:var(--cream); border-bottom:2px solid var(--ink); border-top:2px solid var(--ink);}
+  .story .grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;
+  }
+  @media(max-width:800px){ .story .grid{grid-template-columns:1fr; gap:36px;} }
+  .story .yearline{
+    font-family:'Big Shoulders Display'; font-weight:900;
+    font-size:clamp(70px,11vw,150px); color:var(--gold); line-height:0.85;
+  }
+  .story .yearline small{display:block; font-size:18px; font-family:'Work Sans'; font-weight:600; color:var(--cream); margin-top:14px; text-transform:none; letter-spacing:0;}
+  .story h2{font-size:clamp(32px,4.5vw,46px); margin-bottom:20px;}
+  .story p{font-size:16px; color:#e9e2d3; margin-bottom:14px;}
+  .story p strong{color:var(--gold);}
+
+  /* WHERE TO BUY */
+  .buy{
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:2px;
+    background:var(--ink); border:2px solid var(--ink);
+  }
+  @media(max-width:800px){ .buy{grid-template-columns:1fr;} }
+  .buy-left, .buy-right{background:var(--paper); padding:48px 40px;}
+  .buy-right{background:var(--coral); color:var(--ink);}
+  .buy h2{font-size:clamp(32px,5vw,50px); margin-bottom:18px;}
+  .buy p{font-size:15px; margin-bottom:22px; max-width:420px;}
+  .ah-badge{
+    display:inline-flex; align-items:center; gap:12px;
+    background:var(--ink); color:var(--cream);
+    padding:14px 22px; border-radius:2px; text-decoration:none;
+    font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:0.03em;
+  }
+  .ah-badge:hover{background:var(--burgundy);}
+  .buy-right ul{list-style:none;}
+  .buy-right li{
+    padding:14px 0; border-bottom:1px solid rgba(0,0,0,0.18);
+    font-weight:600; font-size:15px;
+    display:flex; gap:10px; align-items:baseline;
+  }
+  .buy-right li b{font-family:'Big Shoulders Display'; font-size:18px;}
+
+  /* SOCIAL */
+  .social{padding:70px 0; text-align:center;}
+  .social h2{font-size:clamp(30px,5vw,48px); margin-bottom:26px;}
+  .social-links{display:flex; gap:16px; justify-content:center; flex-wrap:wrap;}
+  .social-links a{
+    border:2px solid var(--ink); padding:13px 26px; border-radius:2px;
+    font-weight:700; text-transform:uppercase; font-size:13px; letter-spacing:0.04em;
+    text-decoration:none;
+  }
+  .social-links a:hover{background:var(--ink); color:var(--cream);}
+
+  footer{
+    border-top:2px solid var(--ink);
+    padding:26px 0;
+    font-size:12px;
+    color:#8a8371;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">IT<span>'</span>Z</div>
+    <ul>
+      <li><a href="#producten">Producten</a></li>
+      <li><a href="#verhaal">Het verhaal</a></li>
+      <li><a href="#kopen">Waar te koop</a></li>
+    </ul>
+    <a class="nav-cta" href="#kopen">Bestel bij AH</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="sticker">0.0%<span class="big">ALC</span>100% IT'Z</div>
+  <div class="wrap">
+    <h1>Wijn.<br>Zonder<br>gedoe.</h1>
+    <p class="tag">IT'Z is <strong>alcoholvrije wijn</strong> gemaakt door wijnhuis Leitz — al 280 jaar in het vak. Gewoon te vinden in het schap bij de Albert Heijn.</p>
+    <div class="hero-cta">
+      <a class="btn btn-solid" href="#kopen">Waar te koop</a>
+      <a class="btn btn-outline" href="#producten">Bekijk de wijnen</a>
+    </div>
+  </div>
+</header>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>●</span>CHARDONNAY<span>●</span>PINOT NOIR<span>●</span>ROSÉ<span>●</span>SPARKLING<span>●</span>0.0% ALCOHOL<span>●</span>TE KOOP BIJ AH<span>●</span>SINDS 1744<span>●</span>CHARDONNAY<span>●</span>PINOT NOIR<span>●</span>ROSÉ<span>●</span>SPARKLING<span>●</span>0.0% ALCOHOL<span>●</span>TE KOOP BIJ AH<span>●</span>SINDS 1744<span>●</span>
+  </div>
+</div>
+
+<section class="section" id="producten">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Het assortiment</div>
+        <h2>Vier smaken,<br>nul alcohol</h2>
+      </div>
+      <p>Elke IT'Z begint als echte wijn — daarna wordt de alcohol er zorgvuldig uitgehaald, zonder in te leveren op smaak. Er komen dit jaar nog meer smaken bij.</p>
+    </div>
+
+    <div class="products">
+      <div class="product-card p-rose">
+        <div class="imgbox"><img src="https://static.ah.nl/dam/product/AHI_5674744f574a534b51586d4747335242545859797567?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Rosé alcoholvrij"></div>
+        <h3>Rosé</h3>
+        <div class="grape">Fris & zacht — bij de borrel</div>
+        <div class="price">€7,49 <a href="https://www.ah.nl/producten/product/wi603120/it-z-rose-alcoholvrij" target="_blank" rel="noopener">Bekijk op AH →</a></div>
+      </div>
+      <div class="product-card p-chardonnay">
+        <div class="imgbox"><img src="https://static.ah.nl/dam/product/AHI_6634637343317158536f717277696539375243614667?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Chardonnay alcoholvrij"></div>
+        <h3>Chardonnay</h3>
+        <div class="grape">Citrus & vanille — bij vis of kip</div>
+        <div class="price">€7,49 <a href="https://www.ah.nl/producten/product/wi603133/it-z-chardonnay-alcoholvrij" target="_blank" rel="noopener">Bekijk op AH →</a></div>
+      </div>
+      <div class="product-card p-pinot">
+        <div class="imgbox"><img src="https://static.ah.nl/dam/product/AHI_457a527a44396b56536661356535667567456a587867?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Pinot Noir alcoholvrij"></div>
+        <h3>Pinot Noir</h3>
+        <div class="grape">Zacht & rond — bij de kaasplank</div>
+        <div class="price">€7,49 <a href="https://www.ah.nl/producten/product/wi603124/it-z-pinot-noir-alcoholvrij" target="_blank" rel="noopener">Bekijk op AH →</a></div>
+      </div>
+      <div class="product-card p-sparkling">
+        <div class="imgbox"><img src="https://static.ah.nl/dam/product/AHI_4f4f6136325a4e5951433271714e4c375f5647704151?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Sparkling alcoholvrij"></div>
+        <h3>Sparkling</h3>
+        <div class="grape">Bubbels — voor elke toost</div>
+        <div class="price">€7,49 <a href="https://www.ah.nl/producten/product/wi603112/it-z-sparkling-alcoholvrij" target="_blank" rel="noopener">Bekijk op AH →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="verhaal">
+  <div class="wrap section">
+    <div class="grid">
+      <div class="yearline">1744<small>Familie Leitz maakt al bijna drie eeuwen wijn in de Rheingau, Duitsland.</small></div>
+      <div>
+        <h2>Gemaakt door mensen die wijn snappen</h2>
+        <p>IT'Z komt niet van een alcoholvrij-startup, maar van <strong>wijnhuis Leitz</strong> — een familiebedrijf dat al generaties lang wijn maakt in de Rheingau. Sinds 2007 verfijnen ze ook het ontalcoholiseren, met steeds betere technieken om smaak te behouden.</p>
+        <p>Voor IT'Z begint het altijd met échte wijn. Pas daarna wordt de alcohol er voorzichtig uitgehaald — het lastigste deel van het proces, want daarmee kan ook smaak verdwijnen. Vandaar de aandacht voor de basiswijn.</p>
+        <p>Het resultaat: wijn die smaakt naar wijn. Zonder de kater, zonder het gedoe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="kopen">
+  <div class="wrap">
+    <div class="section-head" style="border:none; margin-bottom:24px; padding-bottom:0;">
+      <div>
+        <div class="eyebrow">Waar te koop</div>
+        <h2>Gewoon bij de AH</h2>
+      </div>
+    </div>
+    <div class="buy">
+      <div class="buy-left">
+        <h2>In het schap,<br>niet online besteld</h2>
+        <p>Alle vier de IT'Z-wijnen liggen bij Albert Heijn, in het schap alcoholvrije wijn. Check de app voor voorraad bij jouw winkel, of bestel voor thuisbezorging.</p>
+        <a class="ah-badge" href="https://www.ah.nl/producten/merk/it-z" target="_blank" rel="noopener">Bekijk IT'Z bij AH.nl →</a>
+      </div>
+      <div class="buy-right">
+        <ul>
+          <li><b>4x</b>&nbsp;wijnen nu verkrijgbaar</li>
+          <li><b>0.0%</b>&nbsp;alcohol, elke fles</li>
+          <li><b>€7,49</b>&nbsp;per fles van 0,75L</li>
+          <li><b>+</b>&nbsp;nieuwe smaken volgen dit jaar</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="social">
+  <div class="wrap">
+    <h2>Volg IT'Z</h2>
+    <div class="social-links">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:10px;">
+    <span>IT'Z is een alcoholvrije wijn van wijnhuis Leitz.</span>
+    <span>Alle IT'Z-wijnen zijn 0.0% alcohol.</span>
+  </div>
+</footer>
+
+</body>
+</html>
