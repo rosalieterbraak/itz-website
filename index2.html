@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT'Z,0.0% alcohol, 100% it's wine</title>
+<!-- GA4 Tracking,replace G-XXXXXXXX with your property ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXX');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FAF5EC;
+    --ink:#1C1A17;
+    --ah-blue:#0071C5;
+    --paper:#FFFFFF;
+    /* Wine-specific accent colors (from labels) */
+    --rose-accent:#E8A0A0;
+    --chardonnay-accent:#D4AF37;
+    --pinot-accent:#7B3F52;
+    --sparkling-accent:#F5E6D3;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{
+    font-family:'Big Shoulders Display', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.01em;
+    line-height:0.92;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1140px; margin:0 auto; padding:0 28px;}
+
+  /* NAV */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:var(--cream);
+    border-bottom:2px solid var(--ink);
+  }
+  nav .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:16px; padding-bottom:16px;
+  }
+  .logo{font-family:'Big Shoulders Display'; font-weight:900; font-size:28px; text-transform:uppercase;}
+  .logo span{color:var(--burgundy);}
+  nav ul{display:flex; gap:28px; list-style:none;}
+  nav a{font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:0.04em; text-decoration:none;}
+  .nav-cta{
+    background:var(--ah-blue); color:var(--paper); padding:9px 18px;
+    font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:0.04em;
+    text-decoration:none; border-radius:2px;
+  }
+  @media(max-width:720px){ nav ul{display:none;} }
+
+  /* HERO */
+  .hero{
+    position:relative;
+    padding:90px 0 70px;
+    border-bottom:2px solid var(--ink);
+    overflow:hidden;
+    background-image:url('assets/hero.png');
+    background-size:cover;
+    background-position:center 100%;
+    background-repeat:no-repeat;
+  }
+  .hero::before{
+    content:'';
+    position:absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:rgba(250,245,236,0.55);
+    z-index:1;
+  }
+  .hero .wrap{position:relative; z-index:2;}
+  .hero h1{
+    font-size:clamp(32px, 5.5vw, 72px);
+    font-weight:900;
+    max-width:900px;
+  }
+  .hero .tag{
+    font-size:clamp(15px, 2vw, 20px);
+    max-width:560px;
+    margin-top:22px;
+    font-weight:500;
+  }
+  .hero .tag strong{color:var(--burgundy);}
+  .sticker{
+    position:absolute;
+    top:60px; right:6%;
+    width:150px; height:150px;
+    background:var(--burgundy);
+    color:var(--cream);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    transform:rotate(11deg);
+    font-family:'Big Shoulders Display';
+    font-weight:900;
+    font-size:15px;
+    line-height:1.15;
+    text-transform:uppercase;
+    box-shadow:0 8px 24px rgba(0,0,0,0.18);
+    z-index:3;
+  }
+  .sticker .big{font-size:34px; display:block;}
+  @media(max-width:720px){ .sticker{width:110px;height:110px; top:20px; right:20px; font-size:11px;} .sticker .big{font-size:24px;} }
+  .sticker{display:none;}
+
+  .hero-cta{
+    margin-top:36px;
+    display:none;
+  }
+  .btn{
+    display:inline-block;
+    padding:15px 26px;
+    font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:0.04em;
+    text-decoration:none;
+    border-radius:2px;
+    border:2px solid var(--ink);
+  }
+  .btn-solid{background:var(--ink); color:var(--cream);}
+  .btn-solid:hover{background:#2a2825; border-color:#2a2825;}
+  .btn-outline{background:transparent; color:var(--ink);}
+  .btn-outline:hover{background:var(--ink); color:var(--cream);}
+  .btn-ah{background:var(--ah-blue); color:var(--paper); border:none; transition:all 0.3s ease;}
+  .btn-ah:hover{background:#005BA3; transform:translateY(-2px); box-shadow:0 4px 12px rgba(0, 113, 197, 0.3);}
+  .btn-discover{background:var(--ink); color:var(--paper); border:none; font-size:13px; padding:12px 18px;}
+  .btn-discover:hover{background:#2a2825; transform:scale(1.05);}
+
+  /* MARQUEE */
+  .marquee{
+    width:100vw;
+    margin-left:calc(-50vw + 50%);
+    border-bottom:2px solid var(--ink);
+    background:var(--ink);
+    color:var(--cream);
+    overflow:hidden;
+    white-space:nowrap;
+    padding:12px 0;
+  }
+  .marquee-track{
+    display:inline-block;
+    font-family:'Big Shoulders Display';
+    font-weight:700;
+    font-size:17px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+  }
+  .marquee-track span{margin:0 48px; color:var(--gold);}
+
+  /* PRODUCTS */
+  .section{padding:80px 0;}
+  .section-head{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    margin-bottom:44px; gap:24px; flex-wrap:wrap;
+    border-bottom:2px solid var(--ink);
+    padding-bottom:20px;
+  }
+  .section-head h2{font-size:clamp(38px,6vw,64px); font-weight:800;}
+  .eyebrow{
+    font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.12em;
+    color:var(--burgundy); margin-bottom:8px;
+  }
+  .section-head p{max-width:340px; font-size:15px;}
+
+  .products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2px;
+    background:var(--ink);
+    border:2px solid var(--ink);
+  }
+  @media(max-width:900px){ .products{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:520px){ .products{grid-template-columns:1fr;} }
+
+  .product-card{
+    background:var(--paper);
+    padding:26px 22px 22px;
+    display:flex; flex-direction:column;
+    position:relative;
+  }
+  .product-card .imgbox{
+    aspect-ratio:1/1.15;
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:18px;
+    border-radius:4px;
+    position:relative;
+  }
+  .product-card .imgbox img{max-height:88%; max-width:78%; object-fit:contain; filter:drop-shadow(0 10px 16px rgba(0,0,0,0.18));}
+  .product-card .badge{
+    position:absolute;
+    top:12px; right:12px;
+    width:60px; height:60px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  .product-card h3{font-size:24px; font-weight:800; margin-bottom:4px;}
+  .product-card .grape{font-size:13px; color:#6b6558; margin-bottom:14px; font-weight:500;}
+  .product-card .price{
+    font-family:'Big Shoulders Display'; font-weight:900; font-size:20px;
+    margin-top:auto; padding-top:14px; border-top:1px solid #e4ddce;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .product-card .price a{font-family:'Work Sans'; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; text-decoration:underline;}
+
+  .p-rose .imgbox{background:#F4DAD0;}
+  .p-rose .quote-badge{background:rgba(232,160,160,0.15); border-color:#E8A0A0;}
+  .p-chardonnay .imgbox{background:#F3E4B8;}
+  .p-chardonnay .quote-badge{background:rgba(212,175,55,0.15); border-color:#D4AF37;}
+  .p-pinot .imgbox{background:#E6CBD1;}
+  .p-pinot .badge{display:none;}
+  .p-pinot .quote-badge{background:rgba(123,63,82,0.15); border-color:#7B3F52;}
+  .p-sparkling .imgbox{background:#F0E6C8;}
+  .p-sparkling .quote-badge{background:rgba(245,230,211,0.3); border-color:#D4AF37;}
+
+  .quote-badge{
+    display:inline-block;
+    padding:10px 12px;
+    border:1px solid var(--ink);
+    border-radius:3px;
+    font-size:12px; font-weight:600; font-style:italic;
+    color:var(--ink);
+    margin-top:10px;
+    line-height:1.4;
+  }
+
+  /* WHY SECTION */
+  .why{
+    padding:80px 0;
+    border-top:2px solid var(--ink);
+    border-bottom:2px solid var(--ink);
+  }
+  .why-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+  }
+  @media(max-width:800px){ .why-grid{grid-template-columns:1fr; gap:30px;} }
+  .why-item{padding:0;}
+  .why-item h3{font-size:24px; font-weight:800; margin-bottom:12px;}
+  .why-item p{font-size:15px; color:#6b6558; line-height:1.6;}
+
+  /* MODAL / PDP */
+  .modal{
+    display:none;
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:100;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+  }
+  .modal.active{display:flex;}
+  .modal-content{
+    background:var(--paper);
+    max-width:600px;
+    width:100%;
+    max-height:90vh;
+    overflow-y:auto;
+    border:2px solid var(--ink);
+    border-radius:0;
+    position:relative;
+  }
+  .modal-close{
+    position:absolute;
+    top:16px; right:16px;
+    background:none;
+    border:none;
+    font-size:24px;
+    cursor:pointer;
+    color:var(--ink);
+    width:40px; height:40px;
+    display:flex; align-items:center; justify-content:center;
+    z-index:10;
+  }
+  .pdp-header{
+    padding:40px;
+    text-align:center;
+    border-bottom:2px solid var(--ink);
+  }
+  .pdp-image{
+    width:140px; height:180px;
+    display:flex; align-items:center; justify-content:center;
+    margin:0 auto 20px;
+    filter:drop-shadow(0 10px 16px rgba(0,0,0,0.18));
+  }
+  .pdp-image img{max-height:100%; max-width:100%; object-fit:contain;}
+  .pdp-body{padding:40px;}
+  .pdp-body h2{margin-bottom:20px;}
+  .pdp-section{margin-bottom:26px;}
+  .pdp-section h4{font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.1em; color:var(--ink); margin-bottom:8px;}
+  .pdp-section p{font-size:14px; color:#6b6558; line-height:1.6;}
+  .pdp-cta{
+    border-top:2px solid var(--ink);
+    padding-top:28px;
+  }
+  .pdp-cta .btn-ah{width:100%; text-align:center;}
+
+  /* STORY */
+  .story{
+    background:var(--ink);
+    background-image:url('assets/leitz.jpg');
+    background-size:cover;
+    background-position:center 70%;
+    background-attachment:fixed;
+    color:var(--cream);
+    border-bottom:2px solid var(--ink);
+    border-top:2px solid var(--ink);
+    position:relative;
+  }
+  .story::before{
+    content:'';
+    position:absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:rgba(28,26,23,0);
+    z-index:1;
+  }
+  .story .wrap{position:relative; z-index:2;}
+  .story .grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;
+  }
+  @media(max-width:800px){ .story .grid{grid-template-columns:1fr; gap:36px;} }
+  .story .yearline{
+    font-family:'Big Shoulders Display'; font-weight:900;
+    font-size:clamp(70px,11vw,150px); color:var(--gold); line-height:0.85;
+  }
+  .story .yearline small{display:block; font-size:18px; font-family:'Work Sans'; font-weight:600; color:var(--cream); margin-top:14px; text-transform:none; letter-spacing:0;}
+  .story h2{font-size:clamp(28px,3.5vw,36px); margin-bottom:20px;}
+  .story p{font-size:16px; color:#e9e2d3; margin-bottom:14px;}
+  .story p strong{color:var(--gold);}
+
+  /* WHERE TO BUY */
+  .buy{
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:2px;
+    background:var(--ink); border:2px solid var(--ink);
+  }
+  @media(max-width:800px){ .buy{grid-template-columns:1fr;} }
+  .buy-left, .buy-right{background:var(--paper); padding:48px 40px;}
+  .buy-right{background:var(--coral); color:var(--ink);}
+  .buy h2{font-size:clamp(32px,5vw,50px); margin-bottom:18px;}
+  .buy p{font-size:15px; margin-bottom:22px; max-width:420px;}
+  .ah-badge{
+    display:inline-flex; align-items:center; gap:12px;
+    background:var(--ah-blue); color:var(--paper);
+    padding:14px 22px; border-radius:2px; text-decoration:none;
+    font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:0.03em;
+  }
+  .ah-badge:hover{background:#005BA3;}
+  .buy-right ul{list-style:none;}
+  .buy-right li{
+    padding:14px 0; border-bottom:1px solid rgba(0,0,0,0.18);
+    font-weight:600; font-size:15px;
+    display:flex; gap:10px; align-items:baseline;
+  }
+  .buy-right li b{font-family:'Big Shoulders Display'; font-size:18px;}
+
+  /* SOCIAL */
+  .social{padding:70px 0; text-align:center;}
+  .social h2{font-size:clamp(30px,5vw,48px); margin-bottom:26px;}
+  .social-links{display:flex; gap:16px; justify-content:center; flex-wrap:wrap;}
+  .social-links a{
+    border:2px solid var(--ink); padding:13px 26px; border-radius:2px;
+    font-weight:700; text-transform:uppercase; font-size:13px; letter-spacing:0.04em;
+    text-decoration:none;
+  }
+  .social-links a:hover{background:var(--ink); color:var(--cream);}
+
+  footer{
+    border-top:2px solid var(--ink);
+    padding:26px 0;
+    font-size:12px;
+    color:#8a8371;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">IT<span>'</span>Z</div>
+    <ul>
+      <li><a href="#producten">Producten</a></li>
+      <li><a href="#verhaal">Het verhaal</a></li>
+      <li><a href="#kopen">Waar te koop</a></li>
+    </ul>
+    <a class="nav-cta" href="#kopen">Bestel bij AH</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="sticker">0.0%<span class="big">ALC</span>100% IT'Z</div>
+  <div class="wrap">
+    <h1>Eerst wijn.<br>Daarna IT'Z.</h1>
+    <p class="tag">IT'Z wordt gemaakt door Weingut Leitz, een familiebedrijf uit de Rheingau dat al sinds 1744 wijn maakt. Iedere fles begint als wijn en pas daarna wordt de alcohol zorgvuldig verwijderd, zodat geur, smaak en balans zoveel mogelijk behouden blijven. Vier verschillende stijlen. Eén wijnhuis. Gewoon verkrijgbaar bij Albert Heijn.</p>
+    <div class="hero-cta">
+      <a class="btn btn-solid" href="#producten">Bekijk de wijnen</a>
+    </div>
+  </div>
+</header>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>●</span>CHARDONNAY<span>●</span>PINOT NOIR<span>●</span>ROSÉ<span>●</span>SPARKLING<span>●</span>0.0% ALCOHOL<span>●</span>TE KOOP BIJ AH<span>●</span>SINDS 1744<span>●</span>CHARDONNAY<span>●</span>PINOT NOIR<span>●</span>ROSÉ<span>●</span>SPARKLING<span>●</span>0.0% ALCOHOL<span>●</span>TE KOOP BIJ AH<span>●</span>SINDS 1744<span>●</span>CHARDONNAY<span>●</span>PINOT NOIR<span>●</span>ROSÉ<span>●</span>SPARKLING<span>●</span>0.0% ALCOHOL<span>●</span>TE KOOP BIJ AH<span>●</span>SINDS 1744<span>●</span>
+  </div>
+</div>
+
+<section class="section" id="producten">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Ons assortiment</div>
+        <h2>Vier wijnen.<br>Vier eigen karakters.</h2>
+      </div>
+      <p>Van een frisse Chardonnay tot een zachte Pinot Noir. Van een fruitige Rosé tot een feestelijke Sparkling. Iedere wijn heeft een eigen stijl, maar allemaal beginnen ze op dezelfde plek: in de wijngaarden van Weingut Leitz in de Rheingau.</p>
+    </div>
+
+    <div class="products">
+      <div class="product-card p-rose" data-product="rose" onclick="openProduct('rose'); return false;" style="cursor:pointer;">
+        <div class="imgbox">
+          <img src="https://static.ah.nl/dam/product/AHI_5674744f574a534b51586d4747335242545859797567?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Rosé alcoholvrij">
+          <div class="badge" style="background-image:url('assets/DGH_med_cirkel_zilver_8-.png');"></div>
+        </div>
+        <h3>Rosé</h3>
+        <div class="grape">Fris, fruitig en heerlijk doordrinkbaar</div>
+        <div class="price">€7,49 <a class="btn btn-discover" href="#" onclick="openProduct('rose'); return false;">Ontdek deze wijn</a></div>
+      </div>
+      <div class="product-card p-chardonnay" data-product="chardonnay" onclick="openProduct('chardonnay'); return false;" style="cursor:pointer;">
+        <div class="imgbox">
+          <img src="https://static.ah.nl/dam/product/AHI_6634637343317158536f717277696539375243614667?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Chardonnay alcoholvrij">
+          <div class="badge" style="background-image:url('assets/DGH_med_cirkel_zilver_8+.png');"></div>
+        </div>
+        <h3>Chardonnay</h3>
+        <div class="grape">Rond en verfijnd</div>
+        <div class="price">€7,49 <a class="btn btn-discover" href="#" onclick="openProduct('chardonnay'); return false;">Ontdek deze wijn</a></div>
+      </div>
+      <div class="product-card p-pinot" data-product="pinot" onclick="openProduct('pinot'); return false;" style="cursor:pointer;">
+        <div class="imgbox">
+          <img src="https://static.ah.nl/dam/product/AHI_457a527a44396b56536661356535667567456a587867?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Pinot Noir alcoholvrij">
+          <div class="badge" style="background-image:url('assets/DGH_med_cirkel_zilver_8.png');"></div>
+        </div>
+        <h3>Pinot Noir</h3>
+        <div class="grape">Soepel en zacht</div>
+        <div class="price">€7,49 <a class="btn btn-discover" href="#" onclick="openProduct('pinot'); return false;">Ontdek deze wijn</a></div>
+      </div>
+      <div class="product-card p-sparkling" data-product="sparkling" onclick="openProduct('sparkling'); return false;" style="cursor:pointer;">
+        <div class="imgbox">
+          <img src="https://static.ah.nl/dam/product/AHI_4f4f6136325a4e5951433271714e4c375f5647704151?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Sparkling alcoholvrij">
+          <div class="badge" style="background-image:url('assets/DGH_med_cirkel_zilver_8.png');"></div>
+        </div>
+        <h3>Sparkling</h3>
+        <div class="grape">Fris en feestelijk</div>
+        <div class="price">€7,49 <a class="btn btn-discover" href="#" onclick="openProduct('sparkling'); return false;">Ontdek deze wijn</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="verhaal">
+  <div class="wrap section">
+    <div class="grid">
+      <div class="yearline">1744<small>Familie Leitz maakt al bijna drie eeuwen wijn in de Rheingau, Duitsland.</small></div>
+      <div>
+        <h2>Bij goede wijn begint alles in de wijngaard.</h2>
+        <p>Al sinds 1744 maakt de familie Leitz wijn in de Rheingau. Generatie na generatie draait het om hetzelfde uitgangspunt: goede wijn begint in de wijngaard.</p>
+        <p>Ook voor IT'Z verandert dat niet. Iedere fles begint als wijn. Pas daarna wordt de alcohol zorgvuldig verwijderd, zodat geur, smaak en balans zoveel mogelijk behouden blijven.</p>
+        <p>Die combinatie van eeuwenlange wijnkennis en jarenlange ervaring met alcoholvrije wijn maakt IT'Z tot wat het vandaag is.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why section" id="waarom">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:60px; border:none; padding-bottom:0;">
+      <h2>Waarom IT'Z?</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <h3>Al sinds 1744 een wijnhuis</h3>
+        <p>Weingut Leitz maakt al generaties lang wijn in de Rheingau. Vanuit Rüdesheim bouwde het familiebedrijf een internationale reputatie op met kwaliteitswijnen. Diezelfde kennis en aandacht voor vakmanschap vormen ook de basis van IT'Z.</p>
+      </div>
+      <div class="why-item">
+        <h3>Sinds 2007 gespecialiseerd in alcoholvrije wijn</h3>
+        <p>Leitz ontwikkelt al sinds 2007 alcoholvrije wijn. Door jarenlange ervaring met het zorgvuldig verwijderen van alcohol blijven aroma, frisheid en balans zoveel mogelijk behouden.</p>
+      </div>
+      <div class="why-item">
+        <h3>Eerst wijn. Daarna alcoholvrij.</h3>
+        <p>Iedere IT'Z begint als wijn. Pas nadat de wijn is gemaakt, wordt de alcohol zorgvuldig verwijderd. Zo blijft het karakter van de wijn zoveel mogelijk behouden.</p>
+      </div>
+      <div class="why-item">
+        <h3>Met aandacht voor de toekomst</h3>
+        <p>Weingut Leitz is aangesloten bij Fair'n Green, een duurzaamheidsprogramma voor de wijnbouw. Daarmee werkt het wijnhuis continu aan een verantwoorde omgang met natuur, energie en biodiversiteit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="kopen">
+  <div class="wrap">
+    <div class="section-head" style="border:none; margin-bottom:24px; padding-bottom:0;">
+      <div>
+        <div class="eyebrow">Waar te koop</div>
+        <h2>Gewoon bij de AH</h2>
+      </div>
+    </div>
+    <div class="buy">
+      <div class="buy-left">
+        <h2>Gewoon verkrijgbaar<br>bij Albert Heijn</h2>
+        <p>IT'Z is exclusief verkrijgbaar bij Albert Heijn. Alle vier de wijnen zijn te vinden in het assortiment van AH en AH.nl. Bekijk eenvoudig de actuele voorraad of voeg jouw favoriete wijn direct toe aan je boodschappen.</p>
+        <a class="ah-badge" href="https://www.ah.nl/producten/merk/it-z" target="_blank" rel="noopener">Bekijk IT'Z bij Albert Heijn</a>
+      </div>
+      <div class="buy-right" style="background:var(--ink); padding:0; overflow:hidden;">
+        <iframe width="100%" height="100%" style="border:none; display:block; min-height:400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.0!2d4.8952!3d52.3702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c5c5c5c5c5c5%3A0x0!2sAlbert%20Heijn%2C%20Netherlands!5e0!3m2!1sen!2snl!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="social">
+  <div class="wrap">
+    <h2>Volg IT'Z</h2>
+    <div class="social-links">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:10px;">
+    <span>IT'Z is een alcoholvrije wijnlijn van Weingut Leitz uit de Rheingau, Duitsland.</span>
+    <span>Sinds 1744 maakt de familie Leitz wijn. Sinds 2007 ontwikkelen zij ook alcoholvrije wijnen.</span>
+  </div>
+</footer>
+
+<!-- PRODUCT DETAIL MODALS -->
+<div class="modal" id="modal-rose">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProduct()">✕</button>
+    <div class="pdp-header p-rose">
+      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_5674744f574a534b51586d4747335242545859797567?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Rosé"></div>
+      <h2>IT'Z Rosé</h2>
+      <p style="font-weight:600; font-size:15px; margin-top:8px;">Fris, fruitig en heerlijk doordrinkbaar.</p>
+      <div style="margin-top:16px; padding:12px; background:rgba(232,160,160,0.15); border-radius:4px; border-left:3px solid #E8A0A0;">
+        <div style="font-weight:700; font-size:13px; color:#666; margin-bottom:6px;">Harold Hamersma (score: 8-)</div>
+        <p style="font-size:14px; font-style:italic; color:#333; margin:0;">"Mooi slank, goed droog, veel sappig fruit."</p>
+      </div>
+    </div>
+    <div class="pdp-body">
+      <div class="pdp-section">
+        <p>De IT'Z Rosé is een frisse rosé met aroma's van rood zomerfruit en een levendig karakter. De combinatie van fruitige tonen en frisse zuren zorgt voor een wijn die licht, toegankelijk en veelzijdig is. Ideaal als aperitief, maar ook een uitstekende begeleider van lichte gerechten.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Smaakprofiel</h4>
+        <p>In het glas proef je frisse tonen van aardbei, framboos en ander rood zomerfruit. De wijn heeft een levendige frisheid en een droge afdronk die uitnodigt tot een volgende slok. Licht van stijl, zonder zwaar of zoet te worden.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px; font-size:13px;">
+          <div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Droogheid</span> <span>●●●○○</span></div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Frisheid</span> <span>●●●●●</span></div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Fruitigheid</span> <span>●●●●○</span></div>
+            <div style="display:flex; justify-content:space-between;"><span>Body</span> <span>●●○○○</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="pdp-section">
+        <h4>Foodpairing</h4>
+        <p>Deze rosé voelt zich thuis op momenten waarop je iets fris wilt schenken. Combineer hem met salades, gegrilde groenten, lichte pasta's, sushi of een borrelplank met zachte kazen en charcuterie. Ook op een zonnig terras of tijdens een barbecue komt zijn frisse karakter mooi tot zijn recht. Door zijn frisse stijl past deze rosé moeiteloos bij uiteenlopende lichte gerechten.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Serveren</h4>
+        <p>Schenk goed gekoeld, bij voorkeur tussen 8 en 10 °C. Gebruik een wit wijnglas zodat de fruitige aroma's optimaal tot hun recht komen.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Wanneer kies je deze wijn?</h4>
+        <p>Deze rosé is een heerlijke keuze wanneer je op zoek bent naar iets fris, fruitig en gemakkelijk drinkbaar. Perfect voor een zonnige middag, een borrel met vrienden of een lichte maaltijd op het terras.</p>
+      </div>
+      <div class="pdp-cta">
+        <a class="btn btn-ah" href="https://www.ah.nl/producten/product/wi603120/it-z-rose-alcoholvrij" target="_blank" rel="noopener">Bekijk bij Albert Heijn</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-chardonnay">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProduct()">✕</button>
+    <div class="pdp-header p-chardonnay">
+      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_6634637343317158536f717277696539375243614667?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Chardonnay"></div>
+      <h2>IT'Z Chardonnay</h2>
+      <p style="font-weight:600; font-size:15px; margin-top:8px;">Rond, fris en veelzijdig.</p>
+      <div style="margin-top:16px; padding:12px; background:rgba(212,175,55,0.15); border-radius:4px; border-left:3px solid #D4AF37;">
+        <div style="font-weight:700; font-size:13px; color:#666; margin-bottom:6px;">Harold Hamersma (score: 8+)</div>
+        <p style="font-size:14px; font-style:italic; color:#333; margin:0;">"IT'Z goed! Indrukwekkend goed."</p>
+      </div>
+    </div>
+    <div class="pdp-body">
+      <div class="pdp-section">
+        <p>De IT'Z Chardonnay is een toegankelijke witte wijn met een frisse stijl en een zachte, ronde afdronk. Aroma's van citrus en rijp wit fruit worden aangevuld met subtiele tonen van vanille. Een wijn die gemakkelijk combineert met verschillende gerechten en zowel aan tafel als tijdens de borrel goed tot zijn recht komt.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Smaakprofiel</h4>
+        <p>Een frisse eerste indruk wordt gevolgd door aroma's van citrus, rijpe appel en wit steenfruit. De subtiele romigheid geeft de wijn meer structuur, terwijl de frisse zuren zorgen voor een levendige en evenwichtige afdronk. Daardoor blijft de wijn elegant, toegankelijk en prettig in balans.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px; font-size:13px;">
+          <div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Droogheid</span> <span>●●●●○</span></div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Frisheid</span> <span>●●●●○</span></div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Fruitigheid</span> <span>●●●○○</span></div>
+            <div style="display:flex; justify-content:space-between;"><span>Body</span> <span>●●●○○</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="pdp-section">
+        <h4>Foodpairing</h4>
+        <p>De frisse zuren maken deze Chardonnay een veelzijdige begeleider aan tafel. Hij combineert mooi met gegrilde kip, zalm uit de oven, romige pasta's en risotto. Ook bij zachte kazen of een borrelplank met milde kazen en noten komt zijn frisse karakter goed tot zijn recht. Zoek je een wijn die gemakkelijk aansluit bij verschillende gerechten, dan is deze Chardonnay een brede en toegankelijke keuze.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Serveren</h4>
+        <p>Schenk goed gekoeld, bij voorkeur tussen 8 en 10 °C. Gebruik een witwijnglas zodat de frisse aroma's en het fruit optimaal tot hun recht komen.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Wanneer kies je deze wijn?</h4>
+        <p>Deze wijn is een goede keuze voor wie houdt van een frisse witte wijn met iets meer ronding. De combinatie van levendige zuren, rijp fruit en een zachte afdronk maakt hem geschikt voor uiteenlopende momenten, van een lunch in de zon tot een uitgebreid diner.</p>
+      </div>
+      <div class="pdp-cta">
+        <a class="btn btn-ah" href="https://www.ah.nl/producten/product/wi603133/it-z-chardonnay-alcoholvrij" target="_blank" rel="noopener">Bekijk bij Albert Heijn</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-pinot">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProduct()">✕</button>
+    <div class="pdp-header p-pinot">
+      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_457a527a44396b56536661356535667567456a587867?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Pinot Noir"></div>
+      <h2>IT'Z Pinot Noir</h2>
+      <p style="font-weight:600; font-size:15px; margin-top:8px;">Soepel, zacht en verfijnd.</p>
+      <div style="margin-top:16px; padding:12px; background:rgba(123,63,82,0.15); border-radius:4px; border-left:3px solid #7B3F52;">
+        <div style="font-weight:700; font-size:13px; color:#666; margin-bottom:6px;">Harold Hamersma (score: 8)</div>
+        <p style="font-size:14px; font-style:italic; color:#333; margin:0;">"Licht koelen. Wordt ie nog wat smakeijker."</p>
+      </div>
+    </div>
+    <div class="pdp-body">
+      <div class="pdp-section">
+        <p>De IT'Z Pinot Noir is een toegankelijke rode wijn met een zachte structuur en een fruitig karakter. Aroma's van rijpe kersen en rode bessen worden aangevuld met subtiele kruidige tonen. Een elegante wijn die gemakkelijk combineert met verschillende gerechten.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Smaakprofiel</h4>
+        <p>Rijp rood fruit vormt de basis van deze pinot noir. Tonen van kersen en rode bessen zorgen voor een fruitige eerste indruk, gevolgd door een zachte structuur en een frisse afdronk. Daardoor blijft de wijn soepel, evenwichtig en toegankelijk.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px; font-size:13px;">
+          <div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Droogheid</span> <span>●●●●○</span></div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Frisheid</span> <span>●●●○○</span></div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Fruitigheid</span> <span>●●●○○</span></div>
+            <div style="display:flex; justify-content:space-between;"><span>Body</span> <span>●●●○○</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="pdp-section">
+        <h4>Foodpairing</h4>
+        <p>Deze pinot noir past goed bij pasta's, pizza, gegrilde groenten en gerechten met paddenstoelen. Ook gevogelte en een borrelplank met zachte kazen vormen een mooie combinatie. Zijn zachte structuur en frisse karakter maken hem veelzijdig aan tafel en geschikt voor verschillende momenten.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Serveren</h4>
+        <p>Schenk licht gekoeld, bij voorkeur tussen 14 en 16 °C. Gebruik een roodwijnglas zodat de aroma's zich mooi kunnen ontwikkelen.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Wanneer kies je deze wijn?</h4>
+        <p>Deze wijn is een goede keuze wanneer je houdt van een zachte rode wijn met veel fruit en een elegante afdronk. Ideaal voor een ontspannen avond, een goed diner of een gezellige borrel.</p>
+      </div>
+      <div class="pdp-cta">
+        <a class="btn btn-ah" href="https://www.ah.nl/producten/product/wi603124/it-z-pinot-noir-alcoholvrij" target="_blank" rel="noopener">Bekijk bij Albert Heijn</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-sparkling">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProduct()">✕</button>
+    <div class="pdp-header p-sparkling">
+      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_4f4f6136325a4e5951433271714e4c375f5647704151?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Sparkling"></div>
+      <h2>IT'Z Sparkling</h2>
+      <p style="font-weight:600; font-size:15px; margin-top:8px;">Fris, feestelijk en vol fijne bubbels.</p>
+      <div style="margin-top:16px; padding:12px; background:rgba(212,175,55,0.15); border-radius:4px; border-left:3px solid #D4AF37;">
+        <div style="font-weight:700; font-size:13px; color:#666; margin-bottom:6px;">Harold Hamersma (score: 8)</div>
+        <p style="font-size:14px; font-style:italic; color:#333; margin:0;">"Een mollige mousse, sappige rondinsen, rijpe perzik en appel."</p>
+      </div>
+    </div>
+    <div class="pdp-body">
+      <div class="pdp-section">
+        <p>De IT'Z Sparkling is een mousserende wijn met een frisse stijl en een elegante mousse. Aroma's van appel, peer en citrus zorgen voor een levendig karakter. Een veelzijdige wijn die uitnodigt om samen van te genieten.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Smaakprofiel</h4>
+        <p>Frisse tonen van appel, peer en citrus worden ondersteund door fijne bubbels en een levendige frisheid. De droge afdronk zorgt voor een elegant en verfrissend geheel dat prettig in balans blijft.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px; font-size:13px;">
+          <div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Droogheid</span> <span>●●●●○</span></div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Frisheid</span> <span>●●●●●</span></div>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Fruitigheid</span> <span>●●●○○</span></div>
+            <div style="display:flex; justify-content:space-between;"><span>Body</span> <span>●●○○○</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="pdp-section">
+        <h4>Foodpairing</h4>
+        <p>Deze IT'Z Sparkling is een veelzijdige begeleider van feestelijke momenten. Hij combineert mooi met oesters, sushi, schaal- en schelpdieren, lichte voorgerechten en feestelijke hapjes. Ook als aperitief of tijdens een brunch komt zijn frisse karakter uitstekend tot zijn recht.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Serveren</h4>
+        <p>Serveer goed gekoeld, bij voorkeur tussen 6 en 8 °C. Gebruik een mousserendwijnglas of een smal wijnglas zodat de bubbels mooi behouden blijven.</p>
+      </div>
+      <div class="pdp-section">
+        <h4>Wanneer kies je deze wijn?</h4>
+        <p>Deze wijn is gemaakt voor momenten waarop iets te vieren valt, groot of klein. Dankzij de frisse stijl en de fijne bubbels is dit een uitstekende keuze als aperitief, tijdens een feestelijke gelegenheid of om samen op een bijzonder moment te proosten.</p>
+      </div>
+      <div class="pdp-cta">
+        <a class="btn btn-ah" href="https://www.ah.nl/producten/product/wi603112/it-z-sparkling-alcoholvrij" target="_blank" rel="noopener">Bekijk bij Albert Heijn</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openProduct(wine) {
+  const modal = document.getElementById('modal-' + wine);
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeProduct() {
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach(modal => modal.classList.remove('active'));
+  document.body.style.overflow = 'auto';
+}
+
+// Marquee scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.querySelector('.marquee-track');
+  if (track) {
+    let position = 0;
+    const speed = 0.5;
+    const trackWidth = track.offsetWidth / 3;
+
+    function animate() {
+      position -= speed;
+      if (position <= -trackWidth) {
+        position = 0;
+      }
+      track.style.transform = `translateX(${position}px)`;
+      requestAnimationFrame(animate);
+    }
+    animate();
+  }
+});
+
+// Close modal when clicking outside content
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeProduct();
+      }
+    });
+  });
+});
+
+// Close on Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeProduct();
+  }
+});
+</script>
+
+</body>
+</html>
