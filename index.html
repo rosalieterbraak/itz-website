@@ -72,7 +72,7 @@
     padding:90px 0 70px;
     border-bottom:2px solid var(--ink);
     overflow:hidden;
-    background-image:url('assets/hero.png');
+    background-image:url('hero.png');
     background-size:cover;
     background-position:center 100%;
     background-repeat:no-repeat;
@@ -222,6 +222,7 @@
   .p-rose .quote-badge{background:rgba(232,160,160,0.15); border-color:#E8A0A0;}
   .p-chardonnay .imgbox{background:#F3E4B8;}
   .p-chardonnay .quote-badge{background:rgba(212,175,55,0.15); border-color:#D4AF37;}
+  .p-chardonnay .badge{display:none;}
   .p-pinot .imgbox{background:#E6CBD1;}
   .p-pinot .badge{display:none;}
   .p-pinot .quote-badge{background:rgba(123,63,82,0.15); border-color:#7B3F52;}
@@ -296,10 +297,9 @@
     border-bottom:2px solid var(--ink);
   }
   .pdp-image{
-    width:140px; height:180px;
+    width:160px; height:220px;
     display:flex; align-items:center; justify-content:center;
     margin:0 auto 20px;
-    filter:drop-shadow(0 10px 16px rgba(0,0,0,0.18));
   }
   .pdp-image img{max-height:100%; max-width:100%; object-fit:contain;}
   .pdp-body{padding:40px;}
@@ -316,7 +316,7 @@
   /* STORY */
   .story{
     background:var(--ink);
-    background-image:url('assets/leitz.jpg');
+    background-image:url('leitz.jpg');
     background-size:cover;
     background-position:center 70%;
     background-attachment:fixed;
@@ -437,7 +437,7 @@
       <div class="product-card p-rose" data-product="rose" onclick="openProduct('rose'); return false;" style="cursor:pointer;">
         <div class="imgbox">
           <img src="https://static.ah.nl/dam/product/AHI_5674744f574a534b51586d4747335242545859797567?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Rosé alcoholvrij">
-          <div class="badge" style="background-image:url('assets/DGH_med_cirkel_zilver_8-.png');"></div>
+          <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8-.png');"></div>
         </div>
         <h3>Rosé</h3>
         <div class="grape">Fris, fruitig en heerlijk doordrinkbaar</div>
@@ -445,8 +445,8 @@
       </div>
       <div class="product-card p-chardonnay" data-product="chardonnay" onclick="openProduct('chardonnay'); return false;" style="cursor:pointer;">
         <div class="imgbox">
-          <img src="https://static.ah.nl/dam/product/AHI_6634637343317158536f717277696539375243614667?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Chardonnay alcoholvrij">
-          <div class="badge" style="background-image:url('assets/DGH_med_cirkel_zilver_8+.png');"></div>
+          <img src="itz-chardonnay-schoon.png" alt="IT'Z Chardonnay alcoholvrij">
+          <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8+.png');"></div>
         </div>
         <h3>Chardonnay</h3>
         <div class="grape">Rond en verfijnd</div>
@@ -454,8 +454,8 @@
       </div>
       <div class="product-card p-pinot" data-product="pinot" onclick="openProduct('pinot'); return false;" style="cursor:pointer;">
         <div class="imgbox">
-          <img src="https://static.ah.nl/dam/product/AHI_457a527a44396b56536661356535667567456a587867?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Pinot Noir alcoholvrij">
-          <div class="badge" style="background-image:url('assets/DGH_med_cirkel_zilver_8.png');"></div>
+          <img src="itz-pinot-noir-800.png" alt="IT'Z Pinot Noir alcoholvrij">
+          <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div>
         </div>
         <h3>Pinot Noir</h3>
         <div class="grape">Soepel en zacht</div>
@@ -464,7 +464,7 @@
       <div class="product-card p-sparkling" data-product="sparkling" onclick="openProduct('sparkling'); return false;" style="cursor:pointer;">
         <div class="imgbox">
           <img src="https://static.ah.nl/dam/product/AHI_4f4f6136325a4e5951433271714e4c375f5647704151?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Sparkling alcoholvrij">
-          <div class="badge" style="background-image:url('assets/DGH_med_cirkel_zilver_8.png');"></div>
+          <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div>
         </div>
         <h3>Sparkling</h3>
         <div class="grape">Fris en feestelijk</div>
@@ -606,7 +606,7 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-chardonnay">
-      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_6634637343317158536f717277696539375243614667?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Chardonnay"></div>
+      <div class="pdp-image"><img src="itz-chardonnay-schoon.png" alt="IT'Z Chardonnay"></div>
       <h2>IT'Z Chardonnay</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Rond, fris en veelzijdig.</p>
       <div style="margin-top:16px; padding:12px; background:rgba(212,175,55,0.15); border-radius:4px; border-left:3px solid #D4AF37;">
@@ -655,7 +655,7 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-pinot">
-      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_457a527a44396b56536661356535667567456a587867?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Pinot Noir"></div>
+      <div class="pdp-image"><img src="itz-pinot-noir-800.png" alt="IT'Z Pinot Noir"></div>
       <h2>IT'Z Pinot Noir</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Soepel, zacht en verfijnd.</p>
       <div style="margin-top:16px; padding:12px; background:rgba(123,63,82,0.15); border-radius:4px; border-left:3px solid #7B3F52;">
