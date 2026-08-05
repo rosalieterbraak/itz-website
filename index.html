@@ -195,10 +195,12 @@
   }
   .product-card .imgbox{
     aspect-ratio:1/1.15;
+    min-height:0;
     display:flex; align-items:center; justify-content:center;
     margin-bottom:18px;
     border-radius:4px;
     position:relative;
+    overflow:hidden;
   }
   .product-card .imgbox img{max-height:88%; max-width:78%; object-fit:contain; filter:drop-shadow(0 10px 16px rgba(0,0,0,0.18));}
   .product-card .badge{
@@ -220,13 +222,15 @@
 
   .p-rose .imgbox{background:#F4DAD0;}
   .p-rose .quote-badge{background:rgba(232,160,160,0.15); border-color:#E8A0A0;}
+  .p-rose .imgbox img{mix-blend-mode:multiply;}
   .p-chardonnay .imgbox{background:#F3E4B8;}
   .p-chardonnay .quote-badge{background:rgba(212,175,55,0.15); border-color:#D4AF37;}
   .p-pinot .imgbox{background:#E6CBD1;}
   .p-pinot .quote-badge{background:rgba(123,63,82,0.15); border-color:#7B3F52;}
-  .p-chardonnay .imgbox img, .p-pinot .imgbox img{max-height:52%; max-width:42%;}
+  .p-chardonnay .imgbox img, .p-pinot .imgbox img{max-height:79%; max-width:60%;}
   .p-sparkling .imgbox{background:#F0E6C8;}
   .p-sparkling .quote-badge{background:rgba(245,230,211,0.3); border-color:#D4AF37;}
+  .p-sparkling .imgbox img{mix-blend-mode:multiply;}
 
   .quote-badge{
     display:inline-block;
@@ -299,8 +303,17 @@
     width:160px; height:220px;
     display:flex; align-items:center; justify-content:center;
     margin:0 auto 20px;
+    position:relative;
   }
   .pdp-image img{max-height:100%; max-width:100%; object-fit:contain;}
+  .pdp-image .badge{
+    position:absolute;
+    top:0; right:-10px;
+    width:56px; height:56px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
   .pdp-body{padding:40px;}
   .pdp-body h2{margin-bottom:20px;}
   .pdp-section{margin-bottom:26px;}
@@ -556,7 +569,7 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-rose">
-      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_5674744f574a534b51586d4747335242545859797567?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Rosé"></div>
+      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_5674744f574a534b51586d4747335242545859797567?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Rosé" style="mix-blend-mode:multiply;"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8-.png');"></div></div>
       <h2>IT'Z Rosé</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Fris, fruitig en heerlijk doordrinkbaar.</p>
       <div style="margin-top:16px; padding:12px; background:rgba(232,160,160,0.15); border-radius:4px; border-left:3px solid #E8A0A0;">
@@ -605,7 +618,7 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-chardonnay">
-      <div class="pdp-image"><img src="itz-chardonnay-schoon.png" alt="IT'Z Chardonnay"></div>
+      <div class="pdp-image"><img src="itz-chardonnay-schoon.png" alt="IT'Z Chardonnay"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8+.png');"></div></div>
       <h2>IT'Z Chardonnay</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Rond, fris en veelzijdig.</p>
       <div style="margin-top:16px; padding:12px; background:rgba(212,175,55,0.15); border-radius:4px; border-left:3px solid #D4AF37;">
@@ -654,7 +667,7 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-pinot">
-      <div class="pdp-image"><img src="itz-pinot-noir-800.png" alt="IT'Z Pinot Noir"></div>
+      <div class="pdp-image"><img src="itz-pinot-noir-800.png" alt="IT'Z Pinot Noir"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div></div>
       <h2>IT'Z Pinot Noir</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Soepel, zacht en verfijnd.</p>
       <div style="margin-top:16px; padding:12px; background:rgba(123,63,82,0.15); border-radius:4px; border-left:3px solid #7B3F52;">
@@ -703,7 +716,7 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-sparkling">
-      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_4f4f6136325a4e5951433271714e4c375f5647704151?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Sparkling"></div>
+      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_4f4f6136325a4e5951433271714e4c375f5647704151?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Sparkling" style="mix-blend-mode:multiply;"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div></div>
       <h2>IT'Z Sparkling</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Fris, feestelijk en vol fijne bubbels.</p>
       <div style="margin-top:16px; padding:12px; background:rgba(212,175,55,0.15); border-radius:4px; border-left:3px solid #D4AF37;">
