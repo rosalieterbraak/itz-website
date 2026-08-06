@@ -60,6 +60,7 @@
   }
   .logo{font-family:'Big Shoulders Display'; font-weight:900; font-size:28px; text-transform:uppercase;}
   .logo span{color:var(--burgundy);}
+  .logo img{height:24px; display:block;}
   nav ul{display:flex; gap:28px; list-style:none;}
   nav a{font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:0.04em; text-decoration:none;}
   .nav-cta{
@@ -456,6 +457,18 @@
   }
   .social-links a:hover{background:var(--ink); color:var(--cream);}
 
+  /* CONTACT */
+  .contact-form{max-width:640px; display:flex; flex-direction:column; gap:14px;}
+  .contact-row{display:flex; gap:14px; flex-wrap:wrap;}
+  .contact-row .finder-input{flex:1; min-width:220px;}
+  .contact-textarea{
+    width:100%; padding:12px 14px; border:1.5px solid var(--ink); border-radius:2px;
+    font-family:'Work Sans', sans-serif; font-size:14px; background:var(--paper); color:var(--ink);
+    resize:vertical; min-height:130px;
+  }
+  .contact-form button{align-self:flex-start;}
+  .contact-note{font-size:12px; opacity:0.6; margin-top:-4px;}
+
   footer{
     border-top:2px solid var(--ink);
     padding:26px 0;
@@ -469,11 +482,12 @@
 
 <nav>
   <div class="wrap">
-    <div class="logo">IT<span>'</span>Z</div>
+    <div class="logo"><img src="itz-logo.png" alt="IT'Z"></div>
     <ul>
       <li><a href="#producten">Producten</a></li>
       <li><a href="#verhaal">Het verhaal</a></li>
       <li><a href="#kopen">Waar te koop</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <a class="nav-cta" href="#kopen">Bestel bij AH</a>
   </div>
@@ -483,7 +497,7 @@
   <div class="sticker">0.0%<span class="big">ALC</span>100% IT'Z</div>
   <div class="wrap">
     <h1>Eerst wijn.<br>Daarna IT'Z.</h1>
-    <p class="tag">IT'Z wordt gemaakt door Weingut Leitz, een familiebedrijf uit de Rheingau dat al sinds 1744 wijn maakt. Iedere fles begint als wijn en pas daarna wordt de alcohol zorgvuldig verwijderd, zodat geur, smaak en balans zoveel mogelijk behouden blijven. Vier verschillende stijlen. Eén wijnhuis. Gewoon verkrijgbaar bij Albert Heijn.</p>
+    <p class="tag">IT'Z – Alleen van goede wijn maak je goede alcoholvrije wijn.</p>
     <div class="hero-cta">
       <a class="btn btn-solid" href="#producten">Bekijk de wijnen</a>
     </div>
@@ -553,9 +567,10 @@
       <div class="yearline">1744<small>Familie Leitz maakt al bijna drie eeuwen wijn in de Rheingau, Duitsland.</small></div>
       <div>
         <h2>Bij goede wijn begint alles in de wijngaard.</h2>
-        <p>Al sinds 1744 maakt de familie Leitz wijn in de Rheingau. Generatie na generatie draait het om hetzelfde uitgangspunt: goede wijn begint in de wijngaard.</p>
-        <p>Ook voor IT'Z verandert dat niet. Iedere fles begint als wijn. Pas daarna wordt de alcohol zorgvuldig verwijderd, zodat geur, smaak en balans zoveel mogelijk behouden blijven.</p>
-        <p>Die combinatie van eeuwenlange wijnkennis en jarenlange ervaring met alcoholvrije wijn maakt IT'Z tot wat het vandaag is.</p>
+        <p>IT'Z wordt gemaakt door Weingut Leitz, een familiebedrijf dat al sinds 1744 wijnen produceert in de prestigieuze Duitse wijnstreek Rheingau. Als lid van de VDP, het verbond van de beste wijnhuizen van Duitsland, staat Leitz al generaties lang voor vakmanschap, kwaliteit en karakter.</p>
+        <p>De druiven komen uit eigen wijngaarden. Zo houdt Leitz volledige controle over elke stap van het proces: van druif tot wijn. Pas wanneer de wijn zijn optimale smaak, aroma's en karakter heeft bereikt, wordt de alcohol met uiterste zorg verwijderd. Zo blijft behouden wat écht telt: de stijl, frisheid en identiteit van de wijn.</p>
+        <p>Het resultaat is een premium alcoholvrije wijn die smaakt zoals wijn hoort te smaken. Geen compromis, maar puur vakmanschap.</p>
+        <p>IT'Z. Premium alcoholvrij. Gewoon verkrijgbaar bij Albert Heijn.</p>
       </div>
     </div>
   </div>
@@ -628,6 +643,31 @@
       <a href="#" target="_blank" rel="noopener">Instagram</a>
       <a href="#" target="_blank" rel="noopener">TikTok</a>
     </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head" style="border:none; margin-bottom:24px; padding-bottom:0;">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h2>Stuur ons een bericht</h2>
+      </div>
+      <p>Vraag, opmerking of samenwerking? We reageren zo snel mogelijk.</p>
+    </div>
+    <form class="contact-form" action="https://formsubmit.co/info@betterlow.nl" method="POST">
+      <input type="hidden" name="_subject" value="Nieuw bericht via IT'Z website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="contact-row">
+        <input type="text" name="Naam" class="finder-input" placeholder="Naam" required>
+        <input type="email" name="Email" class="finder-input" placeholder="E-mailadres" required>
+      </div>
+      <textarea name="Bericht" class="contact-textarea" placeholder="Je bericht" required rows="5"></textarea>
+      <button type="submit" class="btn btn-solid">Verstuur bericht</button>
+      <p class="contact-note">Berichten komen aan bij info@betterlow.nl.</p>
+    </form>
   </div>
 </section>
 
