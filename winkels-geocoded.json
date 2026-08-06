@@ -1,0 +1,5780 @@
+[
+ {
+  "winkel": 1001,
+  "straat": "Nieuwezijds Voorburgwal 226",
+  "postcode": "1012RR",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.37282849,
+  "lon": 4.89019839
+ },
+ {
+  "winkel": 1002,
+  "straat": "Schoolstraat 13",
+  "postcode": "9301KB",
+  "plaats": "RODEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.13755729,
+  "lon": 6.43546016
+ },
+ {
+  "winkel": 1003,
+  "straat": "Westerwater 2",
+  "postcode": "2651JN",
+  "plaats": "BERKEL EN RODENRIJS",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.99405871,
+  "lon": 4.47494118
+ },
+ {
+  "winkel": 1006,
+  "straat": "Helmholtzstraat 63",
+  "postcode": "1098LE",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.35020695,
+  "lon": 4.93991314
+ },
+ {
+  "winkel": 1007,
+  "straat": "Moerwijk 2",
+  "postcode": "4826HN",
+  "plaats": "BREDA",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.60684608,
+  "lon": 4.78961014
+ },
+ {
+  "winkel": 1008,
+  "straat": "Rijnstraat 20",
+  "postcode": "7523GG",
+  "plaats": "ENSCHEDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.23916615,
+  "lon": 6.8976848
+ },
+ {
+  "winkel": 1011,
+  "straat": "Rembrandthof 49",
+  "postcode": "1181ZL",
+  "plaats": "AMSTELVEEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.30333051,
+  "lon": 4.86013142
+ },
+ {
+  "winkel": 1014,
+  "straat": "Dudokplein 10",
+  "postcode": "1971EP",
+  "plaats": "IJMUIDEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.4608939,
+  "lon": 4.62319124
+ },
+ {
+  "winkel": 1015,
+  "straat": "Molenweg 11",
+  "postcode": "6542PP",
+  "plaats": "NIJMEGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.84071152,
+  "lon": 5.8397397
+ },
+ {
+  "winkel": 1024,
+  "straat": "Hoofdstraat 232",
+  "postcode": "6881TS",
+  "plaats": "VELP GLD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.99590748,
+  "lon": 5.96903221
+ },
+ {
+  "winkel": 1025,
+  "straat": "Eemnesserweg 40",
+  "postcode": "3741GB",
+  "plaats": "BAARN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.21412553,
+  "lon": 5.28600939
+ },
+ {
+  "winkel": 1026,
+  "straat": "Kerkstraat 27",
+  "postcode": "9751BB",
+  "plaats": "HAREN GN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.1728696,
+  "lon": 6.60826491
+ },
+ {
+  "winkel": 1027,
+  "straat": "Osdorpplein 469",
+  "postcode": "1068SZ",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.35946948,
+  "lon": 4.80289857
+ },
+ {
+  "winkel": 1032,
+  "straat": "Hanzestraat 411",
+  "postcode": "6826ML",
+  "plaats": "ARNHEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.98380056,
+  "lon": 5.95297384
+ },
+ {
+  "winkel": 1035,
+  "straat": "Scheldeplein 5",
+  "postcode": "1078GR",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.3441986,
+  "lon": 4.89139944
+ },
+ {
+  "winkel": 1037,
+  "straat": "Bogaardplein 22",
+  "postcode": "2284DM",
+  "plaats": "RIJSWIJK ZH",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.03561503,
+  "lon": 4.31556973
+ },
+ {
+  "winkel": 1039,
+  "straat": "Dr. Wiardi Beckmansingel 10",
+  "postcode": "3132CX",
+  "plaats": "VLAARDINGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.90933918,
+  "lon": 4.31644557
+ },
+ {
+  "winkel": 1042,
+  "straat": "Samanthagang 64",
+  "postcode": "2719CK",
+  "plaats": "ZOETERMEER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.04347781,
+  "lon": 4.47624194
+ },
+ {
+  "winkel": 1044,
+  "straat": "Bremstraat 9",
+  "postcode": "9404GA",
+  "plaats": "ASSEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.98852118,
+  "lon": 6.58072167
+ },
+ {
+  "winkel": 1045,
+  "straat": "Valkeniersplein 2",
+  "postcode": "4835RB",
+  "plaats": "BREDA",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.57000297,
+  "lon": 4.79129692
+ },
+ {
+  "winkel": 1047,
+  "straat": "Grote Krocht 1",
+  "postcode": "2042LT",
+  "plaats": "ZANDVOORT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.37197909,
+  "lon": 4.53078925
+ },
+ {
+  "winkel": 1048,
+  "straat": "Zevenend 2",
+  "postcode": "1251RN",
+  "plaats": "LAREN NH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.2541461,
+  "lon": 5.22711432
+ },
+ {
+  "winkel": 1056,
+  "straat": "Lindenlaan 10",
+  "postcode": "1271BA",
+  "plaats": "HUIZEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.29725245,
+  "lon": 5.23497958
+ },
+ {
+  "winkel": 1058,
+  "straat": "Homerusplein 9",
+  "postcode": "6411AW",
+  "plaats": "HEERLEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 50.88635054,
+  "lon": 5.96983557
+ },
+ {
+  "winkel": 1062,
+  "straat": "Emmaplein 2",
+  "postcode": "3701DA",
+  "plaats": "ZEIST",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.08680888,
+  "lon": 5.24080477
+ },
+ {
+  "winkel": 1066,
+  "straat": "Langestraat 53",
+  "postcode": "1211GV",
+  "plaats": "HILVERSUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.2220569,
+  "lon": 5.17562521
+ },
+ {
+  "winkel": 1067,
+  "straat": "Van Ostadelaan 294",
+  "postcode": "1816JH",
+  "plaats": "ALKMAAR",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.63162714,
+  "lon": 4.72319941
+ },
+ {
+  "winkel": 1068,
+  "straat": "Koningin Wilhelminaplein 42",
+  "postcode": "2741EC",
+  "plaats": "WADDINXVEEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.05015044,
+  "lon": 4.65347492
+ },
+ {
+  "winkel": 1069,
+  "straat": "Irislaan 83",
+  "postcode": "2343CH",
+  "plaats": "OEGSTGEEST",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.1871313,
+  "lon": 4.47124977
+ },
+ {
+  "winkel": 1072,
+  "straat": "Karel De Groteplein 20",
+  "postcode": "7415DH",
+  "plaats": "DEVENTER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.26856077,
+  "lon": 6.16454962
+ },
+ {
+  "winkel": 1076,
+  "straat": "Bourgondischelaan 14",
+  "postcode": "1181DD",
+  "plaats": "AMSTELVEEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.31799124,
+  "lon": 4.86604185
+ },
+ {
+  "winkel": 1077,
+  "straat": "Roostenlaan 112",
+  "postcode": "5644GJ",
+  "plaats": "EINDHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.41990488,
+  "lon": 5.49180299
+ },
+ {
+  "winkel": 1078,
+  "straat": "Nachtegaalstraat 55",
+  "postcode": "3581AD",
+  "plaats": "UTRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.09162687,
+  "lon": 5.13123829
+ },
+ {
+  "winkel": 1080,
+  "straat": "Gelderlandplein 47",
+  "postcode": "1082KZ",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.33105773,
+  "lon": 4.87851859
+ },
+ {
+  "winkel": 1081,
+  "straat": "Gouden Rijderplein 1",
+  "postcode": "2645EX",
+  "plaats": "DELFGAUW",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.00527901,
+  "lon": 4.39148696
+ },
+ {
+  "winkel": 1082,
+  "straat": "Corridor 24",
+  "postcode": "5554HN",
+  "plaats": "VALKENSWAARD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.35297189,
+  "lon": 5.45863234
+ },
+ {
+  "winkel": 1083,
+  "straat": "Amstellandlaan 20",
+  "postcode": "1382CE",
+  "plaats": "WEESP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.31062466,
+  "lon": 5.0340068
+ },
+ {
+  "winkel": 1085,
+  "straat": "Rozengaardseweg 18",
+  "postcode": "7001DP",
+  "plaats": "DOETINCHEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.96754284,
+  "lon": 6.29588708
+ },
+ {
+  "winkel": 1088,
+  "straat": "Wijkerbaan 2",
+  "postcode": "1945SE",
+  "plaats": "BEVERWIJK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.49680787,
+  "lon": 4.66374846
+ },
+ {
+  "winkel": 1091,
+  "straat": "Stadhoudersplein 4",
+  "postcode": "2241EB",
+  "plaats": "WASSENAAR",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.14457451,
+  "lon": 4.4036561
+ },
+ {
+  "winkel": 1094,
+  "straat": "Molenstraatje 2",
+  "postcode": "4001CB",
+  "plaats": "TIEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.88817435,
+  "lon": 5.42900889
+ },
+ {
+  "winkel": 1098,
+  "straat": "Koekoeklaan 88",
+  "postcode": "1403EH",
+  "plaats": "BUSSUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.26824711,
+  "lon": 5.18369704
+ },
+ {
+  "winkel": 1102,
+  "straat": "Bellamystraat 141",
+  "postcode": "4536AJ",
+  "plaats": "TERNEUZEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.32010583,
+  "lon": 3.84667865
+ },
+ {
+  "winkel": 1103,
+  "straat": "Stadsbrink 375",
+  "postcode": "6707AA",
+  "plaats": "WAGENINGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.96986137,
+  "lon": 5.66843899
+ },
+ {
+  "winkel": 1106,
+  "straat": "Diemerplein 200",
+  "postcode": "1111JD",
+  "plaats": "DIEMEN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.34232752,
+  "lon": 4.96293226
+ },
+ {
+  "winkel": 1107,
+  "straat": "Schoolstraat 1",
+  "postcode": "2251BD",
+  "plaats": "VOORSCHOTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.12662191,
+  "lon": 4.44840003
+ },
+ {
+  "winkel": 1109,
+  "straat": "Koningin Julianalaan 263",
+  "postcode": "2273JG",
+  "plaats": "VOORBURG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.07563424,
+  "lon": 4.35945742
+ },
+ {
+  "winkel": 1110,
+  "straat": "Willem Kraanstraat 2",
+  "postcode": "1063MG",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.37985566,
+  "lon": 4.82369099
+ },
+ {
+  "winkel": 1113,
+  "straat": "De Savornin Lohmanplein 20",
+  "postcode": "2566AC",
+  "plaats": "'S-GRAVENHAGE",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.0664664,
+  "lon": 4.24524547
+ },
+ {
+  "winkel": 1114,
+  "straat": "Branderskamp 9",
+  "postcode": "3851XV",
+  "plaats": "ERMELO",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.30179204,
+  "lon": 5.63154776
+ },
+ {
+  "winkel": 1118,
+  "straat": "Smitsweg 20",
+  "postcode": "3765CT",
+  "plaats": "SOEST",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.17191993,
+  "lon": 5.29236205
+ },
+ {
+  "winkel": 1123,
+  "straat": "Kerkweg 85",
+  "postcode": "1961JB",
+  "plaats": "HEEMSKERK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.51095061,
+  "lon": 4.66710444
+ },
+ {
+  "winkel": 1126,
+  "straat": "Spoelerstraat 6",
+  "postcode": "7442AA",
+  "plaats": "NIJVERDAL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.36419138,
+  "lon": 6.46587529
+ },
+ {
+  "winkel": 1128,
+  "straat": "Baron Van Hovellplein 2",
+  "postcode": "5261GH",
+  "plaats": "VUGHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.65780221,
+  "lon": 5.30021854
+ },
+ {
+  "winkel": 1129,
+  "straat": "Herenweg 8",
+  "postcode": "3732CM",
+  "plaats": "DE BILT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.10935428,
+  "lon": 5.18219329
+ },
+ {
+  "winkel": 1131,
+  "straat": "Makado Centrum 76",
+  "postcode": "1741JA",
+  "plaats": "SCHAGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.78736585,
+  "lon": 4.7970541
+ },
+ {
+  "winkel": 1133,
+  "straat": "Vrieschgroenstraat 5",
+  "postcode": "1503MC",
+  "plaats": "ZAANDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.44408984,
+  "lon": 4.8369197
+ },
+ {
+  "winkel": 1134,
+  "straat": "Ridderhof 25",
+  "postcode": "2981ET",
+  "plaats": "RIDDERKERK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.8700574,
+  "lon": 4.59884789
+ },
+ {
+  "winkel": 1135,
+  "straat": "Casablancastraat 13",
+  "postcode": "2037AZ",
+  "plaats": "HAARLEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.35879884,
+  "lon": 4.65548428
+ },
+ {
+  "winkel": 1138,
+  "straat": "Asterlo 22",
+  "postcode": "3085AD",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.87404366,
+  "lon": 4.4833769
+ },
+ {
+  "winkel": 1140,
+  "straat": "Pastoor Bruggemanlaan 1",
+  "postcode": "6861GR",
+  "plaats": "OOSTERBEEK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.98772935,
+  "lon": 5.84348151
+ },
+ {
+  "winkel": 1141,
+  "straat": "Sint Martinusplein 8",
+  "postcode": "8161ED",
+  "plaats": "EPE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.34926762,
+  "lon": 5.98532354
+ },
+ {
+  "winkel": 1142,
+  "straat": "Piazza Center 74",
+  "postcode": "4204BS",
+  "plaats": "GORINCHEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.83696277,
+  "lon": 4.96171144
+ },
+ {
+  "winkel": 1144,
+  "straat": "Theo Mann-Bouwmeesterln 19",
+  "postcode": "2597GV",
+  "plaats": "'S-GRAVENHAGE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.10489662,
+  "lon": 4.32374535
+ },
+ {
+  "winkel": 1146,
+  "straat": "Buikslotermeerplein 310",
+  "postcode": "1025GB",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.39735006,
+  "lon": 4.9396851
+ },
+ {
+  "winkel": 1147,
+  "straat": "Martinus Nijhofflaan 7",
+  "postcode": "2624ER",
+  "plaats": "DELFT",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.99645465,
+  "lon": 4.35298264
+ },
+ {
+  "winkel": 1148,
+  "straat": "Soendaplein 18",
+  "postcode": "2022BA",
+  "plaats": "HAARLEM",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.39840041,
+  "lon": 4.64514032
+ },
+ {
+  "winkel": 1149,
+  "straat": "Weimarstraat 118",
+  "postcode": "2562HC",
+  "plaats": "'S-GRAVENHAGE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.07597073,
+  "lon": 4.28156929
+ },
+ {
+  "winkel": 1151,
+  "straat": "Weigelia 48",
+  "postcode": "2262AB",
+  "plaats": "LEIDSCHENDAM",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.08737053,
+  "lon": 4.38289553
+ },
+ {
+  "winkel": 1152,
+  "straat": "Steenstraat 5",
+  "postcode": "3961VM",
+  "plaats": "WIJK BIJ DUURSTEDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.9746105,
+  "lon": 5.34345202
+ },
+ {
+  "winkel": 1153,
+  "straat": "Scharnerweg 110",
+  "postcode": "6224JJ",
+  "plaats": "MAASTRICHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 50.84967544,
+  "lon": 5.7132257
+ },
+ {
+  "winkel": 1154,
+  "straat": "Makado-Center 41",
+  "postcode": "2951EH",
+  "plaats": "ALBLASSERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.8638501,
+  "lon": 4.65746433
+ },
+ {
+  "winkel": 1155,
+  "straat": "Kapittelweg 105",
+  "postcode": "1216HX",
+  "plaats": "HILVERSUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.21613371,
+  "lon": 5.14075866
+ },
+ {
+  "winkel": 1158,
+  "straat": "Hesseplaats 13",
+  "postcode": "3069EA",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.96275525,
+  "lon": 4.55404095
+ },
+ {
+  "winkel": 1159,
+  "straat": "Grote Akkerstraat 1",
+  "postcode": "7941BB",
+  "plaats": "MEPPEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.69800175,
+  "lon": 6.18958508
+ },
+ {
+  "winkel": 1160,
+  "straat": "Torenweidelaan 2",
+  "postcode": "4501AK",
+  "plaats": "OOSTBURG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.3257996,
+  "lon": 3.48402323
+ },
+ {
+  "winkel": 1161,
+  "straat": "Gorecht-Oost 6",
+  "postcode": "9603AA",
+  "plaats": "HOOGEZAND",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.15661563,
+  "lon": 6.75627896
+ },
+ {
+  "winkel": 1162,
+  "straat": "Groenhof 144",
+  "postcode": "1186EX",
+  "plaats": "AMSTELVEEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.28881469,
+  "lon": 4.86998347
+ },
+ {
+  "winkel": 1165,
+  "straat": "Stadhuisplein 6",
+  "postcode": "5461KS",
+  "plaats": "VEGHEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.61490272,
+  "lon": 5.54760909
+ },
+ {
+  "winkel": 1166,
+  "straat": "Amersfoortsestraatweg 3",
+  "postcode": "1411HB",
+  "plaats": "NAARDEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.28835584,
+  "lon": 5.17161336
+ },
+ {
+  "winkel": 1170,
+  "straat": "Zeemanlaan 2",
+  "postcode": "1171BD",
+  "plaats": "BADHOEVEDORP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.33814329,
+  "lon": 4.77881772
+ },
+ {
+  "winkel": 1172,
+  "straat": "Wethouder Nijhuisstraat 164",
+  "postcode": "7545NM",
+  "plaats": "ENSCHEDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.21297114,
+  "lon": 6.86151969
+ },
+ {
+  "winkel": 1177,
+  "straat": "Dorpsstraat 25",
+  "postcode": "3941JK",
+  "plaats": "DOORN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.03461726,
+  "lon": 5.3442849
+ },
+ {
+  "winkel": 1182,
+  "straat": "Beijersehof 19",
+  "postcode": "3262VR",
+  "plaats": "OUD-BEIJERLAND",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.82045963,
+  "lon": 4.40487716
+ },
+ {
+  "winkel": 1184,
+  "straat": "Siersteenlaan 464",
+  "postcode": "9743ES",
+  "plaats": "GRONINGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.22530283,
+  "lon": 6.52878583
+ },
+ {
+  "winkel": 1185,
+  "straat": "Waalderstraat 48",
+  "postcode": "1791EC",
+  "plaats": "DEN BURG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.05652767,
+  "lon": 4.79811388
+ },
+ {
+  "winkel": 1186,
+  "straat": "Geesterduin 27",
+  "postcode": "1902EJ",
+  "plaats": "CASTRICUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.55084912,
+  "lon": 4.67449527
+ },
+ {
+  "winkel": 1188,
+  "straat": "Orionstraat 149",
+  "postcode": "5632DC",
+  "plaats": "EINDHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.47016967,
+  "lon": 5.49371872
+ },
+ {
+  "winkel": 1192,
+  "straat": "Heuvel 81",
+  "postcode": "5664HN",
+  "plaats": "GELDROP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.42285803,
+  "lon": 5.5587767
+ },
+ {
+  "winkel": 1195,
+  "straat": "Blokhuis 67",
+  "postcode": "2161EV",
+  "plaats": "LISSE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.26136165,
+  "lon": 4.55975713
+ },
+ {
+  "winkel": 1196,
+  "straat": "W.H. Van Leeuwenlaan 1",
+  "postcode": "2613ZE",
+  "plaats": "DELFT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.01388652,
+  "lon": 4.34300938
+ },
+ {
+  "winkel": 1197,
+  "straat": "Hof Van Holland 30",
+  "postcode": "3332EH",
+  "plaats": "ZWIJNDRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.82267352,
+  "lon": 4.65102424
+ },
+ {
+  "winkel": 1204,
+  "straat": "Cardo 12",
+  "postcode": "3995XM",
+  "plaats": "HOUTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.01706523,
+  "lon": 5.17816471
+ },
+ {
+  "winkel": 1208,
+  "straat": "Franz Leharplein 19",
+  "postcode": "5654AZ",
+  "plaats": "EINDHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.42315014,
+  "lon": 5.46269378
+ },
+ {
+  "winkel": 1209,
+  "straat": "Harderwijkerweg 18",
+  "postcode": "8071GA",
+  "plaats": "NUNSPEET",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.37616776,
+  "lon": 5.78063834
+ },
+ {
+  "winkel": 1211,
+  "straat": "Selhorstweg 2",
+  "postcode": "3841GL",
+  "plaats": "HARDERWIJK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.34803569,
+  "lon": 5.6230031
+ },
+ {
+  "winkel": 1213,
+  "straat": "De Passage 26",
+  "postcode": "3641AK",
+  "plaats": "MIJDRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.20617089,
+  "lon": 4.86601443
+ },
+ {
+  "winkel": 1214,
+  "straat": "De Clomp 3104",
+  "postcode": "3704KA",
+  "plaats": "ZEIST",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.08332072,
+  "lon": 5.22042868
+ },
+ {
+  "winkel": 1215,
+  "straat": "Kopermolen 44",
+  "postcode": "2317PB",
+  "plaats": "LEIDEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.17681739,
+  "lon": 4.50504536
+ },
+ {
+  "winkel": 1216,
+  "straat": "Het Kleine Loo 342",
+  "postcode": "2592CK",
+  "plaats": "'S-GRAVENHAGE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.0917734,
+  "lon": 4.35675076
+ },
+ {
+  "winkel": 1217,
+  "straat": "'T Loo 61",
+  "postcode": "1851HT",
+  "plaats": "HEILOO",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.60573202,
+  "lon": 4.71209292
+ },
+ {
+  "winkel": 1220,
+  "straat": "Dobbe 61",
+  "postcode": "8032JX",
+  "plaats": "ZWOLLE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.52899768,
+  "lon": 6.10273363
+ },
+ {
+  "winkel": 1221,
+  "straat": "Kampsingel 2",
+  "postcode": "6901JE",
+  "plaats": "ZEVENAAR",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.93090554,
+  "lon": 6.07838189
+ },
+ {
+  "winkel": 1222,
+  "straat": "Sterrebos 2",
+  "postcode": "5344AM",
+  "plaats": "OSS",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.75446175,
+  "lon": 5.51155072
+ },
+ {
+  "winkel": 1224,
+  "straat": "Amsteldiep 45",
+  "postcode": "2904EB",
+  "plaats": "CAPELLE AAN DEN IJSSEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.93627877,
+  "lon": 4.60234463
+ },
+ {
+  "winkel": 1225,
+  "straat": "Hof Van Spaland 1",
+  "postcode": "3121CA",
+  "plaats": "SCHIEDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.93470378,
+  "lon": 4.37670852
+ },
+ {
+  "winkel": 1230,
+  "straat": "Zuidplein 60",
+  "postcode": "3083CW",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.88850451,
+  "lon": 4.48974907
+ },
+ {
+  "winkel": 1232,
+  "straat": "Markenburg 99",
+  "postcode": "2135DS",
+  "plaats": "HOOFDDORP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.30178044,
+  "lon": 4.66419086
+ },
+ {
+  "winkel": 1238,
+  "straat": "Heksenwaag 2",
+  "postcode": "4823JV",
+  "plaats": "BREDA",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.62326771,
+  "lon": 4.74337266
+ },
+ {
+  "winkel": 1239,
+  "straat": "Petuniatuin 12",
+  "postcode": "2724NA",
+  "plaats": "ZOETERMEER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.06347561,
+  "lon": 4.51530836
+ },
+ {
+  "winkel": 1242,
+  "straat": "Christiaan Langefeldstr 83",
+  "postcode": "7558CZ",
+  "plaats": "HENGELO OV",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.28427819,
+  "lon": 6.82934554
+ },
+ {
+  "winkel": 1247,
+  "straat": "Bisonspoor 1078",
+  "postcode": "3605KJ",
+  "plaats": "MAARSSEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.13480538,
+  "lon": 5.03072349
+ },
+ {
+  "winkel": 1248,
+  "straat": "De Kwinkelier 30",
+  "postcode": "3722AR",
+  "plaats": "BILTHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.12812612,
+  "lon": 5.2099837
+ },
+ {
+  "winkel": 1253,
+  "straat": "Handelplein 185",
+  "postcode": "2151NN",
+  "plaats": "NIEUW-VENNEP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.27072681,
+  "lon": 4.61978222
+ },
+ {
+  "winkel": 1254,
+  "straat": "Veenslag 7",
+  "postcode": "3905SH",
+  "plaats": "VEENENDAAL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.02874774,
+  "lon": 5.53248427
+ },
+ {
+  "winkel": 1256,
+  "straat": "Parkstraat 22",
+  "postcode": "5671GG",
+  "plaats": "NUENEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.47218529,
+  "lon": 5.54502768
+ },
+ {
+  "winkel": 1259,
+  "straat": "Sint Antoniusplein 35",
+  "postcode": "8601HK",
+  "plaats": "SNEEK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.03378953,
+  "lon": 5.6555625
+ },
+ {
+  "winkel": 1264,
+  "straat": "Markiezaatsweg 5",
+  "postcode": "4615PA",
+  "plaats": "BERGEN OP ZOOM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.49265351,
+  "lon": 4.27552473
+ },
+ {
+  "winkel": 1265,
+  "straat": "Arkendonk 53",
+  "postcode": "4907XP",
+  "plaats": "OOSTERHOUT NB",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.65927701,
+  "lon": 4.86367833
+ },
+ {
+  "winkel": 1266,
+  "straat": "Binnenhof 1",
+  "postcode": "3971EE",
+  "plaats": "DRIEBERGEN-RIJSENBURG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.05452162,
+  "lon": 5.28730876
+ },
+ {
+  "winkel": 1268,
+  "straat": "Bunschoterplein 1",
+  "postcode": "6711CD",
+  "plaats": "EDE GLD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.04770909,
+  "lon": 5.67221285
+ },
+ {
+  "winkel": 1273,
+  "straat": "Reigerhof 150",
+  "postcode": "2914KE",
+  "plaats": "NIEUWERKERK AD IJSSEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.96816617,
+  "lon": 4.61892434
+ },
+ {
+  "winkel": 1274,
+  "straat": "Lekkenburg 3",
+  "postcode": "2804XA",
+  "plaats": "GOUDA",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.03176195,
+  "lon": 4.70446008
+ },
+ {
+  "winkel": 1275,
+  "straat": "Rio De Janeiroplein 1",
+  "postcode": "1334HE",
+  "plaats": "ALMERE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.39449109,
+  "lon": 5.28085109
+ },
+ {
+  "winkel": 1279,
+  "straat": "Kerkstraat 26",
+  "postcode": "3891ET",
+  "plaats": "ZEEWOLDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.33015332,
+  "lon": 5.5416661
+ },
+ {
+  "winkel": 1284,
+  "straat": "Molenwijk 35",
+  "postcode": "1035EG",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.41700804,
+  "lon": 4.89304346
+ },
+ {
+  "winkel": 1286,
+  "straat": "Talmastraat 16",
+  "postcode": "3371VG",
+  "plaats": "HARDINXVELD-GIESSENDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.82527566,
+  "lon": 4.83259352
+ },
+ {
+  "winkel": 1290,
+  "straat": "Escamplaan 281",
+  "postcode": "2547EA",
+  "plaats": "'S-GRAVENHAGE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.06209016,
+  "lon": 4.27009168
+ },
+ {
+  "winkel": 1291,
+  "straat": "Dorpsstraat 118",
+  "postcode": "6871AR",
+  "plaats": "RENKUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.97161821,
+  "lon": 5.72809855
+ },
+ {
+  "winkel": 1294,
+  "straat": "Godebaldkwartier 149",
+  "postcode": "3511DP",
+  "plaats": "UTRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.09024357,
+  "lon": 5.11264379
+ },
+ {
+  "winkel": 1295,
+  "straat": "Wade 10",
+  "postcode": "8043LS",
+  "plaats": "ZWOLLE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.53332605,
+  "lon": 6.05628344
+ },
+ {
+  "winkel": 1301,
+  "straat": "Lange Kerkstraat 34",
+  "postcode": "3111NP",
+  "plaats": "SCHIEDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.91806944,
+  "lon": 4.40028434
+ },
+ {
+  "winkel": 1305,
+  "straat": "De Hovel 19",
+  "postcode": "5051NP",
+  "plaats": "GOIRLE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.52133838,
+  "lon": 5.06978108
+ },
+ {
+  "winkel": 1308,
+  "straat": "Helperplein 4",
+  "postcode": "9721CX",
+  "plaats": "GRONINGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.1976316,
+  "lon": 6.57956347
+ },
+ {
+  "winkel": 1310,
+  "straat": "Nieuwe Egmonderstraatweg 11",
+  "postcode": "1934PA",
+  "plaats": "EGMOND AAN DEN HOEF",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.61858057,
+  "lon": 4.64797276
+ },
+ {
+  "winkel": 1312,
+  "straat": "Seinstraat 13",
+  "postcode": "1223DE",
+  "plaats": "HILVERSUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.23236291,
+  "lon": 5.1921017
+ },
+ {
+  "winkel": 1317,
+  "straat": "Euterpeplein 43",
+  "postcode": "3816NR",
+  "plaats": "AMERSFOORT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.15147228,
+  "lon": 5.40577878
+ },
+ {
+  "winkel": 1319,
+  "straat": "Basiliekpad 4",
+  "postcode": "3401BJ",
+  "plaats": "IJSSELSTEIN UT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.01691498,
+  "lon": 5.04000863
+ },
+ {
+  "winkel": 1324,
+  "straat": "Beeksestraat 55",
+  "postcode": "4841GB",
+  "plaats": "PRINSENBEEK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.60430983,
+  "lon": 4.7172108
+ },
+ {
+  "winkel": 1327,
+  "straat": "Passage 65",
+  "postcode": "3431LN",
+  "plaats": "NIEUWEGEIN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.02842688,
+  "lon": 5.08059582
+ },
+ {
+  "winkel": 1332,
+  "straat": "Simon Carmiggelthof 55",
+  "postcode": "2492JR",
+  "plaats": "'S-GRAVENHAGE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.06471652,
+  "lon": 4.40201838
+ },
+ {
+  "winkel": 1342,
+  "straat": "Bentinckplein 40",
+  "postcode": "3039KM",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.92699897,
+  "lon": 4.46183545
+ },
+ {
+  "winkel": 1343,
+  "straat": "Theresiastraat 77",
+  "postcode": "2593AB",
+  "plaats": "'S-GRAVENHAGE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.0838823,
+  "lon": 4.33224233
+ },
+ {
+  "winkel": 1344,
+  "straat": "Oostermeent-Zuid 48",
+  "postcode": "1274SV",
+  "plaats": "HUIZEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.2945173,
+  "lon": 5.26298582
+ },
+ {
+  "winkel": 1345,
+  "straat": "Van Beuningenhaven 10",
+  "postcode": "2993EH",
+  "plaats": "BARENDRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.84702526,
+  "lon": 4.49869735
+ },
+ {
+  "winkel": 1347,
+  "straat": "Karspeldreef 1389",
+  "postcode": "1104SE",
+  "plaats": "AMSTERDAM ZUIDOOST",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.31632482,
+  "lon": 4.97876032
+ },
+ {
+  "winkel": 1349,
+  "straat": "Van Hogendorplaan 44",
+  "postcode": "1215EH",
+  "plaats": "HILVERSUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.21455681,
+  "lon": 5.1559298
+ },
+ {
+  "winkel": 1354,
+  "straat": "Mosveld 129",
+  "postcode": "1031AD",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.39035572,
+  "lon": 4.9151724
+ },
+ {
+  "winkel": 1355,
+  "straat": "Klein Grachtje 16",
+  "postcode": "8021JC",
+  "plaats": "ZWOLLE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.51640834,
+  "lon": 6.10018383
+ },
+ {
+  "winkel": 1357,
+  "straat": "Gruttostraat 23",
+  "postcode": "5212VM",
+  "plaats": "'S-HERTOGENBOSCH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.70091759,
+  "lon": 5.30220559
+ },
+ {
+  "winkel": 1361,
+  "straat": "Praamplein 4",
+  "postcode": "1431CV",
+  "plaats": "AALSMEER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.26824729,
+  "lon": 4.74648448
+ },
+ {
+  "winkel": 1363,
+  "straat": "Gerrit Van Der Veenstr 57",
+  "postcode": "1077DP",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.34884089,
+  "lon": 4.87766904
+ },
+ {
+  "winkel": 1367,
+  "straat": "Nieuwe Binnenweg 288",
+  "postcode": "3021GS",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.91278152,
+  "lon": 4.45847024
+ },
+ {
+  "winkel": 1368,
+  "straat": "Mathenesserplein 76",
+  "postcode": "3022LD",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.9175781,
+  "lon": 4.44495213
+ },
+ {
+  "winkel": 1370,
+  "straat": "Europaplein 85",
+  "postcode": "6602GV",
+  "plaats": "WIJCHEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.8069067,
+  "lon": 5.72800086
+ },
+ {
+  "winkel": 1373,
+  "straat": "Cellebroedersstraat 1",
+  "postcode": "2871AS",
+  "plaats": "SCHOONHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.94678821,
+  "lon": 4.85818651
+ },
+ {
+  "winkel": 1385,
+  "straat": "Wendelaarstraat 1",
+  "postcode": "1814GR",
+  "plaats": "ALKMAAR",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.61964965,
+  "lon": 4.73666482
+ },
+ {
+  "winkel": 1388,
+  "straat": "Ackershof 53",
+  "postcode": "2641DZ",
+  "plaats": "PIJNACKER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.01933891,
+  "lon": 4.43347248
+ },
+ {
+  "winkel": 1391,
+  "straat": "Van Baerlestraat 33",
+  "postcode": "1071AP",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.35718095,
+  "lon": 4.87962838
+ },
+ {
+  "winkel": 1394,
+  "straat": "Limburglaan 2",
+  "postcode": "5652AA",
+  "plaats": "EINDHOVEN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.43510649,
+  "lon": 5.45170481
+ },
+ {
+  "winkel": 1397,
+  "straat": "Kronenburgpassage 86",
+  "postcode": "6831ER",
+  "plaats": "ARNHEM",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.95936927,
+  "lon": 5.89671654
+ },
+ {
+  "winkel": 1401,
+  "straat": "In Den Vijfhoek 1",
+  "postcode": "7571DT",
+  "plaats": "OLDENZAAL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.31338746,
+  "lon": 6.92612522
+ },
+ {
+  "winkel": 1402,
+  "straat": "Winkelhof 29",
+  "postcode": "2353TS",
+  "plaats": "LEIDERDORP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.16302542,
+  "lon": 4.5333128
+ },
+ {
+  "winkel": 1403,
+  "straat": "Europaboulevard 26",
+  "postcode": "1825SB",
+  "plaats": "ALKMAAR",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.65459851,
+  "lon": 4.75753305
+ },
+ {
+  "winkel": 1404,
+  "straat": "Veerstraat 20",
+  "postcode": "1404CH",
+  "plaats": "BUSSUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.27583339,
+  "lon": 5.16094423
+ },
+ {
+  "winkel": 1411,
+  "straat": "Centrumpassage 27",
+  "postcode": "2903HA",
+  "plaats": "CAPELLE AAN DEN IJSSEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.93204655,
+  "lon": 4.58923796
+ },
+ {
+  "winkel": 1412,
+  "straat": "Nieuwe Markt 45",
+  "postcode": "6101CV",
+  "plaats": "ECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.10349724,
+  "lon": 5.87311703
+ },
+ {
+  "winkel": 1413,
+  "straat": "Molenstraat 17",
+  "postcode": "4761CJ",
+  "plaats": "ZEVENBERGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.64398891,
+  "lon": 4.60471301
+ },
+ {
+  "winkel": 1415,
+  "straat": "Anna Van Burenstraat 24",
+  "postcode": "4811CK",
+  "plaats": "BREDA",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.59635667,
+  "lon": 4.78159868
+ },
+ {
+  "winkel": 1419,
+  "straat": "Thuvinestraat 33",
+  "postcode": "6921BB",
+  "plaats": "DUIVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.94826658,
+  "lon": 6.02073681
+ },
+ {
+  "winkel": 1428,
+  "straat": "H.J. Van Heekplein 63",
+  "postcode": "7511HN",
+  "plaats": "ENSCHEDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.21674919,
+  "lon": 6.8983559
+ },
+ {
+  "winkel": 1429,
+  "straat": "Oud-Bodegraafseweg 23",
+  "postcode": "2411HS",
+  "plaats": "BODEGRAVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.08371728,
+  "lon": 4.74426477
+ },
+ {
+  "winkel": 1432,
+  "straat": "Rondgang 20",
+  "postcode": "9408MH",
+  "plaats": "ASSEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.99977893,
+  "lon": 6.51346206
+ },
+ {
+  "winkel": 1434,
+  "straat": "Ella Fitzgeraldplein 6",
+  "postcode": "3543EP",
+  "plaats": "UTRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.10139671,
+  "lon": 5.04427714
+ },
+ {
+  "winkel": 1435,
+  "straat": "Van Beethovenlaan 4",
+  "postcode": "4702JS",
+  "plaats": "ROOSENDAAL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.53601046,
+  "lon": 4.4676754
+ },
+ {
+  "winkel": 1438,
+  "straat": "Van Lawick Van Pabststr 76",
+  "postcode": "6814HK",
+  "plaats": "ARNHEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.99010311,
+  "lon": 5.89375296
+ },
+ {
+  "winkel": 1445,
+  "straat": "Boerenstraat 6",
+  "postcode": "4101EZ",
+  "plaats": "CULEMBORG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.95451199,
+  "lon": 5.22599524
+ },
+ {
+  "winkel": 1449,
+  "straat": "Burg Grothestraat 2",
+  "postcode": "3761CM",
+  "plaats": "SOEST",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.18704781,
+  "lon": 5.29364672
+ },
+ {
+  "winkel": 1452,
+  "straat": "Nieuwstraat 370",
+  "postcode": "3201EG",
+  "plaats": "SPIJKENISSE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.84954821,
+  "lon": 4.33125197
+ },
+ {
+  "winkel": 1456,
+  "straat": "Voorhavenkwartier 68",
+  "postcode": "2171HZ",
+  "plaats": "SASSENHEIM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.22726285,
+  "lon": 4.52498742
+ },
+ {
+  "winkel": 1457,
+  "straat": "Van Eesterenplein 99",
+  "postcode": "3315KT",
+  "plaats": "DORDRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.80365175,
+  "lon": 4.71763506
+ },
+ {
+  "winkel": 1460,
+  "straat": "Overtoom 116",
+  "postcode": "1054HM",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.36274935,
+  "lon": 4.87452904
+ },
+ {
+  "winkel": 1463,
+  "straat": "Blekersvaartweg 57",
+  "postcode": "2101CD",
+  "plaats": "HEEMSTEDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.35622623,
+  "lon": 4.62023487
+ },
+ {
+  "winkel": 1467,
+  "straat": "Hammarskjoldhof 64",
+  "postcode": "3527HE",
+  "plaats": "UTRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.0740711,
+  "lon": 5.09448183
+ },
+ {
+  "winkel": 1472,
+  "straat": "Langenkamp 8",
+  "postcode": "7581JE",
+  "plaats": "LOSSER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.26069481,
+  "lon": 7.00783901
+ },
+ {
+  "winkel": 1474,
+  "straat": "Hindersteinlaan 25",
+  "postcode": "3451EV",
+  "plaats": "VLEUTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.1055861,
+  "lon": 5.01461931
+ },
+ {
+  "winkel": 1475,
+  "straat": "17 Septemberplein 9",
+  "postcode": "5691DG",
+  "plaats": "SON EN BREUGEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.51112989,
+  "lon": 5.49156653
+ },
+ {
+  "winkel": 1481,
+  "straat": "Looiershof 1",
+  "postcode": "5104HV",
+  "plaats": "DONGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.62528243,
+  "lon": 4.94248139
+ },
+ {
+  "winkel": 1485,
+  "straat": "Kaaikhof 22",
+  "postcode": "1567JP",
+  "plaats": "ASSENDELFT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.48835872,
+  "lon": 4.75212193
+ },
+ {
+  "winkel": 1491,
+  "straat": "Pijmanstraat 18",
+  "postcode": "8014VB",
+  "plaats": "ZWOLLE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.4833827,
+  "lon": 6.11093915
+ },
+ {
+  "winkel": 1501,
+  "straat": "Emiclaerhof 142",
+  "postcode": "3823ER",
+  "plaats": "AMERSFOORT",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.18657567,
+  "lon": 5.39636031
+ },
+ {
+  "winkel": 1502,
+  "straat": "Bijlmerplein 526",
+  "postcode": "1102DP",
+  "plaats": "AMSTERDAM ZUIDOOST",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.31559775,
+  "lon": 4.95513242
+ },
+ {
+  "winkel": 1504,
+  "straat": "Zijdelwaardplein 84",
+  "postcode": "1422DN",
+  "plaats": "UITHOORN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.24617772,
+  "lon": 4.82678697
+ },
+ {
+  "winkel": 1507,
+  "straat": "Onderdoor 66",
+  "postcode": "3995DX",
+  "plaats": "HOUTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.03406024,
+  "lon": 5.16873434
+ },
+ {
+  "winkel": 1508,
+  "straat": "Herenhof 74",
+  "postcode": "2402DN",
+  "plaats": "ALPHEN AAN DEN RIJN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.15138959,
+  "lon": 4.66043247
+ },
+ {
+  "winkel": 1509,
+  "straat": "Oudedijk 149",
+  "postcode": "3061AA",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.9279493,
+  "lon": 4.51001468
+ },
+ {
+  "winkel": 1510,
+  "straat": "Laan Op Zuid 1190",
+  "postcode": "3071AC",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.90351354,
+  "lon": 4.50521369
+ },
+ {
+  "winkel": 1511,
+  "straat": "Gildeweg 6",
+  "postcode": "4383NK",
+  "plaats": "VLISSINGEN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.45560115,
+  "lon": 3.58581794
+ },
+ {
+  "winkel": 1512,
+  "straat": "Brusselsepoort 45",
+  "postcode": "6216CG",
+  "plaats": "MAASTRICHT",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 50.85066974,
+  "lon": 5.66540677
+ },
+ {
+  "winkel": 1513,
+  "straat": "Tijnjedyk 76",
+  "postcode": "8936AD",
+  "plaats": "LEEUWARDEN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 53.19174654,
+  "lon": 5.81739872
+ },
+ {
+  "winkel": 1514,
+  "straat": "St. Jacobslaan 61",
+  "postcode": "6533BP",
+  "plaats": "NIJMEGEN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.82163184,
+  "lon": 5.85187664
+ },
+ {
+  "winkel": 1515,
+  "straat": "Triade 14",
+  "postcode": "9401ZH",
+  "plaats": "ASSEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.9979099,
+  "lon": 6.56035742
+ },
+ {
+  "winkel": 1516,
+  "straat": "Burg. D. Kooimanweg 16",
+  "postcode": "1442BZ",
+  "plaats": "PURMEREND",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.51005653,
+  "lon": 4.95925875
+ },
+ {
+  "winkel": 1517,
+  "straat": "Wethouder Sangersstraat 174",
+  "postcode": "6191NA",
+  "plaats": "BEEK LB",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 50.95043517,
+  "lon": 5.7948635
+ },
+ {
+  "winkel": 1518,
+  "straat": "Polsbroek 77",
+  "postcode": "7201BX",
+  "plaats": "ZUTPHEN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.13965944,
+  "lon": 6.20286919
+ },
+ {
+  "winkel": 1519,
+  "straat": "Noord Esmarkerrondweg 421",
+  "postcode": "7533BL",
+  "plaats": "ENSCHEDE",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.21976598,
+  "lon": 6.92906889
+ },
+ {
+  "winkel": 1520,
+  "straat": "Passage 50",
+  "postcode": "3901AZ",
+  "plaats": "VEENENDAAL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.02559356,
+  "lon": 5.55679567
+ },
+ {
+  "winkel": 1521,
+  "straat": "Jan Heijnsstraat 10",
+  "postcode": "5041GB",
+  "plaats": "TILBURG",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.56320076,
+  "lon": 5.07511475
+ },
+ {
+  "winkel": 1523,
+  "straat": "Prinsen Hoven 1",
+  "postcode": "8331JV",
+  "plaats": "STEENWIJK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.78755012,
+  "lon": 6.11427226
+ },
+ {
+  "winkel": 1524,
+  "straat": "Prins Bernhardweg 40",
+  "postcode": "7241DH",
+  "plaats": "LOCHEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.16207985,
+  "lon": 6.42032189
+ },
+ {
+  "winkel": 1526,
+  "straat": "Middenbaan 97",
+  "postcode": "2991CS",
+  "plaats": "BARENDRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.85589287,
+  "lon": 4.53731548
+ },
+ {
+  "winkel": 1531,
+  "straat": "Middenwaard 2",
+  "postcode": "1703SE",
+  "plaats": "HEERHUGOWAARD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.66251536,
+  "lon": 4.83124327
+ },
+ {
+  "winkel": 1532,
+  "straat": "De Passage 2",
+  "postcode": "8442PH",
+  "plaats": "HEERENVEEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.9590981,
+  "lon": 5.9258869
+ },
+ {
+  "winkel": 1534,
+  "straat": "Burg Van Stamplein 270",
+  "postcode": "2132BH",
+  "plaats": "HOOFDDORP",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.30161436,
+  "lon": 4.6940353
+ },
+ {
+  "winkel": 1536,
+  "straat": "Walstraat 71",
+  "postcode": "6131CV",
+  "plaats": "SITTARD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 50.99750913,
+  "lon": 5.86717153
+ },
+ {
+  "winkel": 1539,
+  "straat": "Bonnikeplein 2",
+  "postcode": "2201XA",
+  "plaats": "NOORDWIJK ZH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.22978446,
+  "lon": 4.44101634
+ },
+ {
+  "winkel": 1540,
+  "straat": "Lijnbaan 121",
+  "postcode": "3012EN",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.91899148,
+  "lon": 4.47701379
+ },
+ {
+  "winkel": 1542,
+  "straat": "Korte Parallelweg 165",
+  "postcode": "3311JN",
+  "plaats": "DORDRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.80981895,
+  "lon": 4.65568346
+ },
+ {
+  "winkel": 1550,
+  "straat": "Tolbergcentrum 160",
+  "postcode": "4708HK",
+  "plaats": "ROOSENDAAL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.513824,
+  "lon": 4.43877011
+ },
+ {
+  "winkel": 1554,
+  "straat": "Brink 20",
+  "postcode": "1188NC",
+  "plaats": "AMSTELVEEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.28128108,
+  "lon": 4.85150127
+ },
+ {
+  "winkel": 1555,
+  "straat": "Insulindelaan 130",
+  "postcode": "5613BT",
+  "plaats": "EINDHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.44138308,
+  "lon": 5.50362901
+ },
+ {
+  "winkel": 1556,
+  "straat": "Thiemsbrug 19",
+  "postcode": "7551EZ",
+  "plaats": "HENGELO OV",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.26681511,
+  "lon": 6.79373073
+ },
+ {
+  "winkel": 1557,
+  "straat": "Hooigracht 85",
+  "postcode": "2312KP",
+  "plaats": "LEIDEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.15975135,
+  "lon": 4.49710269
+ },
+ {
+  "winkel": 1559,
+  "straat": "Flora 54",
+  "postcode": "7422LL",
+  "plaats": "DEVENTER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.24810077,
+  "lon": 6.21547185
+ },
+ {
+  "winkel": 1561,
+  "straat": "Peppelweg 151",
+  "postcode": "3053GL",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.96081681,
+  "lon": 4.46695665
+ },
+ {
+  "winkel": 1562,
+  "straat": "Cornelis Troostplein 11",
+  "postcode": "1072JJ",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.35104036,
+  "lon": 4.89189543
+ },
+ {
+  "winkel": 1565,
+  "straat": "Terweeplein 3",
+  "postcode": "2341CZ",
+  "plaats": "OEGSTGEEST",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.17708833,
+  "lon": 4.46878922
+ },
+ {
+  "winkel": 1571,
+  "straat": "Kop Van Het Ruim 1",
+  "postcode": "8251KD",
+  "plaats": "DRONTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.52599467,
+  "lon": 5.71940797
+ },
+ {
+  "winkel": 1575,
+  "straat": "De Loper 85",
+  "postcode": "3137DD",
+  "plaats": "VLAARDINGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.93226036,
+  "lon": 4.34578246
+ },
+ {
+  "winkel": 1576,
+  "straat": "Van Dedemstraat 19",
+  "postcode": "1624NN",
+  "plaats": "HOORN NH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.64618823,
+  "lon": 5.0515436
+ },
+ {
+  "winkel": 1578,
+  "straat": "Langeweide 77",
+  "postcode": "1507NC",
+  "plaats": "ZAANDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.4484347,
+  "lon": 4.80256524
+ },
+ {
+  "winkel": 1579,
+  "straat": "Middenmolenplein 64",
+  "postcode": "2807GZ",
+  "plaats": "GOUDA",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.0113102,
+  "lon": 4.74373934
+ },
+ {
+  "winkel": 1581,
+  "straat": "Markt 19",
+  "postcode": "5401GN",
+  "plaats": "UDEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.65644034,
+  "lon": 5.61501418
+ },
+ {
+  "winkel": 1583,
+  "straat": "Troosterhof 14",
+  "postcode": "3571NC",
+  "plaats": "UTRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.10674412,
+  "lon": 5.13453903
+ },
+ {
+  "winkel": 1585,
+  "straat": "Koningsoord 137",
+  "postcode": "5057DL",
+  "plaats": "BERKEL-ENSCHOT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.58633401,
+  "lon": 5.13527599
+ },
+ {
+  "winkel": 1592,
+  "straat": "Mia Van Ijperenplein 89",
+  "postcode": "3065JK",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.92858042,
+  "lon": 4.54641682
+ },
+ {
+  "winkel": 1593,
+  "straat": "Espenhof 20",
+  "postcode": "3355BM",
+  "plaats": "PAPENDRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.83619886,
+  "lon": 4.70185812
+ },
+ {
+  "winkel": 1594,
+  "straat": "Stadhouderskade 101",
+  "postcode": "1073AW",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.35758478,
+  "lon": 4.89653449
+ },
+ {
+  "winkel": 1595,
+  "straat": "Keizerstraat 342",
+  "postcode": "2584BP",
+  "plaats": "'S-GRAVENHAGE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.10421099,
+  "lon": 4.27618114
+ },
+ {
+  "winkel": 1596,
+  "straat": "Struytse Hoeck 91",
+  "postcode": "3224HA",
+  "plaats": "HELLEVOETSLUIS",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.83041694,
+  "lon": 4.14465853
+ },
+ {
+  "winkel": 1597,
+  "straat": "Thoelaverweg 2",
+  "postcode": "3231KD",
+  "plaats": "BRIELLE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.90041029,
+  "lon": 4.1712131
+ },
+ {
+  "winkel": 1598,
+  "straat": "Belgieplein 107",
+  "postcode": "1066RC",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.34580239,
+  "lon": 4.81091527
+ },
+ {
+  "winkel": 1601,
+  "straat": "Aagje Dekenstraat 16",
+  "postcode": "4381RZ",
+  "plaats": "VLISSINGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.44562192,
+  "lon": 3.5734505
+ },
+ {
+  "winkel": 1602,
+  "straat": "Burgemeester Kuntzelaan 35",
+  "postcode": "3771EP",
+  "plaats": "BARNEVELD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.13765048,
+  "lon": 5.59025339
+ },
+ {
+  "winkel": 1605,
+  "straat": "Hoefbladplein 4",
+  "postcode": "2643KD",
+  "plaats": "PIJNACKER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.00419628,
+  "lon": 4.44317151
+ },
+ {
+  "winkel": 1612,
+  "straat": "Smidstraat 70",
+  "postcode": "5431BJ",
+  "plaats": "CUIJK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.7294734,
+  "lon": 5.87392957
+ },
+ {
+  "winkel": 1613,
+  "straat": "Kiryat Onoplein 87",
+  "postcode": "9203KS",
+  "plaats": "DRACHTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.10115026,
+  "lon": 6.09659047
+ },
+ {
+  "winkel": 1614,
+  "straat": "Winkelcentrum Woensel 119",
+  "postcode": "5625AG",
+  "plaats": "EINDHOVEN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.46822352,
+  "lon": 5.47407667
+ },
+ {
+  "winkel": 1615,
+  "straat": "Torenstraat 1",
+  "postcode": "5701SH",
+  "plaats": "HELMOND",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.48338889,
+  "lon": 5.65508282
+ },
+ {
+  "winkel": 1616,
+  "straat": "Griendtsveenweg 20",
+  "postcode": "7901EA",
+  "plaats": "HOOGEVEEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.72294626,
+  "lon": 6.46763424
+ },
+ {
+  "winkel": 1617,
+  "straat": "Kinheim 305",
+  "postcode": "3191EG",
+  "plaats": "HOOGVLIET ROTTERDAM",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.86525627,
+  "lon": 4.35550328
+ },
+ {
+  "winkel": 1620,
+  "straat": "Pottenbakkerssingel 2",
+  "postcode": "4331NA",
+  "plaats": "MIDDELBURG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.49621037,
+  "lon": 3.60742803
+ },
+ {
+  "winkel": 1621,
+  "straat": "Zwanenveld 5505",
+  "postcode": "6538TZ",
+  "plaats": "NIJMEGEN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.82322252,
+  "lon": 5.79768863
+ },
+ {
+  "winkel": 1622,
+  "straat": "Burchtplein 80",
+  "postcode": "5341VE",
+  "plaats": "OSS",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.77191337,
+  "lon": 5.52655275
+ },
+ {
+  "winkel": 1623,
+  "straat": "Poolsterstraat 36",
+  "postcode": "3067LX",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.94942795,
+  "lon": 4.55444626
+ },
+ {
+  "winkel": 1624,
+  "straat": "Elandstraat 160",
+  "postcode": "2513GW",
+  "plaats": "'S-GRAVENHAGE",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.07994319,
+  "lon": 4.29604069
+ },
+ {
+  "winkel": 1625,
+  "straat": "Rijksstraatweg 40",
+  "postcode": "1964LJ",
+  "plaats": "HEEMSKERK",
+  "wines": [
+   "chardonnay",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.50547203,
+  "lon": 4.65583248
+ },
+ {
+  "winkel": 1626,
+  "straat": "Roelantdreef 41",
+  "postcode": "3562KC",
+  "plaats": "UTRECHT",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.11287959,
+  "lon": 5.11245652
+ },
+ {
+  "winkel": 1627,
+  "straat": "Beertsterweg 1",
+  "postcode": "9672BE",
+  "plaats": "WINSCHOTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.14323382,
+  "lon": 7.04560877
+ },
+ {
+  "winkel": 1628,
+  "straat": "Eemplein 65",
+  "postcode": "3812EA",
+  "plaats": "AMERSFOORT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.15882503,
+  "lon": 5.38201651
+ },
+ {
+  "winkel": 1629,
+  "straat": "Westwaarts 41",
+  "postcode": "2711AD",
+  "plaats": "ZOETERMEER",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.06097396,
+  "lon": 4.48644963
+ },
+ {
+  "winkel": 1630,
+  "straat": "Zeilmakerstraat 2",
+  "postcode": "2222AA",
+  "plaats": "KATWIJK ZH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.20225102,
+  "lon": 4.4272709
+ },
+ {
+  "winkel": 1633,
+  "straat": "Jacoba Van Beierenhof 29",
+  "postcode": "2215JK",
+  "plaats": "VOORHOUT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.22294295,
+  "lon": 4.485687
+ },
+ {
+  "winkel": 1636,
+  "straat": "Sint-Jobsweg 116",
+  "postcode": "3024EJ",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.90406695,
+  "lon": 4.45865883
+ },
+ {
+  "winkel": 1645,
+  "straat": "Dalempromenade 40",
+  "postcode": "5035KL",
+  "plaats": "TILBURG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.58246328,
+  "lon": 4.98370938
+ },
+ {
+  "winkel": 1648,
+  "straat": "Argonautenweg 1",
+  "postcode": "3054RP",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.95912781,
+  "lon": 4.49448881
+ },
+ {
+  "winkel": 1649,
+  "straat": "Bevrijdingsplein 50",
+  "postcode": "2321BX",
+  "plaats": "LEIDEN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.14663335,
+  "lon": 4.47683717
+ },
+ {
+  "winkel": 1651,
+  "straat": "Oude Vest 5",
+  "postcode": "4811HR",
+  "plaats": "BREDA",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.58676768,
+  "lon": 4.77839825
+ },
+ {
+  "winkel": 1654,
+  "straat": "Vierhavensstraat 147",
+  "postcode": "3029BB",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.9095285,
+  "lon": 4.43625145
+ },
+ {
+  "winkel": 1656,
+  "straat": "Julianaplein 9",
+  "postcode": "1781HA",
+  "plaats": "DEN HELDER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.9581634,
+  "lon": 4.76088495
+ },
+ {
+  "winkel": 1657,
+  "straat": "Meerzand 6",
+  "postcode": "5658LJ",
+  "plaats": "EINDHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.44312293,
+  "lon": 5.4093551
+ },
+ {
+  "winkel": 1661,
+  "straat": "Kamperfoelielaan 45",
+  "postcode": "5643BB",
+  "plaats": "EINDHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.42305944,
+  "lon": 5.49862432
+ },
+ {
+  "winkel": 1663,
+  "straat": "Paduaweg 3",
+  "postcode": "3734GG",
+  "plaats": "DEN DOLDER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.13910924,
+  "lon": 5.24013685
+ },
+ {
+  "winkel": 1666,
+  "straat": "Roda J.C. Ring 5",
+  "postcode": "6466NH",
+  "plaats": "KERKRADE",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 50.85749412,
+  "lon": 6.00728567
+ },
+ {
+  "winkel": 1669,
+  "straat": "Lusthofstraat 89",
+  "postcode": "3061WL",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.92533138,
+  "lon": 4.50952832
+ },
+ {
+  "winkel": 1670,
+  "straat": "Grotemarkt 98",
+  "postcode": "3011PA",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.92027075,
+  "lon": 4.48697774
+ },
+ {
+  "winkel": 1677,
+  "straat": "Margrietstraat 47",
+  "postcode": "5731BN",
+  "plaats": "MIERLO",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.44196134,
+  "lon": 5.61887843
+ },
+ {
+  "winkel": 1679,
+  "straat": "Koningshoek 91001",
+  "postcode": "3144BA",
+  "plaats": "MAASSLUIS",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.92884601,
+  "lon": 4.24015028
+ },
+ {
+  "winkel": 1805,
+  "straat": "Rimsky-Korssakovweg 9",
+  "postcode": "1323LP",
+  "plaats": "ALMERE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.36686469,
+  "lon": 5.19036458
+ },
+ {
+  "winkel": 1806,
+  "straat": "Haviksberg 51",
+  "postcode": "4631VB",
+  "plaats": "HOOGERHEIDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.4264578,
+  "lon": 4.32045738
+ },
+ {
+  "winkel": 1808,
+  "straat": "Ginnekenweg 46",
+  "postcode": "4818JG",
+  "plaats": "BREDA",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.57720304,
+  "lon": 4.78050997
+ },
+ {
+  "winkel": 1809,
+  "straat": "Westkade 48",
+  "postcode": "4551BV",
+  "plaats": "SAS VAN GENT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.22484973,
+  "lon": 3.80140073
+ },
+ {
+  "winkel": 1812,
+  "straat": "Wibautstraat 80",
+  "postcode": "1091GP",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.35588982,
+  "lon": 4.91064495
+ },
+ {
+  "winkel": 1813,
+  "straat": "Hoofdstraat 162",
+  "postcode": "3972LG",
+  "plaats": "DRIEBERGEN-RIJSENBURG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.05135986,
+  "lon": 5.2823903
+ },
+ {
+  "winkel": 1820,
+  "straat": "Maalderij 31",
+  "postcode": "1185ZC",
+  "plaats": "AMSTELVEEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.28892412,
+  "lon": 4.83950917
+ },
+ {
+  "winkel": 1821,
+  "straat": "Glacisstraat 15",
+  "postcode": "4615AE",
+  "plaats": "BERGEN OP ZOOM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.48848564,
+  "lon": 4.29020441
+ },
+ {
+  "winkel": 1822,
+  "straat": "Eudokiaplein 12",
+  "postcode": "3037BT",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.93274658,
+  "lon": 4.4713205
+ },
+ {
+  "winkel": 1823,
+  "straat": "Genderenplein 13",
+  "postcode": "2134DP",
+  "plaats": "HOOFDDORP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.30697496,
+  "lon": 4.63862798
+ },
+ {
+  "winkel": 1834,
+  "straat": "Dijkstraat 102",
+  "postcode": "2675AZ",
+  "plaats": "HONSELERSDIJK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.00850847,
+  "lon": 4.22910518
+ },
+ {
+  "winkel": 1835,
+  "straat": "Verdilaan 4",
+  "postcode": "2671VX",
+  "plaats": "NAALDWIJK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.99331355,
+  "lon": 4.21045052
+ },
+ {
+  "winkel": 1836,
+  "straat": "Struyck Van Bergenstraat 2",
+  "postcode": "2291RW",
+  "plaats": "WATERINGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.02466444,
+  "lon": 4.27607751
+ },
+ {
+  "winkel": 1842,
+  "straat": "Goeverneurplein 20",
+  "postcode": "2523EC",
+  "plaats": "'S-GRAVENHAGE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.05555769,
+  "lon": 4.31424277
+ },
+ {
+  "winkel": 1855,
+  "straat": "Pampusweg 13",
+  "postcode": "1398PT",
+  "plaats": "MUIDEN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.33494944,
+  "lon": 5.02221642
+ },
+ {
+  "winkel": 1856,
+  "straat": "Keesomstraat 3",
+  "postcode": "6717AH",
+  "plaats": "EDE GLD",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.03086865,
+  "lon": 5.64697865
+ },
+ {
+  "winkel": 1857,
+  "straat": "Nijmeegseweg 20",
+  "postcode": "5916PT",
+  "plaats": "VENLO",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.38327792,
+  "lon": 6.18200296
+ },
+ {
+  "winkel": 1864,
+  "straat": "Oudeland 84",
+  "postcode": "3335VH",
+  "plaats": "ZWIJNDRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.81882689,
+  "lon": 4.6104478
+ },
+ {
+  "winkel": 1865,
+  "straat": "Weversstraat 3",
+  "postcode": "9411NC",
+  "plaats": "BEILEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.86062189,
+  "lon": 6.51597756
+ },
+ {
+  "winkel": 1871,
+  "straat": "Soestdijkkade 82",
+  "postcode": "2316RC",
+  "plaats": "LEIDEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.16636307,
+  "lon": 4.50608137
+ },
+ {
+  "winkel": 1873,
+  "straat": "Molukkenstraat 308",
+  "postcode": "1098TW",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.3573954,
+  "lon": 4.93945903
+ },
+ {
+  "winkel": 1874,
+  "straat": "Koningin Julianaplein 10",
+  "postcode": "1502DV",
+  "plaats": "ZAANDAM",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.45373664,
+  "lon": 4.82794713
+ },
+ {
+  "winkel": 1875,
+  "straat": "Kraailandhof 106",
+  "postcode": "3828JM",
+  "plaats": "HOOGLAND",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.18709349,
+  "lon": 5.37571169
+ },
+ {
+  "winkel": 1876,
+  "straat": "Torenallee 86",
+  "postcode": "5617BD",
+  "plaats": "EINDHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.44684255,
+  "lon": 5.45801703
+ },
+ {
+  "winkel": 2200,
+  "straat": "De Linie 54",
+  "postcode": "4208DE",
+  "plaats": "GORINCHEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.83717334,
+  "lon": 5.00774661
+ },
+ {
+  "winkel": 2206,
+  "straat": "Westhavendijk 103",
+  "postcode": "4463AD",
+  "plaats": "GOES",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.51044702,
+  "lon": 3.89039732
+ },
+ {
+  "winkel": 2215,
+  "straat": "Stuivenbergheem 15",
+  "postcode": "3907NH",
+  "plaats": "VEENENDAAL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.02583068,
+  "lon": 5.58062641
+ },
+ {
+  "winkel": 2224,
+  "straat": "Haringvlietplein 7",
+  "postcode": "4301XG",
+  "plaats": "ZIERIKZEE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.65345188,
+  "lon": 3.90873945
+ },
+ {
+  "winkel": 2225,
+  "straat": "Bastiaanpoort 7",
+  "postcode": "2611MC",
+  "plaats": "DELFT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.00935319,
+  "lon": 4.36447144
+ },
+ {
+  "winkel": 2229,
+  "straat": "Velperweg 47",
+  "postcode": "6824BG",
+  "plaats": "ARNHEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.98866656,
+  "lon": 5.9276425
+ },
+ {
+  "winkel": 2234,
+  "straat": "Meeuwenstraat 2",
+  "postcode": "1781XA",
+  "plaats": "DEN HELDER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.95345036,
+  "lon": 4.76336392
+ },
+ {
+  "winkel": 2238,
+  "straat": "Dorpsstraat 84",
+  "postcode": "2665BK",
+  "plaats": "BLEISWIJK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.01169607,
+  "lon": 4.52978308
+ },
+ {
+  "winkel": 2246,
+  "straat": "Vijverhof 9",
+  "postcode": "1633DS",
+  "plaats": "AVENHORN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.62379644,
+  "lon": 4.94986781
+ },
+ {
+  "winkel": 2247,
+  "straat": "De Middend 250",
+  "postcode": "1611KN",
+  "plaats": "BOVENKARSPEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.69783537,
+  "lon": 5.23449939
+ },
+ {
+  "winkel": 2254,
+  "straat": "Stan Kentonhof 88",
+  "postcode": "1628TR",
+  "plaats": "HOORN NH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.65312353,
+  "lon": 5.09859925
+ },
+ {
+  "winkel": 2255,
+  "straat": "Schoolweg 15",
+  "postcode": "1787AV",
+  "plaats": "JULIANADORP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.89833159,
+  "lon": 4.75395034
+ },
+ {
+  "winkel": 2259,
+  "straat": "Overleek 1",
+  "postcode": "1671GD",
+  "plaats": "MEDEMBLIK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.76630163,
+  "lon": 5.10065454
+ },
+ {
+  "winkel": 2260,
+  "straat": "Rijperweg 50",
+  "postcode": "1462ME",
+  "plaats": "MIDDENBEEMSTER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.54894958,
+  "lon": 4.91018415
+ },
+ {
+  "winkel": 2264,
+  "straat": "Wuiver 4",
+  "postcode": "1715ED",
+  "plaats": "SPANBROEK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.70286243,
+  "lon": 4.94719087
+ },
+ {
+  "winkel": 2265,
+  "straat": "John F. Kennedyplein 73",
+  "postcode": "1443EB",
+  "plaats": "PURMEREND",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.5088936,
+  "lon": 4.96926299
+ },
+ {
+  "winkel": 2266,
+  "straat": "Van Burgplein 5",
+  "postcode": "1447KP",
+  "plaats": "PURMEREND",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.49406612,
+  "lon": 4.96962699
+ },
+ {
+  "winkel": 2267,
+  "straat": "Van Damplein 13",
+  "postcode": "1448NB",
+  "plaats": "PURMEREND",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.49677851,
+  "lon": 4.93860693
+ },
+ {
+  "winkel": 2278,
+  "straat": "Hollandse Cirkel 36",
+  "postcode": "1689XE",
+  "plaats": "ZWAAG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.67132444,
+  "lon": 5.09163275
+ },
+ {
+  "winkel": 2313,
+  "straat": "Mgr Bekkersplein 3",
+  "postcode": "5076AZ",
+  "plaats": "HAAREN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.60158835,
+  "lon": 5.22640904
+ },
+ {
+  "winkel": 2319,
+  "straat": "Swanlaweg 4",
+  "postcode": "2761BC",
+  "plaats": "ZEVENHUIZEN ZH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.01666833,
+  "lon": 4.58198379
+ },
+ {
+  "winkel": 2320,
+  "straat": "Raadhuisplein 58",
+  "postcode": "2922AH",
+  "plaats": "KRIMPEN AAN DEN IJSSEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.91581669,
+  "lon": 4.5885218
+ },
+ {
+  "winkel": 2325,
+  "straat": "Wesseler-Nering 20",
+  "postcode": "7544JB",
+  "plaats": "ENSCHEDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.19223789,
+  "lon": 6.87844622
+ },
+ {
+  "winkel": 4003,
+  "straat": "Tuinfluiter 1",
+  "postcode": "3752NA",
+  "plaats": "BUNSCHOTEN-SPAKENBURG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.24044348,
+  "lon": 5.36539085
+ },
+ {
+  "winkel": 4005,
+  "straat": "Koophandel 7",
+  "postcode": "9101WZ",
+  "plaats": "DOKKUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.32386493,
+  "lon": 6.00868145
+ },
+ {
+  "winkel": 4007,
+  "straat": "Lovinkstraat 20",
+  "postcode": "8265BT",
+  "plaats": "KAMPEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.54834642,
+  "lon": 5.91057645
+ },
+ {
+  "winkel": 4008,
+  "straat": "Het Anker 7",
+  "postcode": "4941RG",
+  "plaats": "RAAMSDONKSVEER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.69625543,
+  "lon": 4.87294303
+ },
+ {
+  "winkel": 4011,
+  "straat": "Binnenhof 33",
+  "postcode": "7608KH",
+  "plaats": "ALMELO",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.37890321,
+  "lon": 6.67874766
+ },
+ {
+  "winkel": 4013,
+  "straat": "Schapendoesweg 2",
+  "postcode": "7312EC",
+  "plaats": "APELDOORN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.20882898,
+  "lon": 5.94373723
+ },
+ {
+  "winkel": 4014,
+  "straat": "Scharmbarg 107",
+  "postcode": "9407EC",
+  "plaats": "ASSEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.01676626,
+  "lon": 6.5608567
+ },
+ {
+  "winkel": 4016,
+  "straat": "Dorpstraat 23",
+  "postcode": "7361AP",
+  "plaats": "BEEKBERGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.15957823,
+  "lon": 5.96292194
+ },
+ {
+  "winkel": 4018,
+  "straat": "Conradi Veenlandstraat 4",
+  "postcode": "9104BN",
+  "plaats": "DAMWOUDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.29392489,
+  "lon": 5.99600162
+ },
+ {
+  "winkel": 4019,
+  "straat": "De Kolk 3",
+  "postcode": "7491XN",
+  "plaats": "DELDEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.26125398,
+  "lon": 6.70852472
+ },
+ {
+  "winkel": 4020,
+  "straat": "Houtsmastraat 150",
+  "postcode": "7002KK",
+  "plaats": "DOETINCHEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.97345148,
+  "lon": 6.31590494
+ },
+ {
+  "winkel": 4027,
+  "straat": "Leeuwarderweg 8",
+  "postcode": "8801BV",
+  "plaats": "FRANEKER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.18725376,
+  "lon": 5.55049444
+ },
+ {
+  "winkel": 4032,
+  "straat": "Margaret Cavendishweg 95",
+  "postcode": "1349BN",
+  "plaats": "ALMERE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.34730723,
+  "lon": 5.33318877
+ },
+ {
+  "winkel": 4033,
+  "straat": "Dorpsstraat 36",
+  "postcode": "7971CS",
+  "plaats": "HAVELTE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.77080433,
+  "lon": 6.2352513
+ },
+ {
+  "winkel": 4046,
+  "straat": "Clothildestraat 551",
+  "postcode": "2033LW",
+  "plaats": "HAARLEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.37056721,
+  "lon": 4.64681417
+ },
+ {
+  "winkel": 4054,
+  "straat": "Hoogzandveld 2",
+  "postcode": "3434EE",
+  "plaats": "NIEUWEGEIN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.0054952,
+  "lon": 5.08568726
+ },
+ {
+  "winkel": 4056,
+  "straat": "Burg. Backxlaan 307",
+  "postcode": "7711AD",
+  "plaats": "NIEUWLEUSEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.58926479,
+  "lon": 6.28295394
+ },
+ {
+  "winkel": 4057,
+  "straat": "Amsterdamseweg 47",
+  "postcode": "3812RP",
+  "plaats": "AMERSFOORT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.16431091,
+  "lon": 5.3665895
+ },
+ {
+  "winkel": 4058,
+  "straat": "Oranje Marieplein 8",
+  "postcode": "6663RL",
+  "plaats": "LENT",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.86453463,
+  "lon": 5.85378901
+ },
+ {
+  "winkel": 4059,
+  "straat": "Rijksweg-Noord 28",
+  "postcode": "4735TX",
+  "plaats": "ZEGGE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.54535893,
+  "lon": 4.50662287
+ },
+ {
+  "winkel": 4060,
+  "straat": "Stipeplein 14",
+  "postcode": "8431WE",
+  "plaats": "OOSTERWOLDE FR",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.99003159,
+  "lon": 6.28988177
+ },
+ {
+  "winkel": 4062,
+  "straat": "Pieter Repelaerstraat 63",
+  "postcode": "3297BL",
+  "plaats": "PUTTERSHOEK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.8057413,
+  "lon": 4.56805773
+ },
+ {
+  "winkel": 4064,
+  "straat": "Grolloerstraat 5",
+  "postcode": "9451KA",
+  "plaats": "ROLDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.98599827,
+  "lon": 6.6487393
+ },
+ {
+  "winkel": 4067,
+  "straat": "Terreplein 4",
+  "postcode": "4691AA",
+  "plaats": "THOLEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.53631667,
+  "lon": 4.22626929
+ },
+ {
+  "winkel": 4068,
+  "straat": "Molecatenlaan 30",
+  "postcode": "7339LM",
+  "plaats": "UGCHELEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.18581494,
+  "lon": 5.94205322
+ },
+ {
+  "winkel": 4071,
+  "straat": "Kempenaar 3",
+  "postcode": "8242BD",
+  "plaats": "LELYSTAD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.5175621,
+  "lon": 5.45954875
+ },
+ {
+  "winkel": 4075,
+  "straat": "Obergon 2",
+  "postcode": "9951HL",
+  "plaats": "WINSUM GN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.33483599,
+  "lon": 6.51564897
+ },
+ {
+  "winkel": 4076,
+  "straat": "Van Harenstraat 66",
+  "postcode": "8471JG",
+  "plaats": "WOLVEGA",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.87503351,
+  "lon": 5.9974185
+ },
+ {
+  "winkel": 4100,
+  "straat": "Raadhuisstraat 13",
+  "postcode": "7721AX",
+  "plaats": "DALFSEN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.50314271,
+  "lon": 6.25858254
+ },
+ {
+  "winkel": 4102,
+  "straat": "Veldstraat 10",
+  "postcode": "7071CC",
+  "plaats": "ULFT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.89041645,
+  "lon": 6.38384638
+ },
+ {
+  "winkel": 4103,
+  "straat": "Parkweide 14",
+  "postcode": "6718DJ",
+  "plaats": "EDE GLD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.05079729,
+  "lon": 5.64407151
+ },
+ {
+  "winkel": 4104,
+  "straat": "Schoolstraat 12",
+  "postcode": "8531JW",
+  "plaats": "LEMMER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.84559129,
+  "lon": 5.7105366
+ },
+ {
+  "winkel": 4105,
+  "straat": "Laan Van Ouderzorg 2",
+  "postcode": "2352HT",
+  "plaats": "LEIDERDORP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.15851897,
+  "lon": 4.52685953
+ },
+ {
+  "winkel": 4106,
+  "straat": "Olivier Van Noortstraat 32",
+  "postcode": "1363LS",
+  "plaats": "ALMERE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.35216562,
+  "lon": 5.13898214
+ },
+ {
+  "winkel": 4107,
+  "straat": "Stadionplein 115",
+  "postcode": "1076CK",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.34458791,
+  "lon": 4.85710899
+ },
+ {
+  "winkel": 4108,
+  "straat": "De Arend 2",
+  "postcode": "8265NK",
+  "plaats": "KAMPEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.53323183,
+  "lon": 5.91648449
+ },
+ {
+  "winkel": 4113,
+  "straat": "Muntpassage 49",
+  "postcode": "6001GL",
+  "plaats": "WEERT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.25502853,
+  "lon": 5.7049431
+ },
+ {
+  "winkel": 4114,
+  "straat": "Gouwplein 1",
+  "postcode": "1384MB",
+  "plaats": "WEESP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.31854117,
+  "lon": 5.0440894
+ },
+ {
+  "winkel": 4115,
+  "straat": "Kerkstraat 6",
+  "postcode": "6031CH",
+  "plaats": "NEDERWEERT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.28327803,
+  "lon": 5.75015508
+ },
+ {
+  "winkel": 4116,
+  "straat": "Sint Antoniusstraat 1",
+  "postcode": "6093GA",
+  "plaats": "HEYTHUYSEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.25073514,
+  "lon": 5.89996752
+ },
+ {
+  "winkel": 4117,
+  "straat": "Sint Jobplein 2",
+  "postcode": "6004JZ",
+  "plaats": "WEERT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.25180674,
+  "lon": 5.72917366
+ },
+ {
+  "winkel": 4118,
+  "straat": "Boshoverweg 59",
+  "postcode": "6002AM",
+  "plaats": "WEERT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.26201427,
+  "lon": 5.68605703
+ },
+ {
+  "winkel": 4122,
+  "straat": "Heuvelplein 11",
+  "postcode": "5741JH",
+  "plaats": "BEEK EN DONK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.52877501,
+  "lon": 5.63447556
+ },
+ {
+  "winkel": 4128,
+  "straat": "Clarastraat 2",
+  "postcode": "6102CD",
+  "plaats": "ECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.09858727,
+  "lon": 5.88804295
+ },
+ {
+  "winkel": 4130,
+  "straat": "De Klef 22",
+  "postcode": "6644CT",
+  "plaats": "EWIJK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.87011278,
+  "lon": 5.74031349
+ },
+ {
+  "winkel": 4137,
+  "straat": "Craenberglaan 13",
+  "postcode": "6075HC",
+  "plaats": "HERKENBOSCH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.1555541,
+  "lon": 6.06397233
+ },
+ {
+  "winkel": 4138,
+  "straat": "Oude Molen 2",
+  "postcode": "5757AZ",
+  "plaats": "LIESSEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.4157871,
+  "lon": 5.81950266
+ },
+ {
+  "winkel": 4140,
+  "straat": "Rijksweg 62",
+  "postcode": "6228XZ",
+  "plaats": "MAASTRICHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 50.82806143,
+  "lon": 5.72879751
+ },
+ {
+  "winkel": 4142,
+  "straat": "Markt 26",
+  "postcode": "6074BB",
+  "plaats": "MELICK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.15742085,
+  "lon": 6.01352539
+ },
+ {
+  "winkel": 4143,
+  "straat": "Vincent Van Goghstraat 37",
+  "postcode": "5671GW",
+  "plaats": "NUENEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.47496759,
+  "lon": 5.55117867
+ },
+ {
+  "winkel": 4144,
+  "straat": "Kepringelehof 3",
+  "postcode": "5981CP",
+  "plaats": "PANNINGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.32940359,
+  "lon": 5.98351081
+ },
+ {
+  "winkel": 4145,
+  "straat": "Wilhelminalaan 32",
+  "postcode": "5541CW",
+  "plaats": "REUSEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.36059254,
+  "lon": 5.16206027
+ },
+ {
+  "winkel": 4149,
+  "straat": "Industriestraat 19",
+  "postcode": "6135KE",
+  "plaats": "SITTARD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.00055015,
+  "lon": 5.84653268
+ },
+ {
+  "winkel": 4150,
+  "straat": "Kerkstraat 30",
+  "postcode": "5711GW",
+  "plaats": "SOMEREN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.38030023,
+  "lon": 5.7155331
+ },
+ {
+  "winkel": 4157,
+  "straat": "Wieenpassage 40",
+  "postcode": "5921GD",
+  "plaats": "VENLO",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.36823757,
+  "lon": 6.14993203
+ },
+ {
+  "winkel": 4158,
+  "straat": "Raadhuisstraat 100",
+  "postcode": "5801MA",
+  "plaats": "VENRAY",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.5316236,
+  "lon": 5.97957602
+ },
+ {
+  "winkel": 4159,
+  "straat": "Oliemaat 4",
+  "postcode": "5251AG",
+  "plaats": "VLIJMEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.69455923,
+  "lon": 5.22118868
+ },
+ {
+  "winkel": 4165,
+  "straat": "Begoniastraat 12",
+  "postcode": "6014BJ",
+  "plaats": "ITTERVOORT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.17114095,
+  "lon": 5.81908115
+ },
+ {
+  "winkel": 4169,
+  "straat": "Groene Kruisstraat 8",
+  "postcode": "6049BW",
+  "plaats": "HERTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.1797164,
+  "lon": 5.96332647
+ },
+ {
+  "winkel": 4170,
+  "straat": "Van Der Duinstraat 115",
+  "postcode": "5161BN",
+  "plaats": "SPRANG-CAPELLE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.66850314,
+  "lon": 5.03447921
+ },
+ {
+  "winkel": 4172,
+  "straat": "De Gouden Leeuw 8",
+  "postcode": "5801BX",
+  "plaats": "VENRAY",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.52289157,
+  "lon": 5.97305148
+ },
+ {
+  "winkel": 4174,
+  "straat": "Kerkplein 72",
+  "postcode": "6641BH",
+  "plaats": "BEUNINGEN GLD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.86237451,
+  "lon": 5.77155261
+ },
+ {
+  "winkel": 4175,
+  "straat": "Molenhoekpassage 5",
+  "postcode": "5242CZ",
+  "plaats": "ROSMALEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.71018221,
+  "lon": 5.36674566
+ },
+ {
+  "winkel": 4177,
+  "straat": "Helftheuvelpassage 1",
+  "postcode": "5224AA",
+  "plaats": "'S-HERTOGENBOSCH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.69676016,
+  "lon": 5.2668658
+ },
+ {
+  "winkel": 4179,
+  "straat": "Kennedylaan 90",
+  "postcode": "6441JG",
+  "plaats": "BRUNSSUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 50.94936253,
+  "lon": 5.9597229
+ },
+ {
+  "winkel": 4180,
+  "straat": "Burg Cortenstraat 8",
+  "postcode": "6226GV",
+  "plaats": "MAASTRICHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 50.84426298,
+  "lon": 5.72783526
+ },
+ {
+  "winkel": 4181,
+  "straat": "Brugstraat 1",
+  "postcode": "6131AE",
+  "plaats": "SITTARD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 50.99918733,
+  "lon": 5.85874469
+ },
+ {
+  "winkel": 4183,
+  "straat": "Godsweerdersingel 74",
+  "postcode": "6041GM",
+  "plaats": "ROERMOND",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.19611578,
+  "lon": 5.99453213
+ },
+ {
+  "winkel": 4184,
+  "straat": "Schaarbroekerweg 14",
+  "postcode": "6042EJ",
+  "plaats": "ROERMOND",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.210981,
+  "lon": 6.01804115
+ },
+ {
+  "winkel": 4188,
+  "straat": "Langestraat 98",
+  "postcode": "7891GG",
+  "plaats": "KLAZIENAVEEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.72444258,
+  "lon": 6.9867431
+ },
+ {
+  "winkel": 4190,
+  "straat": "Deventerstraatweg 24",
+  "postcode": "8012AH",
+  "plaats": "ZWOLLE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.50021996,
+  "lon": 6.10597928
+ },
+ {
+  "winkel": 4191,
+  "straat": "Borchsingel 25",
+  "postcode": "9766PP",
+  "plaats": "EELDERWOLDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.1797308,
+  "lon": 6.54025287
+ },
+ {
+  "winkel": 4192,
+  "straat": "Buma 1",
+  "postcode": "3825ME",
+  "plaats": "AMERSFOORT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.1959753,
+  "lon": 5.43068736
+ },
+ {
+  "winkel": 4194,
+  "straat": "Westblaak 232",
+  "postcode": "3012KP",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.91632837,
+  "lon": 4.475273
+ },
+ {
+  "winkel": 8500,
+  "straat": "Runneboom 2",
+  "postcode": "7232CX",
+  "plaats": "WARNSVELD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.13483528,
+  "lon": 6.22904883
+ },
+ {
+  "winkel": 8504,
+  "straat": "Amsterdamseweg 73",
+  "postcode": "1182GP",
+  "plaats": "AMSTELVEEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.30705664,
+  "lon": 4.84634559
+ },
+ {
+  "winkel": 8507,
+  "straat": "Van Hardenbroeklaan 3",
+  "postcode": "3981EN",
+  "plaats": "BUNNIK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.06736351,
+  "lon": 5.19974167
+ },
+ {
+  "winkel": 8509,
+  "straat": "Burg Winklerplein 24",
+  "postcode": "3362AA",
+  "plaats": "SLIEDRECHT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.82201683,
+  "lon": 4.77794517
+ },
+ {
+  "winkel": 8510,
+  "straat": "Kapelstraat 35",
+  "postcode": "5591HC",
+  "plaats": "HEEZE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.38177862,
+  "lon": 5.58035864
+ },
+ {
+  "winkel": 8511,
+  "straat": "Koorstraat 10",
+  "postcode": "5831GH",
+  "plaats": "BOXMEER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.64646297,
+  "lon": 5.94897945
+ },
+ {
+  "winkel": 8513,
+  "straat": "Huizerweg 8",
+  "postcode": "1261AW",
+  "plaats": "BLARICUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.27335206,
+  "lon": 5.24359244
+ },
+ {
+  "winkel": 8514,
+  "straat": "Dennenlaan 45",
+  "postcode": "1161CL",
+  "plaats": "ZWANENBURG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.37889808,
+  "lon": 4.7502091
+ },
+ {
+  "winkel": 8515,
+  "straat": "Pieter Calandlaan 212",
+  "postcode": "1069LA",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.35217174,
+  "lon": 4.79933989
+ },
+ {
+  "winkel": 8520,
+  "straat": "Laagte 2",
+  "postcode": "7151BS",
+  "plaats": "EIBERGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.10264462,
+  "lon": 6.6444223
+ },
+ {
+  "winkel": 8524,
+  "straat": "Stationsplein 17",
+  "postcode": "4561GC",
+  "plaats": "HULST",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 51.27634776,
+  "lon": 4.04465051
+ },
+ {
+  "winkel": 8527,
+  "straat": "Dorpsstraat 27",
+  "postcode": "3931ED",
+  "plaats": "WOUDENBERG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.08258156,
+  "lon": 5.41696451
+ },
+ {
+  "winkel": 8533,
+  "straat": "St. Janstraat 91",
+  "postcode": "4741AN",
+  "plaats": "HOEVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.58205718,
+  "lon": 4.58315668
+ },
+ {
+  "winkel": 8541,
+  "straat": "Julianastraat 37",
+  "postcode": "3161AJ",
+  "plaats": "RHOON",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.85654936,
+  "lon": 4.41848576
+ },
+ {
+  "winkel": 8542,
+  "straat": "Szydlowskiplein 20",
+  "postcode": "4571EW",
+  "plaats": "AXEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.26605256,
+  "lon": 3.90894089
+ },
+ {
+  "winkel": 8543,
+  "straat": "Lindenburghlaan 1",
+  "postcode": "4651TM",
+  "plaats": "STEENBERGEN NB",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.58728425,
+  "lon": 4.31425242
+ },
+ {
+  "winkel": 8548,
+  "straat": "Beneden Oosterdiep 165",
+  "postcode": "9645LN",
+  "plaats": "VEENDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.11155696,
+  "lon": 6.88554758
+ },
+ {
+  "winkel": 8549,
+  "straat": "Burg Kruisingalaan 5",
+  "postcode": "9801BH",
+  "plaats": "ZUIDHORN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.24448635,
+  "lon": 6.40983264
+ },
+ {
+  "winkel": 8550,
+  "straat": "Theresiaplein 8",
+  "postcode": "1749GX",
+  "plaats": "WARMENHUIZEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.72200208,
+  "lon": 4.73910088
+ },
+ {
+  "winkel": 8551,
+  "straat": "Einsteinstraat 103",
+  "postcode": "1433KJ",
+  "plaats": "KUDELSTAART",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.2340092,
+  "lon": 4.74924554
+ },
+ {
+  "winkel": 8555,
+  "straat": "'T Dorp 40",
+  "postcode": "5384MC",
+  "plaats": "HEESCH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.73591732,
+  "lon": 5.53035073
+ },
+ {
+  "winkel": 8556,
+  "straat": "Kerkstraat 18",
+  "postcode": "3291AL",
+  "plaats": "STRIJEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.74418012,
+  "lon": 4.55307485
+ },
+ {
+  "winkel": 8557,
+  "straat": "Nico De Regtplein 5",
+  "postcode": "3218XW",
+  "plaats": "HEENVLIET",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.86201667,
+  "lon": 4.23605111
+ },
+ {
+  "winkel": 8558,
+  "straat": "Prinses Maximaplein 8",
+  "postcode": "4191XT",
+  "plaats": "GELDERMALSEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.88665836,
+  "lon": 5.29944306
+ },
+ {
+  "winkel": 8560,
+  "straat": "Lavendelplantsoen 60",
+  "postcode": "1313GA",
+  "plaats": "ALMERE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.38233956,
+  "lon": 5.19848272
+ },
+ {
+  "winkel": 8561,
+  "straat": "Den Hof 4",
+  "postcode": "5582JZ",
+  "plaats": "WAALRE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.39580125,
+  "lon": 5.47453388
+ },
+ {
+  "winkel": 8571,
+  "straat": "Denekamperstraat 5",
+  "postcode": "7631AA",
+  "plaats": "OOTMARSUM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.41000342,
+  "lon": 6.89841104
+ },
+ {
+  "winkel": 8572,
+  "straat": "Hoofdstraat 35",
+  "postcode": "9531AB",
+  "plaats": "BORGER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.92335565,
+  "lon": 6.79191039
+ },
+ {
+  "winkel": 8575,
+  "straat": "Burghseweg 73",
+  "postcode": "4328LA",
+  "plaats": "BURGH-HAAMSTEDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.69211982,
+  "lon": 3.73605521
+ },
+ {
+  "winkel": 8578,
+  "straat": "Hoornesplein 137",
+  "postcode": "2221BE",
+  "plaats": "KATWIJK ZH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.20618067,
+  "lon": 4.41909841
+ },
+ {
+  "winkel": 8580,
+  "straat": "Botplein 15",
+  "postcode": "1317SK",
+  "plaats": "ALMERE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.38902876,
+  "lon": 5.23163169
+ },
+ {
+  "winkel": 8581,
+  "straat": "Anjelierenstraat 36",
+  "postcode": "2231GT",
+  "plaats": "RIJNSBURG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.19197216,
+  "lon": 4.44283636
+ },
+ {
+  "winkel": 8584,
+  "straat": "Meenthof 37",
+  "postcode": "1241CZ",
+  "plaats": "KORTENHOEF",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.24009724,
+  "lon": 5.11271972
+ },
+ {
+  "winkel": 8585,
+  "straat": "Warmoesstraat 37",
+  "postcode": "9076DL",
+  "plaats": "ST.-ANNAPAROCHIE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.27523565,
+  "lon": 5.65772313
+ },
+ {
+  "winkel": 8586,
+  "straat": "Muiderbos 140",
+  "postcode": "2134SV",
+  "plaats": "HOOFDDORP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.31469255,
+  "lon": 4.65952842
+ },
+ {
+  "winkel": 8590,
+  "straat": "Molenstraat 58",
+  "postcode": "4881CT",
+  "plaats": "ZUNDERT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.47089419,
+  "lon": 4.6620738
+ },
+ {
+  "winkel": 8591,
+  "straat": "Watercipresstraat 15",
+  "postcode": "1326CM",
+  "plaats": "ALMERE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.37576912,
+  "lon": 5.24361119
+ },
+ {
+  "winkel": 8592,
+  "straat": "Schoolstraat 3",
+  "postcode": "1759GP",
+  "plaats": "CALLANTSOOG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.83623396,
+  "lon": 4.69602186
+ },
+ {
+  "winkel": 8594,
+  "straat": "De Hoven 25",
+  "postcode": "7122BJ",
+  "plaats": "AALTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.92717979,
+  "lon": 6.57948827
+ },
+ {
+  "winkel": 8595,
+  "straat": "Rijksweg 129",
+  "postcode": "9731AH",
+  "plaats": "GRONINGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.23051354,
+  "lon": 6.61720274
+ },
+ {
+  "winkel": 8599,
+  "straat": "Koningsschild 11",
+  "postcode": "5051TT",
+  "plaats": "GOIRLE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.51918328,
+  "lon": 5.05626223
+ },
+ {
+  "winkel": 8601,
+  "straat": "Neringpassage 127",
+  "postcode": "8224JB",
+  "plaats": "LELYSTAD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.50882743,
+  "lon": 5.47767875
+ },
+ {
+  "winkel": 8605,
+  "straat": "Linie 189",
+  "postcode": "7325DR",
+  "plaats": "APELDOORN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.21718804,
+  "lon": 6.00305436
+ },
+ {
+  "winkel": 8611,
+  "straat": "Gasthuisstraat 124",
+  "postcode": "5171GJ",
+  "plaats": "KAATSHEUVEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.65694441,
+  "lon": 5.03992434
+ },
+ {
+  "winkel": 8615,
+  "straat": "Dorpsstraat 36",
+  "postcode": "6721JL",
+  "plaats": "BENNEKOM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.99839091,
+  "lon": 5.67547652
+ },
+ {
+  "winkel": 8616,
+  "straat": "Strijpsestraat 137",
+  "postcode": "5616GM",
+  "plaats": "EINDHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.44088847,
+  "lon": 5.45355098
+ },
+ {
+  "winkel": 8617,
+  "straat": "De Bus 38",
+  "postcode": "5581GP",
+  "plaats": "WAALRE",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "rose"
+  ],
+  "lat": 51.38702029,
+  "lon": 5.44574994
+ },
+ {
+  "winkel": 8619,
+  "straat": "Laarweg 1",
+  "postcode": "9471AD",
+  "plaats": "ZUIDLAREN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.09300992,
+  "lon": 6.69036821
+ },
+ {
+  "winkel": 8620,
+  "straat": "Pastoor Doensstraat 4",
+  "postcode": "4854CP",
+  "plaats": "BAVEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.56548087,
+  "lon": 4.83137521
+ },
+ {
+  "winkel": 8621,
+  "straat": "Haven Noord 1",
+  "postcode": "7731GZ",
+  "plaats": "OMMEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.52611668,
+  "lon": 6.42564982
+ },
+ {
+  "winkel": 8628,
+  "straat": "Dingstraat 34",
+  "postcode": "7101GX",
+  "plaats": "WINTERSWIJK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.9679466,
+  "lon": 6.71856773
+ },
+ {
+  "winkel": 8633,
+  "straat": "Fortunastraat 17",
+  "postcode": "6846XZ",
+  "plaats": "ARNHEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.95382356,
+  "lon": 5.84748371
+ },
+ {
+  "winkel": 8635,
+  "straat": "Middenburcht 14",
+  "postcode": "3452MT",
+  "plaats": "VLEUTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.09294389,
+  "lon": 5.01304537
+ },
+ {
+  "winkel": 8638,
+  "straat": "Irmengard Passage 3",
+  "postcode": "6301EC",
+  "plaats": "VALKENBURG",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 50.86611268,
+  "lon": 5.83411975
+ },
+ {
+  "winkel": 8642,
+  "straat": "Juan Grisstraat 44",
+  "postcode": "1328KA",
+  "plaats": "ALMERE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.37194584,
+  "lon": 5.26582089
+ },
+ {
+  "winkel": 8643,
+  "straat": "Lombokstraat 2",
+  "postcode": "1335JR",
+  "plaats": "ALMERE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.40226423,
+  "lon": 5.30027168
+ },
+ {
+  "winkel": 8648,
+  "straat": "Prins Hendrikstraat 62",
+  "postcode": "5281CN",
+  "plaats": "BOXTEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.58617391,
+  "lon": 5.32226612
+ },
+ {
+  "winkel": 8649,
+  "straat": "Sterrenhof 18",
+  "postcode": "3204AT",
+  "plaats": "SPIJKENISSE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.84220108,
+  "lon": 4.3235827
+ },
+ {
+  "winkel": 8655,
+  "straat": "Steenweg 8",
+  "postcode": "5301HL",
+  "plaats": "ZALTBOMMEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.811934,
+  "lon": 5.24114263
+ },
+ {
+  "winkel": 8659,
+  "straat": "Amstelplein 37",
+  "postcode": "1421SB",
+  "plaats": "UITHOORN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.23253701,
+  "lon": 4.8287627
+ },
+ {
+  "winkel": 8665,
+  "straat": "Marsmanplein 222",
+  "postcode": "2025DV",
+  "plaats": "HAARLEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.41701773,
+  "lon": 4.64689992
+ },
+ {
+  "winkel": 8670,
+  "straat": "Cassandraplein 8",
+  "postcode": "5631BA",
+  "plaats": "EINDHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.45990908,
+  "lon": 5.48893932
+ },
+ {
+  "winkel": 8673,
+  "straat": "Verzetstraat 10",
+  "postcode": "1541HB",
+  "plaats": "KOOG AAN DE ZAAN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.46364181,
+  "lon": 4.80941013
+ },
+ {
+  "winkel": 8675,
+  "straat": "Spoorwegstraat 1",
+  "postcode": "2015BL",
+  "plaats": "HAARLEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.38706725,
+  "lon": 4.62238387
+ },
+ {
+  "winkel": 8679,
+  "straat": "Lijnbaan 11",
+  "postcode": "4132CB",
+  "plaats": "VIANEN UT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.9914535,
+  "lon": 5.09437394
+ },
+ {
+  "winkel": 8684,
+  "straat": "Elandsgracht 13",
+  "postcode": "1016TM",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.36982682,
+  "lon": 4.88175964
+ },
+ {
+  "winkel": 8689,
+  "straat": "Kleiweg 45",
+  "postcode": "3051GJ",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.94516386,
+  "lon": 4.4810961
+ },
+ {
+  "winkel": 8690,
+  "straat": "Marsdiepstraat 262",
+  "postcode": "1784AV",
+  "plaats": "DEN HELDER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.94388403,
+  "lon": 4.74157719
+ },
+ {
+  "winkel": 8693,
+  "straat": "Westerstraat 188",
+  "postcode": "1601AP",
+  "plaats": "ENKHUIZEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.70303688,
+  "lon": 5.28269682
+ },
+ {
+  "winkel": 8695,
+  "straat": "Lange Nering 200",
+  "postcode": "8302EZ",
+  "plaats": "EMMELOORD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.71112582,
+  "lon": 5.76280607
+ },
+ {
+  "winkel": 8701,
+  "straat": "Overdiep 1",
+  "postcode": "9902DB",
+  "plaats": "APPINGEDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.31823157,
+  "lon": 6.85905787
+ },
+ {
+  "winkel": 8702,
+  "straat": "Waterlandplein 255",
+  "postcode": "1024LT",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.39280069,
+  "lon": 4.95540835
+ },
+ {
+  "winkel": 8705,
+  "straat": "Dorpsplein 6",
+  "postcode": "6931CZ",
+  "plaats": "WESTERVOORT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.962205,
+  "lon": 5.96757681
+ },
+ {
+  "winkel": 8708,
+  "straat": "De Brink 86",
+  "postcode": "7206KC",
+  "plaats": "ZUTPHEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.12529622,
+  "lon": 6.19834502
+ },
+ {
+  "winkel": 8711,
+  "straat": "Klaverweide 10",
+  "postcode": "1511XW",
+  "plaats": "OOSTZAAN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.43721654,
+  "lon": 4.87839504
+ },
+ {
+  "winkel": 8714,
+  "straat": "Rijksweg 16",
+  "postcode": "9731AB",
+  "plaats": "GRONINGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.22708887,
+  "lon": 6.59971162
+ },
+ {
+  "winkel": 8717,
+  "straat": "Hoofdstraat-Oost 9",
+  "postcode": "9981AG",
+  "plaats": "UITHUIZEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.40771655,
+  "lon": 6.67411496
+ },
+ {
+  "winkel": 8718,
+  "straat": "Frieswijkstraat 72",
+  "postcode": "3862BM",
+  "plaats": "NIJKERK GLD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.21625925,
+  "lon": 5.47802142
+ },
+ {
+  "winkel": 8720,
+  "straat": "Stoepemaheerd 21",
+  "postcode": "9737TL",
+  "plaats": "GRONINGEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.24646643,
+  "lon": 6.58837323
+ },
+ {
+  "winkel": 8724,
+  "straat": "Raadhuisstraat 24",
+  "postcode": "7255BN",
+  "plaats": "HENGELO GLD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.05362884,
+  "lon": 6.30870486
+ },
+ {
+  "winkel": 8725,
+  "straat": "Nieuwe Es 7",
+  "postcode": "4254AW",
+  "plaats": "SLEEUWIJK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.81251812,
+  "lon": 4.9454463
+ },
+ {
+  "winkel": 8728,
+  "straat": "Menno Simonszplein 6",
+  "postcode": "2014SC",
+  "plaats": "HAARLEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.37774835,
+  "lon": 4.61746614
+ },
+ {
+  "winkel": 8730,
+  "straat": "Huis Te Veldelaan 2",
+  "postcode": "3155SE",
+  "plaats": "MAASLAND",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.93416877,
+  "lon": 4.26916837
+ },
+ {
+  "winkel": 8732,
+  "straat": "Operaplein 110",
+  "postcode": "7323EL",
+  "plaats": "APELDOORN",
+  "wines": [
+   "chardonnay",
+   "pinot",
+   "sparkling",
+   "rose"
+  ],
+  "lat": 52.22973997,
+  "lon": 5.98719994
+ },
+ {
+  "winkel": 8733,
+  "straat": "Scharenburg 21",
+  "postcode": "6652AK",
+  "plaats": "DRUTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.88344722,
+  "lon": 5.60645815
+ },
+ {
+  "winkel": 8735,
+  "straat": "Winkelcentrum 19",
+  "postcode": "6581BV",
+  "plaats": "MALDEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.78210904,
+  "lon": 5.85374707
+ },
+ {
+  "winkel": 8736,
+  "straat": "Meerveldplein 3",
+  "postcode": "1359HM",
+  "plaats": "ALMERE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.34282049,
+  "lon": 5.20255888
+ },
+ {
+  "winkel": 8741,
+  "straat": "Vrede En Vrijheid 19",
+  "postcode": "1785RL",
+  "plaats": "DEN HELDER",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.93605513,
+  "lon": 4.77157143
+ },
+ {
+  "winkel": 8743,
+  "straat": "Larenseweg 102",
+  "postcode": "7451EN",
+  "plaats": "HOLTEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.27472442,
+  "lon": 6.41201714
+ },
+ {
+  "winkel": 8747,
+  "straat": "Langestraat 82",
+  "postcode": "6851AS",
+  "plaats": "HUISSEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.93954508,
+  "lon": 5.94140199
+ },
+ {
+  "winkel": 8749,
+  "straat": "Sinnebuorren 28",
+  "postcode": "8501CB",
+  "plaats": "JOURE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.96663978,
+  "lon": 5.79896371
+ },
+ {
+  "winkel": 8752,
+  "straat": "Oudorperplein 27",
+  "postcode": "1823HA",
+  "plaats": "ALKMAAR",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.6341908,
+  "lon": 4.76621205
+ },
+ {
+  "winkel": 8753,
+  "straat": "Hofland 1",
+  "postcode": "8401SH",
+  "plaats": "GORREDIJK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.00350056,
+  "lon": 6.06646429
+ },
+ {
+  "winkel": 8758,
+  "straat": "Hoog Kanje 110",
+  "postcode": "3708DL",
+  "plaats": "ZEIST",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.07608658,
+  "lon": 5.26269014
+ },
+ {
+  "winkel": 8759,
+  "straat": "Steenstraat 11",
+  "postcode": "5961ET",
+  "plaats": "HORST",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.45324255,
+  "lon": 6.05253339
+ },
+ {
+  "winkel": 8760,
+  "straat": "Jan Evertsenstraat 24",
+  "postcode": "1056EC",
+  "plaats": "AMSTERDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.37148629,
+  "lon": 4.85789976
+ },
+ {
+  "winkel": 8761,
+  "straat": "Zaagmolenpad 16",
+  "postcode": "7008AJ",
+  "plaats": "DOETINCHEM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.97098431,
+  "lon": 6.27156672
+ },
+ {
+  "winkel": 8766,
+  "straat": "Rapportstraat 2",
+  "postcode": "5504BP",
+  "plaats": "VELDHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.40433884,
+  "lon": 5.39697696
+ },
+ {
+  "winkel": 8770,
+  "straat": "Valburgseweg 20",
+  "postcode": "6661EV",
+  "plaats": "ELST GLD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.91943414,
+  "lon": 5.83894758
+ },
+ {
+  "winkel": 8772,
+  "straat": "Dorpstienden 14",
+  "postcode": "3253AS",
+  "plaats": "OUDDORP ZH",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.80970907,
+  "lon": 3.93404199
+ },
+ {
+  "winkel": 8773,
+  "straat": "Burchtplein 13",
+  "postcode": "4873BS",
+  "plaats": "ETTEN-LEUR",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.56834436,
+  "lon": 4.63929642
+ },
+ {
+  "winkel": 8776,
+  "straat": "Middelzeelaan 4",
+  "postcode": "8604BH",
+  "plaats": "SNEEK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.03913854,
+  "lon": 5.67766068
+ },
+ {
+  "winkel": 8777,
+  "straat": "Hoofdweg 202",
+  "postcode": "9765CK",
+  "plaats": "PATERSWOLDE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 53.14716979,
+  "lon": 6.56583345
+ },
+ {
+  "winkel": 8780,
+  "straat": "Sniederslaan 53",
+  "postcode": "5531EH",
+  "plaats": "BLADEL",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.36733381,
+  "lon": 5.22112649
+ },
+ {
+  "winkel": 8782,
+  "straat": "Voorstraat 2",
+  "postcode": "4286AL",
+  "plaats": "ALMKERK",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.77115479,
+  "lon": 4.96139861
+ },
+ {
+  "winkel": 8784,
+  "straat": "Voorhof 12",
+  "postcode": "8212CA",
+  "plaats": "LELYSTAD",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.51388331,
+  "lon": 5.50319588
+ },
+ {
+  "winkel": 8786,
+  "straat": "Kapelaanstraat 25",
+  "postcode": "5421DD",
+  "plaats": "GEMERT",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.55375202,
+  "lon": 5.68490577
+ },
+ {
+  "winkel": 8789,
+  "straat": "Wilhelminaplein 4",
+  "postcode": "6591GX",
+  "plaats": "GENNEP",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.69674563,
+  "lon": 5.97284862
+ },
+ {
+  "winkel": 8790,
+  "straat": "Houtzagersstraat 6",
+  "postcode": "8171CW",
+  "plaats": "VAASSEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.28787882,
+  "lon": 5.96930066
+ },
+ {
+  "winkel": 8791,
+  "straat": "Nieuwstraat 104",
+  "postcode": "4921CZ",
+  "plaats": "MADE",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.67446922,
+  "lon": 4.78377197
+ },
+ {
+  "winkel": 8792,
+  "straat": "Anjelierstraat 3",
+  "postcode": "7641CD",
+  "plaats": "WIERDEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.36117615,
+  "lon": 6.59642273
+ },
+ {
+  "winkel": 8793,
+  "straat": "Prins Hendrikstraat 382",
+  "postcode": "3151AW",
+  "plaats": "HOEK VAN HOLLAND",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.97774549,
+  "lon": 4.12866735
+ },
+ {
+  "winkel": 8794,
+  "straat": "Lageweg 1",
+  "postcode": "2064KZ",
+  "plaats": "SPAARNDAM",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 52.41191368,
+  "lon": 4.6844311
+ },
+ {
+  "winkel": 8795,
+  "straat": "Mira 25",
+  "postcode": "5505AR",
+  "plaats": "VELDHOVEN",
+  "wines": [
+   "chardonnay"
+  ],
+  "lat": 51.41251819,
+  "lon": 5.39703023
+ },
+ {
+  "winkel": 2210,
+  "straat": "Otto Reuchlinweg 968",
+  "postcode": "3072MD",
+  "plaats": "ROTTERDAM",
+  "wines": [
+   "rose"
+  ],
+  "lat": 51.90567576,
+  "lon": 4.48875136
+ }
+]

@@ -14,6 +14,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 <style>
   :root{
     --cream:#FAF5EC;
@@ -396,11 +399,17 @@
   .finder-count{font-size:13px; font-weight:700; margin-bottom:14px; text-transform:uppercase; letter-spacing:0.03em;}
   .finder-input{
     width:100%; padding:12px 14px; border:1.5px solid var(--ink); border-radius:2px;
-    font-family:'Work Sans', sans-serif; font-size:14px; margin-bottom:14px; background:var(--paper); color:var(--ink);
+    font-family:'Work Sans', sans-serif; font-size:14px; background:var(--paper); color:var(--ink);
   }
+  .finder-search{display:flex; gap:8px; margin-bottom:14px;}
+  .finder-search .finder-input{flex:1;}
+  .finder-search button{white-space:nowrap; padding:12px 18px; font-size:12px;}
+  #finder-map{width:100%; height:260px; border:1.5px solid var(--ink); border-radius:2px; margin-bottom:14px; background:#e4ddce;}
   .finder-results{max-height:240px; overflow-y:auto; border-top:1px solid rgba(0,0,0,0.18);}
-  .finder-results .store-row{padding:10px 0; border-bottom:1px solid rgba(0,0,0,0.12); font-size:13px; line-height:1.4;}
-  .finder-results .store-row b{font-family:'Big Shoulders Display'; font-size:15px; display:block; text-transform:uppercase;}
+  .finder-results .store-row{padding:10px 0; border-bottom:1px solid rgba(0,0,0,0.12); font-size:13px; line-height:1.4; display:flex; justify-content:space-between; align-items:baseline; gap:8px;}
+  .finder-results .store-row .info b{font-family:'Big Shoulders Display'; font-size:15px; display:block; text-transform:uppercase;}
+  .finder-results .store-row.nearest{background:rgba(0,113,197,0.08); margin:0 -8px; padding:10px 8px; border-radius:2px;}
+  .finder-results .store-row .distance{font-weight:700; color:var(--ah-blue); font-size:13px; white-space:nowrap;}
   .finder-empty{font-size:13px; padding:16px 0; opacity:0.65;}
 
   /* SOCIAL */
@@ -560,15 +569,19 @@
         <a class="ah-badge" href="https://www.ah.nl/producten/merk/it-z" target="_blank" rel="noopener">Bekijk IT'Z bij Albert Heijn</a>
       </div>
       <div class="buy-right store-finder" id="store-finder">
-        <h3>Check jouw AH</h3>
+        <h3>Vind de dichtstbijzijnde AH</h3>
         <div class="finder-tabs">
           <button type="button" class="finder-tab active" data-wine="rose">Rosé</button>
           <button type="button" class="finder-tab" data-wine="chardonnay">Chardonnay</button>
           <button type="button" class="finder-tab" data-wine="pinot">Pinot Noir</button>
           <button type="button" class="finder-tab" data-wine="sparkling">Sparkling</button>
         </div>
+        <div class="finder-search">
+          <input type="text" id="finder-input" class="finder-input" placeholder="Vul je postcode in, bv. 1012AB">
+          <button type="button" id="finder-search-btn" class="btn btn-solid">Zoek</button>
+        </div>
         <p class="finder-count" id="finder-count">Winkels laden…</p>
-        <input type="text" id="finder-input" class="finder-input" placeholder="Postcode of plaatsnaam, bv. 1012 of Amsterdam">
+        <div id="finder-map"></div>
         <div class="finder-results" id="finder-results"></div>
       </div>
     </div>
@@ -789,6 +802,8 @@
   </div>
 </div>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
 function openProduct(wine) {
   const modal = document.getElementById('modal-' + wine);
@@ -842,62 +857,129 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-// Store finder widget
+// Store finder widget (Leaflet map + nearest-store search)
 (function(){
   const finder = document.getElementById('store-finder');
   if (!finder) return;
 
   let storeData = null;
   let activeWine = 'rose';
+  let map, clusterGroup, userMarker;
   const tabs = finder.querySelectorAll('.finder-tab');
   const input = document.getElementById('finder-input');
+  const searchBtn = document.getElementById('finder-search-btn');
   const resultsEl = document.getElementById('finder-results');
   const countEl = document.getElementById('finder-count');
 
-  fetch('winkels.json')
-    .then(r => r.json())
-    .then(data => {
+  function initMap() {
+    map = L.map('finder-map', {scrollWheelZoom:false}).setView([52.2, 5.3], 7);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors',
+      maxZoom: 19
+    }).addTo(map);
+    clusterGroup = L.markerClusterGroup();
+    map.addLayer(clusterGroup);
+    setTimeout(function(){ map.invalidateSize(); }, 200);
+  }
+
+  function storesForWine(wine) {
+    if (!storeData) return [];
+    return storeData.filter(function(s){ return s.wines.indexOf(wine) !== -1; });
+  }
+
+  function renderMarkers() {
+    if (!map) return;
+    clusterGroup.clearLayers();
+    storesForWine(activeWine).forEach(function(s) {
+      const marker = L.marker([s.lat, s.lon]);
+      marker.bindPopup('<b>' + s.plaats + '</b><br>' + s.straat + '<br>' + s.postcode);
+      clusterGroup.addLayer(marker);
+    });
+  }
+
+  function updateCount() {
+    if (!storeData) return;
+    countEl.textContent = 'Verkrijgbaar bij ' + storesForWine(activeWine).length + ' AH-winkels';
+  }
+
+  function haversine(lat1, lon1, lat2, lon2) {
+    const R = 6371;
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+      Math.sin(dLon/2) * Math.sin(dLon/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+  }
+
+  function renderPrompt() {
+    resultsEl.innerHTML = '<div class="finder-empty">Vul je postcode in om de dichtstbijzijnde winkels te vinden.</div>';
+  }
+
+  function geocodePostcode(q) {
+    const url = 'https://api.pdok.nl/bzk/locatieserver/search/v3_1/free?' +
+      new URLSearchParams({ q: q, fq: 'type:postcode', rows: 1 });
+    return fetch(url).then(function(res){ return res.json(); }).then(function(json) {
+      const docs = json.response && json.response.docs;
+      if (!docs || !docs.length) return null;
+      const centroide = docs[0].centroide_ll;
+      if (!centroide) return null;
+      const inner = centroide.replace('POINT(', '').replace(')', '');
+      const parts = inner.split(' ');
+      return { lon: parseFloat(parts[0]), lat: parseFloat(parts[1]) };
+    });
+  }
+
+  function doSearch() {
+    const q = input.value.trim();
+    if (q.length < 4) { renderPrompt(); return; }
+    resultsEl.innerHTML = '<div class="finder-empty">Zoeken…</div>';
+
+    geocodePostcode(q).then(function(loc) {
+      if (!loc) {
+        resultsEl.innerHTML = '<div class="finder-empty">Postcode niet gevonden. Controleer de invoer.</div>';
+        return;
+      }
+      const stores = storesForWine(activeWine).map(function(s) {
+        return Object.assign({}, s, { distance: haversine(loc.lat, loc.lon, s.lat, s.lon) });
+      }).sort(function(a, b) { return a.distance - b.distance; });
+
+      const nearest = stores.slice(0, 8);
+      if (nearest.length === 0) {
+        resultsEl.innerHTML = '<div class="finder-empty">Geen winkels gevonden voor deze wijn.</div>';
+      } else {
+        resultsEl.innerHTML = nearest.map(function(s, i) {
+          return '<div class="store-row' + (i === 0 ? ' nearest' : '') + '">' +
+            '<div class="info"><b>' + s.plaats + '</b>' + s.straat + ', ' + s.postcode + '</div>' +
+            '<div class="distance">' + s.distance.toFixed(1) + ' km</div></div>';
+        }).join('');
+      }
+
+      if (map) {
+        if (userMarker) map.removeLayer(userMarker);
+        userMarker = L.circleMarker([loc.lat, loc.lon], {radius:8, color:'#0071C5', fillColor:'#0071C5', fillOpacity:0.8}).addTo(map);
+        map.setView([loc.lat, loc.lon], 12);
+      }
+    }).catch(function() {
+      resultsEl.innerHTML = '<div class="finder-empty">Zoeken is mislukt. Probeer het opnieuw.</div>';
+    });
+  }
+
+  fetch('winkels-geocoded.json')
+    .then(function(r){ return r.json(); })
+    .then(function(data) {
       storeData = data;
       updateCount();
-      renderResults();
+      renderMarkers();
+      renderPrompt();
     })
-    .catch(() => {
+    .catch(function() {
       countEl.textContent = '';
       resultsEl.innerHTML = '<div class="finder-empty">Winkelgegevens konden niet geladen worden.</div>';
     });
 
-  function updateCount() {
-    if (!storeData) return;
-    countEl.textContent = 'Verkrijgbaar bij ' + storeData[activeWine].length + ' AH-winkels';
-  }
-
-  function renderResults() {
-    if (!storeData) return;
-    const q = input.value.trim().toLowerCase();
-    const stores = storeData[activeWine];
-
-    if (q.length < 2) {
-      resultsEl.innerHTML = '<div class="finder-empty">Typ een postcode of plaatsnaam om winkels bij jou in de buurt te vinden.</div>';
-      return;
-    }
-
-    const matches = stores.filter(function(s) {
-      const straat = (s[1] || '').toLowerCase();
-      const postcode = (s[2] || '').toLowerCase();
-      const plaats = (s[3] || '').toLowerCase();
-      return postcode.startsWith(q) || plaats.includes(q) || straat.includes(q);
-    });
-
-    if (matches.length === 0) {
-      resultsEl.innerHTML = '<div class="finder-empty">Geen winkels gevonden. Probeer een andere postcode of plaats.</div>';
-      return;
-    }
-
-    const shown = matches.slice(0, 25);
-    resultsEl.innerHTML = shown.map(function(s) {
-      return '<div class="store-row"><b>' + s[3] + '</b>' + s[1] + ', ' + s[2] + '</div>';
-    }).join('') + (matches.length > shown.length ? '<div class="finder-empty">+ ' + (matches.length - shown.length) + ' andere winkels</div>' : '');
-  }
+  initMap();
 
   tabs.forEach(function(tab) {
     tab.addEventListener('click', function() {
@@ -905,11 +987,19 @@ document.addEventListener('keydown', function(e) {
       tab.classList.add('active');
       activeWine = tab.dataset.wine;
       updateCount();
-      renderResults();
+      renderMarkers();
+      if (input.value.trim().length >= 4) {
+        doSearch();
+      } else {
+        renderPrompt();
+      }
     });
   });
 
-  input.addEventListener('input', renderResults);
+  searchBtn.addEventListener('click', doSearch);
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') { e.preventDefault(); doSearch(); }
+  });
 })();
 </script>
 
