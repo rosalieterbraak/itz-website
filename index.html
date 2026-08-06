@@ -365,7 +365,7 @@
   }
   @media(max-width:800px){ .buy{grid-template-columns:1fr;} }
   .buy-left, .buy-right{background:var(--paper); padding:48px 40px;}
-  .buy-right{background:var(--coral); color:var(--ink);}
+  .buy-right{background:var(--rose-accent); color:var(--ink);}
   .buy h2{font-size:clamp(32px,5vw,50px); margin-bottom:18px;}
   .buy p{font-size:15px; margin-bottom:22px; max-width:420px;}
   .ah-badge{
@@ -382,6 +382,26 @@
     display:flex; gap:10px; align-items:baseline;
   }
   .buy-right li b{font-family:'Big Shoulders Display'; font-size:18px;}
+
+  /* STORE FINDER */
+  .store-finder{display:flex; flex-direction:column;}
+  .store-finder h3{font-size:22px; margin-bottom:16px;}
+  .finder-tabs{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;}
+  .finder-tab{
+    padding:8px 14px; border:1.5px solid var(--ink); background:transparent;
+    font-family:'Work Sans', sans-serif; font-weight:700; font-size:12px; text-transform:uppercase;
+    letter-spacing:0.03em; cursor:pointer; border-radius:2px; color:var(--ink);
+  }
+  .finder-tab.active{background:var(--ink); color:var(--paper);}
+  .finder-count{font-size:13px; font-weight:700; margin-bottom:14px; text-transform:uppercase; letter-spacing:0.03em;}
+  .finder-input{
+    width:100%; padding:12px 14px; border:1.5px solid var(--ink); border-radius:2px;
+    font-family:'Work Sans', sans-serif; font-size:14px; margin-bottom:14px; background:var(--paper); color:var(--ink);
+  }
+  .finder-results{max-height:240px; overflow-y:auto; border-top:1px solid rgba(0,0,0,0.18);}
+  .finder-results .store-row{padding:10px 0; border-bottom:1px solid rgba(0,0,0,0.12); font-size:13px; line-height:1.4;}
+  .finder-results .store-row b{font-family:'Big Shoulders Display'; font-size:15px; display:block; text-transform:uppercase;}
+  .finder-empty{font-size:13px; padding:16px 0; opacity:0.65;}
 
   /* SOCIAL */
   .social{padding:70px 0; text-align:center;}
@@ -539,8 +559,17 @@
         <p>IT'Z is exclusief verkrijgbaar bij Albert Heijn. Alle vier de wijnen zijn te vinden in het assortiment van AH en AH.nl. Bekijk eenvoudig de actuele voorraad of voeg jouw favoriete wijn direct toe aan je boodschappen.</p>
         <a class="ah-badge" href="https://www.ah.nl/producten/merk/it-z" target="_blank" rel="noopener">Bekijk IT'Z bij Albert Heijn</a>
       </div>
-      <div class="buy-right" style="background:var(--ink); padding:0; overflow:hidden;">
-        <iframe width="100%" height="100%" style="border:none; display:block; min-height:400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.0!2d4.8952!3d52.3702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c5c5c5c5c5c5%3A0x0!2sAlbert%20Heijn%2C%20Netherlands!5e0!3m2!1sen!2snl!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="buy-right store-finder" id="store-finder">
+        <h3>Check jouw AH</h3>
+        <div class="finder-tabs">
+          <button type="button" class="finder-tab active" data-wine="rose">Rosé</button>
+          <button type="button" class="finder-tab" data-wine="chardonnay">Chardonnay</button>
+          <button type="button" class="finder-tab" data-wine="pinot">Pinot Noir</button>
+          <button type="button" class="finder-tab" data-wine="sparkling">Sparkling</button>
+        </div>
+        <p class="finder-count" id="finder-count">Winkels laden…</p>
+        <input type="text" id="finder-input" class="finder-input" placeholder="Postcode of plaatsnaam, bv. 1012 of Amsterdam">
+        <div class="finder-results" id="finder-results"></div>
       </div>
     </div>
   </div>
@@ -812,6 +841,76 @@ document.addEventListener('keydown', function(e) {
     closeProduct();
   }
 });
+
+// Store finder widget
+(function(){
+  const finder = document.getElementById('store-finder');
+  if (!finder) return;
+
+  let storeData = null;
+  let activeWine = 'rose';
+  const tabs = finder.querySelectorAll('.finder-tab');
+  const input = document.getElementById('finder-input');
+  const resultsEl = document.getElementById('finder-results');
+  const countEl = document.getElementById('finder-count');
+
+  fetch('winkels.json')
+    .then(r => r.json())
+    .then(data => {
+      storeData = data;
+      updateCount();
+      renderResults();
+    })
+    .catch(() => {
+      countEl.textContent = '';
+      resultsEl.innerHTML = '<div class="finder-empty">Winkelgegevens konden niet geladen worden.</div>';
+    });
+
+  function updateCount() {
+    if (!storeData) return;
+    countEl.textContent = 'Verkrijgbaar bij ' + storeData[activeWine].length + ' AH-winkels';
+  }
+
+  function renderResults() {
+    if (!storeData) return;
+    const q = input.value.trim().toLowerCase();
+    const stores = storeData[activeWine];
+
+    if (q.length < 2) {
+      resultsEl.innerHTML = '<div class="finder-empty">Typ een postcode of plaatsnaam om winkels bij jou in de buurt te vinden.</div>';
+      return;
+    }
+
+    const matches = stores.filter(function(s) {
+      const straat = (s[1] || '').toLowerCase();
+      const postcode = (s[2] || '').toLowerCase();
+      const plaats = (s[3] || '').toLowerCase();
+      return postcode.startsWith(q) || plaats.includes(q) || straat.includes(q);
+    });
+
+    if (matches.length === 0) {
+      resultsEl.innerHTML = '<div class="finder-empty">Geen winkels gevonden. Probeer een andere postcode of plaats.</div>';
+      return;
+    }
+
+    const shown = matches.slice(0, 25);
+    resultsEl.innerHTML = shown.map(function(s) {
+      return '<div class="store-row"><b>' + s[3] + '</b>' + s[1] + ', ' + s[2] + '</div>';
+    }).join('') + (matches.length > shown.length ? '<div class="finder-empty">+ ' + (matches.length - shown.length) + ' andere winkels</div>' : '');
+  }
+
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      activeWine = tab.dataset.wine;
+      updateCount();
+      renderResults();
+    });
+  });
+
+  input.addEventListener('input', renderResults);
+})();
 </script>
 
 </body>
