@@ -202,7 +202,7 @@
     position:relative;
     overflow:hidden;
   }
-  .product-card .imgbox img{max-height:88%; max-width:78%; object-fit:contain;}
+  .product-card .imgbox img{max-height:88%; max-width:78%; object-fit:contain; filter:drop-shadow(0 10px 16px rgba(0,0,0,0.18));}
   .product-card .badge{
     position:absolute;
     top:12px; right:12px;
@@ -222,15 +222,13 @@
 
   .p-rose .imgbox{background:#F4DAD0;}
   .p-rose .quote-badge{background:rgba(232,160,160,0.15); border-color:#E8A0A0;}
-  .p-rose .imgbox img{mix-blend-mode:multiply;}
   .p-chardonnay .imgbox{background:#F3E4B8;}
   .p-chardonnay .quote-badge{background:rgba(212,175,55,0.15); border-color:#D4AF37;}
   .p-pinot .imgbox{background:#E6CBD1;}
   .p-pinot .quote-badge{background:rgba(123,63,82,0.15); border-color:#7B3F52;}
-  .p-chardonnay .imgbox img, .p-pinot .imgbox img{max-height:79%; max-width:60%; filter:drop-shadow(0 10px 16px rgba(0,0,0,0.18));}
+  .p-chardonnay .imgbox img, .p-pinot .imgbox img{max-height:79%; max-width:60%;}
   .p-sparkling .imgbox{background:#F0E6C8;}
   .p-sparkling .quote-badge{background:rgba(245,230,211,0.3); border-color:#D4AF37;}
-  .p-sparkling .imgbox img{mix-blend-mode:multiply;}
 
   .quote-badge{
     display:inline-block;
@@ -448,7 +446,7 @@
     <div class="products">
       <div class="product-card p-rose" data-product="rose" onclick="openProduct('rose'); return false;" style="cursor:pointer;">
         <div class="imgbox">
-          <img src="https://static.ah.nl/dam/product/AHI_5674744f574a534b51586d4747335242545859797567?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Rosé alcoholvrij">
+          <img src="itz-rose-transparent.png" alt="IT'Z Rosé alcoholvrij">
           <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8-.png');"></div>
         </div>
         <h3>Rosé</h3>
@@ -475,7 +473,7 @@
       </div>
       <div class="product-card p-sparkling" data-product="sparkling" onclick="openProduct('sparkling'); return false;" style="cursor:pointer;">
         <div class="imgbox">
-          <img src="https://static.ah.nl/dam/product/AHI_4f4f6136325a4e5951433271714e4c375f5647704151?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Sparkling alcoholvrij">
+          <img src="itz-sparkling-transparent.png" alt="IT'Z Sparkling alcoholvrij">
           <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div>
         </div>
         <h3>Sparkling</h3>
@@ -569,7 +567,7 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-rose">
-      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_5674744f574a534b51586d4747335242545859797567?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Rosé" style="mix-blend-mode:multiply;"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8-.png');"></div></div>
+      <div class="pdp-image"><img src="itz-rose-transparent.png" alt="IT'Z Rosé"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8-.png');"></div></div>
       <h2>IT'Z Rosé</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Fris, fruitig en heerlijk doordrinkbaar.</p>
       <div style="margin-top:16px; padding:12px; background:rgba(232,160,160,0.15); border-radius:4px; border-left:3px solid #E8A0A0;">
@@ -716,7 +714,7 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-sparkling">
-      <div class="pdp-image"><img src="https://static.ah.nl/dam/product/AHI_4f4f6136325a4e5951433271714e4c375f5647704151?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary" alt="IT'Z Sparkling" style="mix-blend-mode:multiply;"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div></div>
+      <div class="pdp-image"><img src="itz-sparkling-transparent.png" alt="IT'Z Sparkling"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div></div>
       <h2>IT'Z Sparkling</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Fris, feestelijk en vol fijne bubbels.</p>
       <div style="margin-top:16px; padding:12px; background:rgba(212,175,55,0.15); border-radius:4px; border-left:3px solid #D4AF37;">
