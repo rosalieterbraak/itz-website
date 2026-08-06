@@ -149,11 +149,12 @@
     width:100vw;
     margin-left:calc(-50vw + 50%);
     border-bottom:2px solid var(--ink);
-    background:var(--ink);
+    background:var(--pinot-accent);
     color:var(--cream);
     overflow:hidden;
-    white-space:nowrap;
-    padding:12px 0;
+    white-space:normal;
+    padding:14px 0;
+    text-align:center;
   }
   .marquee-track{
     display:inline-block;
@@ -163,7 +164,8 @@
     text-transform:uppercase;
     letter-spacing:0.05em;
   }
-  .marquee-track span{margin:0 48px; color:var(--gold);}
+  .marquee-track span{margin:0 24px; color:var(--sparkling-accent);}
+  @media(max-width:720px){ .marquee-track{font-size:13px;} .marquee-track span{margin:0 14px;} }
 
   /* PRODUCTS */
   .section{padding:80px 0;}
@@ -229,8 +231,6 @@
   .p-chardonnay .quote-badge{background:rgba(212,175,55,0.15); border-color:#D4AF37;}
   .p-pinot .imgbox{background:#E6CBD1;}
   .p-pinot .quote-badge{background:rgba(123,63,82,0.15); border-color:#7B3F52;}
-  .p-chardonnay .imgbox img{max-height:68.7%; max-width:60%;}
-  .p-pinot .imgbox img{max-height:67.8%; max-width:60%;}
   .p-sparkling .imgbox{background:#F0E6C8;}
   .p-sparkling .quote-badge{background:rgba(245,230,211,0.3); border-color:#D4AF37;}
 
@@ -296,6 +296,40 @@
     display:flex; align-items:center; justify-content:center;
     z-index:10;
   }
+
+  /* ZOOM LIGHTBOX */
+  .zoom-overlay{
+    display:none;
+    position:fixed; top:0; left:0;
+    width:100%; height:100%;
+    background:rgba(20,18,15,0.88);
+    z-index:200;
+    align-items:center; justify-content:center;
+    padding:40px 20px;
+    cursor:zoom-out;
+  }
+  .zoom-overlay.active{display:flex;}
+  .zoom-overlay img{max-height:85vh; max-width:90vw; object-fit:contain; filter:drop-shadow(0 20px 40px rgba(0,0,0,0.4));}
+  .zoom-close{
+    position:absolute; top:20px; right:24px;
+    background:none; border:1.5px solid var(--cream); border-radius:2px;
+    color:var(--cream); font-size:22px; cursor:pointer;
+    width:44px; height:44px; display:flex; align-items:center; justify-content:center;
+    z-index:210;
+  }
+
+  /* HAMERSMA QUOTE */
+  .hamersma-quote{cursor:pointer;}
+  .hamersma-quote .hq-header{display:flex; justify-content:space-between; align-items:center; font-weight:700; font-size:13px; color:#666; margin-bottom:6px; text-transform:uppercase; letter-spacing:0.03em;}
+  .hamersma-quote .hq-short{font-size:14px; font-style:italic; color:#333; margin:0;}
+  .hamersma-quote .hq-full{display:none;}
+  .hamersma-quote.expanded .hq-short{display:none;}
+  .hamersma-quote.expanded .hq-full{display:block;}
+  .hamersma-quote .hq-full p{font-size:14px; font-style:italic; color:#333; margin:0 0 8px;}
+  .hamersma-quote .hq-full p:last-of-type{margin-bottom:6px;}
+  .hamersma-quote .hq-date{display:block; font-size:11px; font-style:normal; color:#888; margin-bottom:8px;}
+  .hamersma-quote .hq-toggle{display:block; font-size:11px; font-weight:700; text-decoration:underline; color:#555;}
+
   .pdp-header{
     padding:40px;
     text-align:center;
@@ -307,7 +341,7 @@
     margin:0 auto 20px;
     position:relative;
   }
-  .pdp-image img{max-height:100%; max-width:100%; object-fit:contain;}
+  .pdp-image img{max-height:100%; max-width:100%; object-fit:contain; cursor:zoom-in;}
   .pdp-image .badge{
     position:absolute;
     top:0; right:-10px;
@@ -330,7 +364,7 @@
   /* STORY */
   .story{
     background:var(--ink);
-    background-image:url('leitz.jpg');
+    background-image:url('leitz-light.jpg');
     background-size:cover;
     background-position:center 70%;
     background-attachment:fixed;
@@ -344,7 +378,7 @@
     position:absolute;
     top:0; left:0;
     width:100%; height:100%;
-    background:rgba(28,26,23,0);
+    background:rgba(28,26,23,0.28);
     z-index:1;
   }
   .story .wrap{position:relative; z-index:2;}
@@ -459,7 +493,7 @@
 
 <div class="marquee">
   <div class="marquee-track">
-    <span>●</span>CHARDONNAY<span>●</span>PINOT NOIR<span>●</span>ROSÉ<span>●</span>SPARKLING<span>●</span>0.0% ALCOHOL<span>●</span>TE KOOP BIJ AH<span>●</span>SINDS 1744<span>●</span>CHARDONNAY<span>●</span>PINOT NOIR<span>●</span>ROSÉ<span>●</span>SPARKLING<span>●</span>0.0% ALCOHOL<span>●</span>TE KOOP BIJ AH<span>●</span>SINDS 1744<span>●</span>CHARDONNAY<span>●</span>PINOT NOIR<span>●</span>ROSÉ<span>●</span>SPARKLING<span>●</span>0.0% ALCOHOL<span>●</span>TE KOOP BIJ AH<span>●</span>SINDS 1744<span>●</span>
+    <span>●</span>CHARDONNAY<span>●</span>PINOT NOIR<span>●</span>ROSÉ<span>●</span>SPARKLING<span>●</span>0.0% ALCOHOL<span>●</span>TE KOOP BIJ AH<span>●</span>SINDS 1744
   </div>
 </div>
 
@@ -476,7 +510,7 @@
     <div class="products">
       <div class="product-card p-rose" data-product="rose" onclick="openProduct('rose'); return false;" style="cursor:pointer;">
         <div class="imgbox">
-          <img src="itz-rose-transparent.png" alt="IT'Z Rosé alcoholvrij">
+          <img src="itz-rose-v2.png" alt="IT'Z Rosé alcoholvrij">
           <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8-.png');"></div>
         </div>
         <h3>Rosé</h3>
@@ -485,7 +519,7 @@
       </div>
       <div class="product-card p-chardonnay" data-product="chardonnay" onclick="openProduct('chardonnay'); return false;" style="cursor:pointer;">
         <div class="imgbox">
-          <img src="itz-chardonnay-schoon.png" alt="IT'Z Chardonnay alcoholvrij">
+          <img src="itz-chardonnay-v2.png" alt="IT'Z Chardonnay alcoholvrij">
           <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8+.png');"></div>
         </div>
         <h3>Chardonnay</h3>
@@ -494,7 +528,7 @@
       </div>
       <div class="product-card p-pinot" data-product="pinot" onclick="openProduct('pinot'); return false;" style="cursor:pointer;">
         <div class="imgbox">
-          <img src="itz-pinot-noir-800.png" alt="IT'Z Pinot Noir alcoholvrij">
+          <img src="itz-pinot-v2.png" alt="IT'Z Pinot Noir alcoholvrij">
           <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div>
         </div>
         <h3>Pinot Noir</h3>
@@ -503,7 +537,7 @@
       </div>
       <div class="product-card p-sparkling" data-product="sparkling" onclick="openProduct('sparkling'); return false;" style="cursor:pointer;">
         <div class="imgbox">
-          <img src="itz-sparkling-transparent.png" alt="IT'Z Sparkling alcoholvrij">
+          <img src="itz-sparkling-v2.png" alt="IT'Z Sparkling alcoholvrij">
           <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div>
         </div>
         <h3>Sparkling</h3>
@@ -610,12 +644,19 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-rose">
-      <div class="pdp-image"><img src="itz-rose-transparent.png" alt="IT'Z Rosé"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8-.png');"></div></div>
+      <div class="pdp-image"><img src="itz-rose-v2.png" alt="IT'Z Rosé" onclick="openZoom('rose'); event.stopPropagation();"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8-.png');"></div></div>
       <h2>IT'Z Rosé</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Fris, fruitig en heerlijk doordrinkbaar.</p>
-      <div style="margin-top:16px; padding:12px; background:rgba(232,160,160,0.15); border-radius:4px; border-left:3px solid #E8A0A0;">
-        <div style="font-weight:700; font-size:13px; color:#666; margin-bottom:6px;">Harold Hamersma (score: 8-)</div>
-        <p style="font-size:14px; font-style:italic; color:#333; margin:0;">"Mooi slank, goed droog, veel sappig fruit."</p>
+      <div class="hamersma-quote" style="margin-top:16px; padding:12px; background:rgba(232,160,160,0.15); border-radius:4px; border-left:3px solid #E8A0A0;" onclick="toggleQuote(this)">
+        <div class="hq-header"><span>Harold Hamersma</span><span>Score: 8-</span></div>
+        <p class="hq-short">"We hebben wel rosés geproefd met alcohol die minder te vertellen hadden."</p>
+        <div class="hq-full">
+          <p>"Kwartetje druiven heeft er zin in. Verklaart luidkeels over zomerkoninkjes, rode appels, curieus genoeg over wat geflambeerde kersen en enigszins zonnige kruiderij."</p>
+          <p>"Mooi slank, goed droog, veel sappig fruit."</p>
+          <p>"We hebben wel rosés geproefd met alcohol die minder te vertellen hadden."</p>
+          <span class="hq-date">Geproefd op 10 november 2025</span>
+        </div>
+        <span class="hq-toggle">Lees volledige review ▾</span>
       </div>
     </div>
     <div class="pdp-body">
@@ -659,12 +700,19 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-chardonnay">
-      <div class="pdp-image"><img src="itz-chardonnay-schoon.png" alt="IT'Z Chardonnay"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8+.png');"></div></div>
+      <div class="pdp-image"><img src="itz-chardonnay-v2.png" alt="IT'Z Chardonnay" onclick="openZoom('chardonnay'); event.stopPropagation();"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8+.png');"></div></div>
       <h2>IT'Z Chardonnay</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Rond, fris en veelzijdig.</p>
-      <div style="margin-top:16px; padding:12px; background:rgba(212,175,55,0.15); border-radius:4px; border-left:3px solid #D4AF37;">
-        <div style="font-weight:700; font-size:13px; color:#666; margin-bottom:6px;">Harold Hamersma (score: 8+)</div>
-        <p style="font-size:14px; font-style:italic; color:#333; margin:0;">"IT'Z goed! Indrukwekkend goed."</p>
+      <div class="hamersma-quote" style="margin-top:16px; padding:12px; background:rgba(212,175,55,0.15); border-radius:4px; border-left:3px solid #D4AF37;" onclick="toggleQuote(this)">
+        <div class="hq-header"><span>Harold Hamersma</span><span>Score: 8+</span></div>
+        <p class="hq-short">"IT'Z good! Indrukwekkend goed."</p>
+        <div class="hq-full">
+          <p>"Presenteert zich nota bene als 'echte' chardonnay mét alcohol."</p>
+          <p>"Met mooi rijp geel en iets tropisch fruit, er is wat wijnkenners van vroeger zo verlekkerd 'rondeur' noemden, er is een vleug vanille."</p>
+          <p>"IT'Z good! Indrukwekkend goed."</p>
+          <span class="hq-date">Geproefd op 10 november 2025</span>
+        </div>
+        <span class="hq-toggle">Lees volledige review ▾</span>
       </div>
     </div>
     <div class="pdp-body">
@@ -708,12 +756,19 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-pinot">
-      <div class="pdp-image"><img src="itz-pinot-noir-800.png" alt="IT'Z Pinot Noir"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div></div>
+      <div class="pdp-image"><img src="itz-pinot-v2.png" alt="IT'Z Pinot Noir" onclick="openZoom('pinot'); event.stopPropagation();"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div></div>
       <h2>IT'Z Pinot Noir</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Soepel, zacht en verfijnd.</p>
-      <div style="margin-top:16px; padding:12px; background:rgba(123,63,82,0.15); border-radius:4px; border-left:3px solid #7B3F52;">
-        <div style="font-weight:700; font-size:13px; color:#666; margin-bottom:6px;">Harold Hamersma (score: 8)</div>
-        <p style="font-size:14px; font-style:italic; color:#333; margin:0;">"Licht koelen. Wordt ie nog wat smakeijker."</p>
+      <div class="hamersma-quote" style="margin-top:16px; padding:12px; background:rgba(123,63,82,0.15); border-radius:4px; border-left:3px solid #7B3F52;" onclick="toggleQuote(this)">
+        <div class="hq-header"><span>Harold Hamersma</span><span>Score: 8</span></div>
+        <p class="hq-short">"Zachte, rijpe kersen, wat gewelde pruim, iets specerij en milde zuren."</p>
+        <div class="hq-full">
+          <p>"Pinot noir in een heel fatsoenlijke uitvoering. Eentje die zelfs het karakter van de druif wenst prijs te geven."</p>
+          <p>"Zachte, rijpe kersen, wat gewelde pruim, iets specerij en milde zuren."</p>
+          <p>"Licht koelen. Wordt ie nog wat smakelijker."</p>
+          <span class="hq-date">Geproefd op 10 november 2025</span>
+        </div>
+        <span class="hq-toggle">Lees volledige review ▾</span>
       </div>
     </div>
     <div class="pdp-body">
@@ -757,12 +812,19 @@
   <div class="modal-content">
     <button class="modal-close" onclick="closeProduct()">✕</button>
     <div class="pdp-header p-sparkling">
-      <div class="pdp-image"><img src="itz-sparkling-transparent.png" alt="IT'Z Sparkling"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div></div>
+      <div class="pdp-image"><img src="itz-sparkling-v2.png" alt="IT'Z Sparkling" onclick="openZoom('sparkling'); event.stopPropagation();"><div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8.png');"></div></div>
       <h2>IT'Z Sparkling</h2>
       <p style="font-weight:600; font-size:15px; margin-top:8px;">Fris, feestelijk en vol fijne bubbels.</p>
-      <div style="margin-top:16px; padding:12px; background:rgba(212,175,55,0.15); border-radius:4px; border-left:3px solid #D4AF37;">
-        <div style="font-weight:700; font-size:13px; color:#666; margin-bottom:6px;">Harold Hamersma (score: 8)</div>
-        <p style="font-size:14px; font-style:italic; color:#333; margin:0;">"Een mollige mousse, sappige rondinsen, rijpe perzik en appel."</p>
+      <div class="hamersma-quote" style="margin-top:16px; padding:12px; background:rgba(212,175,55,0.15); border-radius:4px; border-left:3px solid #D4AF37;" onclick="toggleQuote(this)">
+        <div class="hq-header"><span>Harold Hamersma</span><span>Score: 8</span></div>
+        <p class="hq-short">"Een mollige mousse, sappige rondingen, rijpe perzik en appel."</p>
+        <div class="hq-full">
+          <p>"De Spaanse airéndruif heeft koers gezet naar Duitsland om daar omgeschoold te worden tot een alcoholvrije mousserende wijn."</p>
+          <p>"Een en ander blijkt de reis waard."</p>
+          <p>"Een mollige mousse, sappige rondingen, rijpe perzik en appel plus wat amandel vallen ons ten deel."</p>
+          <span class="hq-date">Geproefd op 10 november 2025</span>
+        </div>
+        <span class="hq-toggle">Lees volledige review ▾</span>
       </div>
     </div>
     <div class="pdp-body">
@@ -802,6 +864,11 @@
   </div>
 </div>
 
+<div class="zoom-overlay" id="zoom-overlay" onclick="closeZoom()">
+  <button class="zoom-close" onclick="closeZoom(); event.stopPropagation();">✕</button>
+  <img id="zoom-img" src="" alt="">
+</div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
@@ -819,26 +886,6 @@ function closeProduct() {
   document.body.style.overflow = 'auto';
 }
 
-// Marquee scroll
-document.addEventListener('DOMContentLoaded', function() {
-  const track = document.querySelector('.marquee-track');
-  if (track) {
-    let position = 0;
-    const speed = 0.5;
-    const trackWidth = track.offsetWidth / 3;
-
-    function animate() {
-      position -= speed;
-      if (position <= -trackWidth) {
-        position = 0;
-      }
-      track.style.transform = `translateX(${position}px)`;
-      requestAnimationFrame(animate);
-    }
-    animate();
-  }
-});
-
 // Close modal when clicking outside content
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.modal').forEach(modal => {
@@ -853,9 +900,45 @@ document.addEventListener('DOMContentLoaded', function() {
 // Close on Escape key
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') {
+    closeZoom();
     closeProduct();
   }
 });
+
+// Bottle image zoom lightbox
+const WINE_ZOOM_IMAGES = {
+  rose: 'itz-rose-v2.png',
+  chardonnay: 'itz-chardonnay-v2.png',
+  pinot: 'itz-pinot-v2.png',
+  sparkling: 'itz-sparkling-v2.png'
+};
+const WINE_ZOOM_NAMES = {
+  rose: "IT'Z Rosé",
+  chardonnay: "IT'Z Chardonnay",
+  pinot: "IT'Z Pinot Noir",
+  sparkling: "IT'Z Sparkling"
+};
+function openZoom(wine) {
+  const overlay = document.getElementById('zoom-overlay');
+  const img = document.getElementById('zoom-img');
+  img.src = WINE_ZOOM_IMAGES[wine];
+  img.alt = WINE_ZOOM_NAMES[wine];
+  overlay.classList.add('active');
+}
+
+function closeZoom() {
+  const overlay = document.getElementById('zoom-overlay');
+  if (overlay) overlay.classList.remove('active');
+}
+
+// Hamersma quote expand/collapse
+function toggleQuote(el) {
+  el.classList.toggle('expanded');
+  const toggle = el.querySelector('.hq-toggle');
+  if (toggle) {
+    toggle.textContent = el.classList.contains('expanded') ? 'Verberg review ▴' : 'Lees volledige review ▾';
+  }
+}
 
 // Store finder widget (Leaflet map + nearest-store search)
 (function(){
