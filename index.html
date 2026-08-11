@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IT'Z,0.0% alcohol, 100% it's wine</title>
+<meta name="description" content="IT'Z is een alcoholvrije wijnlijn van Weingut Leitz uit de Rheingau. Vier stijlen, gemaakt als echte wijn en pas daarna ontdaan van alcohol. Verkrijgbaar bij Albert Heijn.">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="IT'Z – Premium alcoholvrije wijn">
+<meta property="og:description" content="Alleen van goede wijn maak je goede alcoholvrije wijn. IT'Z, gemaakt door Weingut Leitz. Gewoon verkrijgbaar bij Albert Heijn.">
+<meta property="og:image" content="https://rosalieterbraak.github.io/itz-website/hero-bottles-v2.jpg">
+<meta property="og:type" content="website">
 <!-- GA4 Tracking,replace G-XXXXXXXX with your property ID -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
 <script>
@@ -73,14 +79,18 @@
   /* HERO */
   .hero{
     position:relative;
-    padding:90px 0 70px;
+    padding:48px 0 70px;
+    min-height:560px;
+    display:flex;
+    align-items:flex-start;
     border-bottom:2px solid var(--ink);
     overflow:hidden;
-    background-image:url('hero-bottles.png');
+    background-image:url('hero-bottles-v2.jpg');
     background-size:cover;
-    background-position:center center;
+    background-position:center 40%;
     background-repeat:no-repeat;
   }
+  @media(max-width:720px){ .hero{min-height:380px; padding-top:32px;} }
   .hero::before{
     content:'';
     position:absolute;
@@ -91,9 +101,9 @@
   }
   .hero .wrap{position:relative; z-index:2;}
   .hero h1{
-    font-size:clamp(32px, 5.5vw, 72px);
+    font-size:clamp(26px, 4vw, 48px);
     font-weight:900;
-    max-width:900px;
+    max-width:640px;
   }
   .hero .tag{
     font-size:clamp(15px, 2vw, 20px);
@@ -149,9 +159,8 @@
   .marquee{
     width:100vw;
     margin-left:calc(-50vw + 50%);
-    border-bottom:2px solid var(--ink);
-    background:var(--ink);
-    color:var(--cream);
+    background:var(--rose-accent);
+    color:var(--ink);
     overflow:hidden;
     white-space:normal;
     padding:14px 0;
@@ -165,7 +174,7 @@
     text-transform:uppercase;
     letter-spacing:0.05em;
   }
-  .marquee-track span{margin:0 24px; color:var(--sparkling-accent);}
+  .marquee-track span{margin:0 24px; color:var(--pinot-accent);}
   @media(max-width:720px){ .marquee-track{font-size:13px;} .marquee-track span{margin:0 14px;} }
 
   /* PRODUCTS */
@@ -496,7 +505,7 @@
 <header class="hero">
   <div class="sticker">0.0%<span class="big">ALC</span>100% IT'Z</div>
   <div class="wrap">
-    <h1>Alleen van goede wijn maak je goede alcoholvrije wijn: IT'Z.</h1>
+    <h1>IT'Z: Alleen van goede wijn maak je goede alcoholvrije wijn.</h1>
     <div class="hero-cta">
       <a class="btn btn-solid" href="#producten">Bekijk de wijnen</a>
     </div>
@@ -648,6 +657,7 @@
       <input type="hidden" name="_subject" value="Nieuw bericht via IT'Z website">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="https://rosalieterbraak.github.io/itz-website/#contact">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div class="contact-row">
         <input type="text" name="Naam" class="finder-input" placeholder="Naam" required>
