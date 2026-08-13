@@ -64,9 +64,9 @@
     display:flex; align-items:center; justify-content:space-between;
     padding-top:16px; padding-bottom:16px;
   }
-  .logo{font-family:'Big Shoulders Display'; font-weight:900; font-size:28px; text-transform:uppercase;}
+  .logo{font-family:'Big Shoulders Display'; font-weight:900; font-size:28px; text-transform:uppercase; cursor:pointer;}
   .logo span{color:var(--burgundy);}
-  .logo img{height:24px; display:block;}
+  .logo img{height:34px; display:block;}
   nav ul{display:flex; gap:28px; list-style:none;}
   nav a{font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:0.04em; text-decoration:none;}
   .nav-cta{
@@ -107,7 +107,8 @@
   }
   .hero h1 .h1-brand{
     display:block;
-    font-size:clamp(50px, 7.5vw, 80px);
+    height:clamp(38px, 6vw, 62px);
+    margin-bottom:6px;
   }
   .hero h1 .h1-rest{
     display:block;
@@ -184,6 +185,8 @@
     letter-spacing:0.05em;
   }
   .marquee-track span{margin:0 24px; color:var(--pinot-accent);}
+  .marquee-track a{color:inherit; text-decoration:none;}
+  .marquee-track a:hover{text-decoration:underline;}
   @media(max-width:720px){ .marquee-track{font-size:13px;} .marquee-track span{margin:0 14px;} }
 
   /* PRODUCTS */
@@ -380,6 +383,25 @@
   }
   .pdp-cta .btn-ah{width:100%; text-align:center;}
 
+  .pdp-nutrition{
+    border-top:1px solid #e4ddce;
+    padding-top:18px;
+    margin-bottom:26px;
+  }
+  .pdp-nutrition summary{
+    cursor:pointer;
+    font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.1em;
+    list-style:none;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .pdp-nutrition summary::-webkit-details-marker{display:none;}
+  .pdp-nutrition summary::after{content:'▾'; font-size:11px; font-weight:400;}
+  .pdp-nutrition[open] summary::after{content:'▴';}
+  .pdp-nutrition .nutrition-note{font-size:12px; color:#6b6558; margin-top:10px;}
+  .pdp-nutrition table{width:100%; border-collapse:collapse; margin-top:10px; font-size:13px;}
+  .pdp-nutrition td{padding:7px 0; border-bottom:1px solid #e4ddce; color:#333;}
+  .pdp-nutrition td:last-child{text-align:right; font-weight:600;}
+
   /* STORY */
   .story{
     background:var(--ink);
@@ -430,6 +452,7 @@
     font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:0.03em;
   }
   .ah-badge:hover{background:#0284C7;}
+  .buy-tonnetje{display:block; height:110px; width:auto; margin-top:28px; opacity:0.9;}
   .buy-right ul{list-style:none;}
   .buy-right li{
     padding:14px 0; border-bottom:1px solid rgba(0,0,0,0.18);
@@ -456,7 +479,8 @@
   .finder-search{display:flex; gap:8px; margin-bottom:14px;}
   .finder-search .finder-input{flex:1;}
   .finder-search button{white-space:nowrap; padding:12px 18px; font-size:12px;}
-  #finder-map{width:100%; height:260px; border:1.5px solid var(--ink); border-radius:2px; margin-bottom:14px; background:#e4ddce; isolation:isolate; position:relative; z-index:0;}
+  #finder-map{width:100%; height:420px; border:1.5px solid var(--ink); border-radius:2px; margin-bottom:14px; background:#e4ddce; isolation:isolate; position:relative; z-index:0;}
+  @media(max-width:720px){ #finder-map{height:320px;} }
   .finder-results{max-height:240px; overflow-y:auto; border-top:1px solid rgba(0,0,0,0.18);}
   .finder-results .store-row{padding:10px 0; border-bottom:1px solid rgba(0,0,0,0.12); font-size:13px; line-height:1.4; display:flex; justify-content:space-between; align-items:baseline; gap:8px;}
   .finder-results .store-row .info b{font-family:'Big Shoulders Display'; font-size:15px; display:block; text-transform:uppercase;}
@@ -500,7 +524,7 @@
 
 <nav>
   <div class="wrap">
-    <div class="logo"><img src="itz-logo.png" alt="IT'Z"></div>
+    <a class="logo" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;"><img src="itz-logo.png" alt="IT'Z"></a>
     <ul>
       <li><a href="#producten">Producten</a></li>
       <li><a href="#verhaal">Het verhaal</a></li>
@@ -514,7 +538,7 @@
 <header class="hero">
   <div class="sticker">0.0%<span class="big">ALC</span>100% IT'Z</div>
   <div class="wrap">
-    <h1><span class="h1-brand">IT'Z</span><span class="h1-rest">Alleen van goede wijn maak je goede alcoholvrije wijn.</span></h1>
+    <h1><img class="h1-brand" src="itz-logo.png" alt="IT'Z"><span class="h1-rest">Alleen van goede wijn maak je goede alcoholvrije wijn.</span></h1>
     <div class="hero-cta">
       <a class="btn btn-solid" href="#producten">Bekijk de wijnen</a>
     </div>
@@ -523,7 +547,7 @@
 
 <div class="marquee">
   <div class="marquee-track">
-    <span>●</span>CHARDONNAY<span>●</span>PINOT NOIR<span>●</span>ROSÉ<span>●</span>SPARKLING<span>●</span>0.0% ALCOHOL<span>●</span>TE KOOP BIJ AH<span>●</span>SINDS 1744
+    <span>●</span><a href="#" onclick="openProduct('chardonnay'); return false;">CHARDONNAY</a><span>●</span><a href="#" onclick="openProduct('pinot'); return false;">PINOT NOIR</a><span>●</span><a href="#" onclick="openProduct('rose'); return false;">ROSÉ</a><span>●</span><a href="#" onclick="openProduct('sparkling'); return false;">SPARKLING</a><span>●</span>0.0% ALCOHOL<span>●</span><a href="https://www.ah.nl/producten/merk/it-z" target="_blank" rel="noopener">NAAR AH</a><span>●</span><a href="#verhaal">SINDS 1744</a>
   </div>
 </div>
 
@@ -538,15 +562,6 @@
     </div>
 
     <div class="products">
-      <div class="product-card p-rose" data-product="rose" onclick="openProduct('rose'); return false;" style="cursor:pointer;">
-        <div class="imgbox">
-          <img src="itz-rose-v2.png" alt="IT'Z Rosé alcoholvrij">
-          <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8-.png');"></div>
-        </div>
-        <h3>Rosé</h3>
-        <div class="grape">Fris, fruitig en heerlijk doordrinkbaar</div>
-        <div class="price">€7,49 <a class="btn btn-discover" href="#" onclick="openProduct('rose'); return false;">Ontdek deze wijn</a></div>
-      </div>
       <div class="product-card p-chardonnay" data-product="chardonnay" onclick="openProduct('chardonnay'); return false;" style="cursor:pointer;">
         <div class="imgbox">
           <img src="itz-chardonnay-v2.png" alt="IT'Z Chardonnay alcoholvrij">
@@ -555,6 +570,15 @@
         <h3>Chardonnay</h3>
         <div class="grape">Rond en verfijnd</div>
         <div class="price">€7,49 <a class="btn btn-discover" href="#" onclick="openProduct('chardonnay'); return false;">Ontdek deze wijn</a></div>
+      </div>
+      <div class="product-card p-rose" data-product="rose" onclick="openProduct('rose'); return false;" style="cursor:pointer;">
+        <div class="imgbox">
+          <img src="itz-rose-v2.png" alt="IT'Z Rosé alcoholvrij">
+          <div class="badge" style="background-image:url('DGH_med_cirkel_zilver_8-.png');"></div>
+        </div>
+        <h3>Rosé</h3>
+        <div class="grape">Fris, fruitig en heerlijk doordrinkbaar</div>
+        <div class="price">€7,49 <a class="btn btn-discover" href="#" onclick="openProduct('rose'); return false;">Ontdek deze wijn</a></div>
       </div>
       <div class="product-card p-pinot" data-product="pinot" onclick="openProduct('pinot'); return false;" style="cursor:pointer;">
         <div class="imgbox">
@@ -600,20 +624,24 @@
     </div>
     <div class="why-grid">
       <div class="why-item">
-        <h3>Al sinds 1744 een wijnhuis</h3>
-        <p>Weingut Leitz maakt al generaties lang wijn in de Rheingau. Vanuit Rüdesheim bouwde het familiebedrijf een internationale reputatie op met kwaliteitswijnen. Diezelfde kennis en aandacht voor vakmanschap vormen ook de basis van IT'Z.</p>
-      </div>
-      <div class="why-item">
-        <h3>Sinds 2016 gespecialiseerd in alcoholvrije wijn</h3>
-        <p>Leitz ontwikkelt al sinds 2016 alcoholvrije wijn. Door jarenlange ervaring met het zorgvuldig verwijderen van alcohol blijven aroma, frisheid en balans zoveel mogelijk behouden.</p>
+        <h3>Pionier in premium alcoholvrije wijn</h3>
+        <p>Weingut Leitz behoort tot de pioniers van premium alcoholvrije wijn. Al in 2016 presenteerde Johannes Leitz zijn alcoholvrije wijnen op internationale wijnbeurzen, in een tijd waarin de categorie binnen de wijnwereld nog nauwelijks serieus werd genomen.</p>
+        <p>Sindsdien bouwt Leitz verder op die voorsprong. Jarenlange ervaring met de basiswijn en zorgvuldige dealcoholisatie vormt de basis voor IT'Z.</p>
       </div>
       <div class="why-item">
         <h3>Eerst wijn. Daarna alcoholvrij.</h3>
-        <p>Iedere IT'Z begint als volwaardige wijn. Pas nadat de wijn is uitgerijpt, wordt de alcohol er met vacuümdistillatie op lage temperatuur uit gehaald. Doordat dit proces bij lage temperaturen gebeurt, blijven de fijnere aroma's en smaken van de wijn zoveel mogelijk behouden, in plaats van dat ze verdampen samen met de alcohol.</p>
+        <p>Iedere IT'Z begint als wijn. Pas daarna wordt de alcohol zorgvuldig verwijderd door vacuümdistillatie bij lage temperatuur.</p>
+        <p>Onder vacuüm kan alcohol bij een lagere temperatuur worden onttrokken. Daardoor kunnen de aroma's en het karakter van de wijn zo veel mogelijk behouden blijven. Een zorgvuldig proces waarin de kwaliteit van de wijn vooropstaat.</p>
+      </div>
+      <div class="why-item">
+        <h3>Laag in calorieën</h3>
+        <p>Alcoholvrij betekent niet automatisch weinig calorieën. IT'Z bevat slechts 16 tot 17 kcal per 100 ml. Dat ligt duidelijk onder het gemiddelde voor alcoholvrije wijn volgens het Voedingscentrum.</p>
+        <p>Ook over suiker zijn we graag concreet. Afhankelijk van de wijn bevat IT'Z 3,0 tot 3,8 gram suiker per 100 ml. Zo weet je precies wat je inschenkt.</p>
       </div>
       <div class="why-item">
         <h3>Met aandacht voor de toekomst</h3>
-        <p>Weingut Leitz is aangesloten bij Fair'n Green, een duurzaamheidsprogramma voor de wijnbouw. Daarmee werkt het wijnhuis continu aan een verantwoorde omgang met natuur, energie en biodiversiteit.</p>
+        <p>Weingut Leitz is aangesloten bij FAIR'N GREEN, een duurzaamheidsprogramma speciaal voor de wijnbouw. Daarbij gaat het niet alleen om de wijngaard, maar ook om energiegebruik, biodiversiteit en sociale verantwoordelijkheid.</p>
+        <p>Ook eerlijke arbeidsomstandigheden en een passende beloning voor medewerkers en oogstmedewerkers maken deel uit van de standaard. Zo kijkt Leitz niet alleen naar wat er vandaag in de fles zit, maar ook naar hoe wijn voor de toekomst wordt gemaakt.</p>
       </div>
     </div>
   </div>
@@ -632,6 +660,7 @@
         <h2>Gewoon verkrijgbaar<br>bij Albert Heijn</h2>
         <p>IT'Z is exclusief verkrijgbaar bij Albert Heijn. Alle vier de wijnen zijn te vinden in het assortiment van AH en AH.nl. Bekijk eenvoudig de actuele voorraad of voeg jouw favoriete wijn direct toe aan je boodschappen.</p>
         <a class="ah-badge" href="https://www.ah.nl/producten/merk/it-z" target="_blank" rel="noopener">Bekijk IT'Z bij Albert Heijn</a>
+        <img class="buy-tonnetje" src="tonnetje-motief.png" alt="">
       </div>
       <div class="buy-right store-finder" id="store-finder">
         <h3>Vind de dichtstbijzijnde AH</h3>
@@ -736,6 +765,19 @@
         <h4>Wanneer kies je deze wijn?</h4>
         <p>Deze rosé is een heerlijke keuze wanneer je op zoek bent naar iets fris, fruitig en gemakkelijk drinkbaar. Perfect voor een zonnige middag, een borrel met vrienden of een lichte maaltijd op het terras.</p>
       </div>
+      <details class="pdp-nutrition">
+        <summary>Voedingswaarden</summary>
+        <p class="nutrition-note">Voedingswaarden per 100 ml</p>
+        <table>
+          <tr><td>Energie</td><td>73 KJ / 17 kcal</td></tr>
+          <tr><td>Vet</td><td>&lt; 0,5 g</td></tr>
+          <tr><td>Waarvan verzadigd vet</td><td>&lt; 0,1 g</td></tr>
+          <tr><td>Koolhydraten</td><td>3,8 g</td></tr>
+          <tr><td>Waarvan suiker</td><td>3 g</td></tr>
+          <tr><td>Proteïne</td><td>&lt; 0,5 g</td></tr>
+          <tr><td>Zout</td><td>&lt; 0,01 g</td></tr>
+        </table>
+      </details>
       <div class="pdp-cta">
         <a class="btn btn-ah" href="https://www.ah.nl/producten/product/wi603120/it-z-rose-alcoholvrij" target="_blank" rel="noopener">Bestel bij Albert Heijn</a>
       </div>
@@ -792,6 +834,19 @@
         <h4>Wanneer kies je deze wijn?</h4>
         <p>Deze wijn is een goede keuze voor wie houdt van een frisse witte wijn met iets meer ronding. De combinatie van levendige zuren, rijp fruit en een zachte afdronk maakt hem geschikt voor uiteenlopende momenten, van een lunch in de zon tot een uitgebreid diner.</p>
       </div>
+      <details class="pdp-nutrition">
+        <summary>Voedingswaarden</summary>
+        <p class="nutrition-note">Voedingswaarden per 100 ml</p>
+        <table>
+          <tr><td>Energie</td><td>73 KJ / 17 kcal</td></tr>
+          <tr><td>Vet</td><td>&lt; 0,5 g</td></tr>
+          <tr><td>Waarvan verzadigd vet</td><td>&lt; 0,1 g</td></tr>
+          <tr><td>Koolhydraten</td><td>3,8 g</td></tr>
+          <tr><td>Waarvan suiker</td><td>3 g</td></tr>
+          <tr><td>Proteïne</td><td>&lt; 0,5 g</td></tr>
+          <tr><td>Zout</td><td>&lt; 0,01 g</td></tr>
+        </table>
+      </details>
       <div class="pdp-cta">
         <a class="btn btn-ah" href="https://www.ah.nl/producten/product/wi603133/it-z-chardonnay-alcoholvrij" target="_blank" rel="noopener">Bestel bij Albert Heijn</a>
       </div>
@@ -848,6 +903,19 @@
         <h4>Wanneer kies je deze wijn?</h4>
         <p>Deze wijn is een goede keuze wanneer je houdt van een zachte rode wijn met veel fruit en een elegante afdronk. Ideaal voor een ontspannen avond, een goed diner of een gezellige borrel.</p>
       </div>
+      <details class="pdp-nutrition">
+        <summary>Voedingswaarden</summary>
+        <p class="nutrition-note">Voedingswaarden per 100 ml</p>
+        <table>
+          <tr><td>Energie</td><td>68 KJ / 16 kcal</td></tr>
+          <tr><td>Vet</td><td>&lt; 0,5 g</td></tr>
+          <tr><td>Waarvan verzadigd vet</td><td>&lt; 0,1 g</td></tr>
+          <tr><td>Koolhydraten</td><td>4,4 g</td></tr>
+          <tr><td>Waarvan suiker</td><td>3,8 g</td></tr>
+          <tr><td>Proteïne</td><td>&lt; 0,5 g</td></tr>
+          <tr><td>Zout</td><td>&lt; 0,01 g</td></tr>
+        </table>
+      </details>
       <div class="pdp-cta">
         <a class="btn btn-ah" href="https://www.ah.nl/producten/product/wi603124/it-z-pinot-noir-alcoholvrij" target="_blank" rel="noopener">Bestel bij Albert Heijn</a>
       </div>
@@ -904,6 +972,19 @@
         <h4>Wanneer kies je deze wijn?</h4>
         <p>Deze wijn is gemaakt voor momenten waarop iets te vieren valt, groot of klein. Dankzij de frisse stijl en de fijne bubbels is dit een uitstekende keuze als aperitief, tijdens een feestelijke gelegenheid of om samen op een bijzonder moment te proosten.</p>
       </div>
+      <details class="pdp-nutrition">
+        <summary>Voedingswaarden</summary>
+        <p class="nutrition-note">Voedingswaarden per 100 ml</p>
+        <table>
+          <tr><td>Energie</td><td>73 KJ / 17 kcal</td></tr>
+          <tr><td>Vet</td><td>&lt; 0,5 g</td></tr>
+          <tr><td>Waarvan verzadigd vet</td><td>&lt; 0,1 g</td></tr>
+          <tr><td>Koolhydraten</td><td>3,9 g</td></tr>
+          <tr><td>Waarvan suiker</td><td>3,1 g</td></tr>
+          <tr><td>Proteïne</td><td>&lt; 0,5 g</td></tr>
+          <tr><td>Zout</td><td>&lt; 0,01 g</td></tr>
+        </table>
+      </details>
       <div class="pdp-cta">
         <a class="btn btn-ah" href="https://www.ah.nl/producten/product/wi603112/it-z-sparkling-alcoholvrij" target="_blank" rel="noopener">Bestel bij Albert Heijn</a>
       </div>
